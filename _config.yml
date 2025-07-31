@@ -1,0 +1,45 @@
+
+# Site settings
+title: Academic Records
+description: Personal Academic and Professional Records
+baseurl: "" # change to subpath if hosted under a folder (e.g., "/records")
+url: ""     # change to your site URL if deploying (e.g., "https://yourdomain.com")
+
+# Build settings
+markdown: kramdown
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+
+# Include folders and files
+include:
+  - assets
+  - RECORDS
+
+# Exclude unnecessary files/folders from build
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Collections (if you plan to use custom content types)
+# collections:
+#   degrees:
+#     output: true
+#     permalink: /degrees/:path/
+
+# Markdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+
+# Defaults for permalinks and layout (optional)
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
