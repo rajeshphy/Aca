@@ -70,14 +70,22 @@
 06_Service_Documents:
   CAS:
     - Pay-Matrix-2018.pdf
-  Confirmation_Letters:
-    []
   DA_Notification:
     - DA-2025.PDF
     - DA-2024.PDF
     - DA-2023.PDF
   HRD:
+    - 2024_UGC_HRDC_Regulation.pdf
     - 2024_JSHEC_NEP.pdf
+    - 2021-Statute_Jharkhand.pdf
+    - 2018_UGC_HRDC_Regulation_Draft.pdf
+  Joining_Confirmation:
+    - 2022-Oct-18-MCD-Joining.png
+    - 2022-Oct-17-DCD-Releiving.png
+    - 2022-Oct-15-Transfer-DCD-MCD.pdf
+    - 2022-Apr-06-Confirmation.pdf
+    - 2020-Nov-23-DCD-Joining.pdf
+    - 2020-Nov-11-Appointment.pdf
   Misc:
     - Daily-Allowances.PDF
     - College_leave_Form.PDF
