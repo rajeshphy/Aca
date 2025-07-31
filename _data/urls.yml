@@ -1,19 +1,13 @@
 
 01_Degrees:
-  1._Matric:
-    []
-  2._ISC:
-    []
-  3._BSc:
-    []
-  4._MSc:
-    []
-  5._PhD:
-    []
-  6._Other_Certifications:
+  Academic:
+    - 5_JRF_NET.pdf
+    - 4_MSc.pdf
+    - 3_BSc.pdf
+    - 2_ISC.pdf
+    - 1_Matric.pdf
+  Other_Certifications:
     - NGPE.pdf
-    - NET-JUNE 2017.pdf
-    - JRF-JUNE-2017.pdf
     - GATE-2018.pdf
 
 02_Research:
@@ -75,6 +69,7 @@
     - DA-2024.PDF
     - DA-2023.PDF
   HRD:
+    - 2025-05-SKMU-Health-Insurance.pdf
     - 2024_UGC_HRDC_Regulation.pdf
     - 2024_JSHEC_NEP.pdf
     - 2021-Statute_Jharkhand.pdf
