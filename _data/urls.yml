@@ -13,15 +13,7 @@
   6._Other_Certifications:
     []
 
-02_Job_Experience:
-  Appointment_Letters:
-    []
-  Promotion_Orders:
-    []
-  Relieving_Joining_Letters:
-    []
-
-03_Research_Papers:
+02_Research:
   Citation_Reports:
     []
   Conference_Papers:
@@ -39,7 +31,7 @@
   Under_Review:
     - Coordinate-Transformation.pdf
 
-04_Workshops_Certificates:
+03_Development_Sessions:
   Conf_Seminar:
     - Feb-16-2024-SBU-National-Conference.png
     - Feb-08-2025-KIIT-International-Conference.png
@@ -58,19 +50,19 @@
     - Feb-28-2022-SKMU-Capacity-Building-Workshop.png
     - Feb-02-2024-HRDC-Startup-Workshop.png
 
-05_Salary:
-  DA_Increments:
+04_Job_Experience:
+  Appointment_Letters:
     []
-  Monthly_Salary_Statements:
+  Promotion_Orders:
     []
-  Pay_Fixation_Orders:
+  Relieving_Joining_Letters:
     []
 
-06_Awards_and_Recognition:
+05_Awards_and_Recognition:
   Certificates:
     []
 
-07_Service_Documents:
+06_Service_Documents:
   CAS_Applications:
     []
   Confirmation_Letters:
@@ -80,19 +72,11 @@
   UGC_Notifications:
     []
 
-08_Lecture_Notes:
+07_Selected_Notes:
   BSc_Physics:
     []
   Miscellaneous:
     []
   MSc_Physics:
-    []
-
-09_Exam_Appointment_Letters:
-  Evaluation:
-    []
-  Invigilation:
-    []
-  Observer_Duties:
     []
 
