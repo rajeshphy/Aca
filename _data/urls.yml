@@ -10,39 +10,38 @@
   Other_Certifications:
     - NGPE.pdf
     - GATE-2018.pdf
+    - 2025-PhD_Synopsis_Approval.png
 
 02_Research:
-  Citation_Reports:
+  1_Published:
+    - 2025-REHO-HD.pdf
+    - 2023-Rajesh-Kumar-REHO.pdf
+  2_Under_Review:
+    - Coordinate-Transformation.pdf
+  3_Conference_Papers:
     []
-  Conference_Papers:
-    []
-  Misc:
-    - Manthan-September-2023-Ank.pdf
-  PPT_Poster:
+  4_Reports:
+    - 2023-Synopsis.pdf
+  5_PPT_Poster:
     - SKMU-1st-PPT.pdf
     - SBU-PPT.pdf
     - SBU-Conference.pdf
     - KIIT-poster-9-Feb-2025.pdf
-  Published:
-    - 2025-REHO-HD.pdf
-    - 2023-Rajesh-Kumar-REHO.pdf
-  Reports:
-    []
-  Under_Review:
-    - Coordinate-Transformation.pdf
+  6_Misc:
+    - Manthan-September-2023-Ank.pdf
 
 03_Development_Sessions:
-  Conf_Seminar:
-    - 2025-Feb-08-KIIT-International-Conference.png
-    - 2024-Feb-16-SBU-National-Conference.png
-  FDP:
+  1_Orientation:
+    - 2021-Nov-16-RU-FIP.png
+  2_FDP:
     - 2024-Sep-9-cssteap.png
     - 2023-Mar-03-SKMU-FDP.png
-  Orientation:
-    - 2021-Nov-16-RU-FIP.png
-  Refresher:
+  3_Refresher:
     []
-  Workshop:
+  4_Conf_Seminar:
+    - 2025-Feb-08-KIIT-International-Conference.png
+    - 2024-Feb-16-SBU-National-Conference.png
+  5_Workshop:
     - 2025-Jun-21-JRU-Character-Building-Workshop.png
     - 2024-Sep-11-XISS-Ranking-Framework-Workshop.png
     - 2024-Feb-02-HRDC-Startup-Workshop.png
