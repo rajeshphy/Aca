@@ -73,16 +73,14 @@
     - 2018-INCOIS_Advt.pdf
 
 05_SKMU_Notification:
-  1_Important:
+  A_Important:
     - Daily-Allowances.PDF
     - College_leave_Form.PDF
     - 2025-Holiday-List.pdf
     - 2025-Academic-Calender.pdf
-  2_BSC_Syllabus:
-    - msc.pdf
-  3_MSC_Syllabus:
-    - msc.pdf
-  9_DA:
+  B_Syllabus:
+    - 2024-25-MSc.pdf
+  F_DA:
     - DA-2025.PDF
     - DA-2024.PDF
     - DA-2023.PDF
