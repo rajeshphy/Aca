@@ -1,13 +1,13 @@
-
 # Site settings
 title: Academic Records
 description: Personal Academic and Professional Records
-baseurl: "" # change to subpath if hosted under a folder (e.g., "/records")
+baseurl: "/Aca" # change to subpath if hosted under a folder (e.g., "/records")
 url: ""     # change to your site URL if deploying (e.g., "https://yourdomain.com")
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
+
 plugins:
   - jekyll-feed
 
