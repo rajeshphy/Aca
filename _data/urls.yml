@@ -1,12 +1,16 @@
 
 01_Degrees:
-  BSc:
+  1._Matric:
     []
-  MSc:
+  2._ISC:
     []
-  Other_Certifications:
+  3._BSc:
     []
-  PhD:
+  4._MSc:
+    []
+  5._PhD:
+    []
+  6._Other_Certifications:
     []
 
 02_Job_Experience:
@@ -23,56 +27,72 @@
   Conference_Papers:
     []
   PPT_Poster:
-    - KIIT-poster-9-Feb-2025.pdf
-    - SBU-Conference.pdf
-    - SBU-PPT.pdf
     - SKMU-1st-PPT.pdf
+    - SBU-PPT.pdf
+    - SBU-Conference.pdf
+    - KIIT-poster-9-Feb-2025.pdf
   Published:
-    - 2023-Rajesh-Kumar-REHO.pdf
     - 2025-REHO-HD.pdf
+    - 2023-Rajesh-Kumar-REHO.pdf
   Reports:
+    []
   Under_Review:
     - Coordinate-Transformation.pdf
 
 04_Workshops_Certificates:
   Conf_Seminar:
-    - Feb-08-2025-KIIT-International-Conference.png
     - Feb-16-2024-SBU-National-Conference.png
+    - Feb-08-2025-KIIT-International-Conference.png
   FDP:
-    - Mar-03-2023-SKMU-FDP.png
     - Sep-9-2024-cssteap.png
+    - Mar-03-2023-SKMU-FDP.png
   Orientation:
     - Nov-16-2021-RU-FIP.png
   Refresher:
+    []
   Workshop:
-    - Feb-02-2024-HRDC-Startup-Workshop.png
-    - Feb-28-2022-SKMU-Capacity-Building-Workshop.png
-    - Jun-21-2025-JRU-Character-Building-Workshop.png
-    - Mar-31-2022-SKMU-Social-Responsibility-Workshop.png
-    - Nov-21-2022-Cyber-Defense-Workshop.png
     - Sep-11-2024-XISS-Ranking-Framework-Workshop.png
+    - Nov-21-2022-Cyber-Defense-Workshop.png
+    - Mar-31-2022-SKMU-Social-Responsibility-Workshop.png
+    - Jun-21-2025-JRU-Character-Building-Workshop.png
+    - Feb-28-2022-SKMU-Capacity-Building-Workshop.png
+    - Feb-02-2024-HRDC-Startup-Workshop.png
 
 05_Salary:
   DA_Increments:
+    []
   Monthly_Salary_Statements:
+    []
   Pay_Fixation_Orders:
+    []
 
 06_Awards_and_Recognition:
   Certificates:
+    []
 
 07_Service_Documents:
   CAS_Applications:
+    []
   Confirmation_Letters:
+    []
   Service_Extension_Orders:
+    []
   UGC_Notifications:
+    []
 
 08_Lecture_Notes:
   BSc_Physics:
+    []
   Miscellaneous:
+    []
   MSc_Physics:
+    []
 
 09_Exam_Appointment_Letters:
   Evaluation:
+    []
   Invigilation:
+    []
   Observer_Duties:
+    []
 

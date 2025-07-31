@@ -17,24 +17,24 @@ for section in RECORDS/*/; do
     # Loop through each subdirectory within the section
     for subsection in "$section"*/; do
         subsection_name=$(basename "$subsection")
-        
-        # List only PDF or all files (customize here)
-        files=("$subsection"*)
-
         echo "  $subsection_name:" >> "$output_file"
 
-        if [ ${#files[@]} -eq 0 ]; then
+        # Get sorted list of files (descending)
+        sorted_files=$(ls -1 "$subsection" 2>/dev/null | sort -r)
+
+        if [ -z "$sorted_files" ]; then
             echo "    []" >> "$output_file"
         else
-            for file in "${files[@]}"; do
-                filename=$(basename "$file")
-                # Skip if it's a directory
-                if [ -f "$file" ]; then
+            has_files=false
+            while IFS= read -r filename; do
+                filepath="$subsection/$filename"
+                if [ -f "$filepath" ]; then
                     echo "    - $filename" >> "$output_file"
+                    has_files=true
                 fi
-            done
-            # If no files were added, ensure empty list
-            if ! grep -q "^    - " "$output_file"; then
+            done <<< "$sorted_files"
+
+            if [ "$has_files" = false ]; then
                 echo "    []" >> "$output_file"
             fi
         fi
