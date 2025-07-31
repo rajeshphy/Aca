@@ -1,20 +1,36 @@
 
 01_Degrees:
   BSc:
-    - 1.pdf
+    []
   MSc:
+    []
   Other_Certifications:
+    []
   PhD:
+    []
 
 02_Job_Experience:
   Appointment_Letters:
+    []
   Promotion_Orders:
+    []
   Relieving_Joining_Letters:
+    []
 
 03_Research_Papers:
   Citation_Reports:
+    []
   Conference_Papers:
+    []
+  PPT_Poster:
+    - KIIT-poster-9-Feb-2025.pdf
+    - SBU-Conference.pdf
+    - SBU-PPT.pdf
+    - SKMU-1st-PPT.pdf
   Published:
+    - 2023-Rajesh-Kumar-REHO.pdf
+    - 2025-REHO-HD.pdf
+  Reports:
   Under_Review:
 
 04_Workshops_Certificates:
