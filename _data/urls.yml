@@ -8,9 +8,9 @@
     - 2_ISC.pdf
     - 1_Matric.pdf
   Other_Certifications:
-    - NGPE.pdf
-    - GATE-2018.pdf
-    - 2025-PhD_Synopsis_Approval.png
+    - 2025-PhD_Synopsis_Approval.pdf
+    - 2018-GATE.pdf
+    - 2016-NGPE.pdf
 
 02_Research:
   1_Published:
@@ -50,8 +50,8 @@
 
 04_Service_Documents:
   1_Joining_Confirmation:
-    - 2022-Oct-18-MCD-Joining.png
-    - 2022-Oct-17-DCD-Releiving.png
+    - 2022-Oct-18-MCD-Joining.pdf
+    - 2022-Oct-17-DCD-Releiving.pdf
     - 2022-Oct-15-Transfer-DCD-MCD.pdf
     - 2022-Apr-06-Confirmation.pdf
     - 2020-Nov-23-DCD-Joining.pdf
@@ -73,15 +73,19 @@
     - 2018-INCOIS_Advt.pdf
 
 05_SKMU_Notification:
-  A_Important:
+  A._Important:
     - Daily-Allowances.PDF
     - College_leave_Form.PDF
     - 2025-Holiday-List.pdf
     - 2025-Academic-Calender.pdf
-  B_Syllabus:
+  B._Syllabus:
     - 2024-25-MSc.pdf
-  F_DA:
+  F._DA:
     - DA-2025.PDF
     - DA-2024.PDF
     - DA-2023.PDF
+
+06_License_ID:
+  *:
+    []
 
