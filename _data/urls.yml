@@ -86,6 +86,10 @@
     - DA-2023.PDF
 
 06_License_ID:
-  *:
-    []
+  ID:
+    - PAN.pdf
+    - DL.pdf
+    - AADHAR.pdf
+  Insurance:
+    - Z-Health-Insurance.pdf
 
