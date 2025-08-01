@@ -115,7 +115,7 @@ a:hover {
     {% if files.size > 0 %}
     <ul>
       {% for file in files %}
-      <li><a href="{{ site.baseurl }}/RECORDS/{{ section[0] }}/{{ subsection[0] }}/{{ file }}">{{ file }}</a></li>
+      <li><a href="{{ site.baseurl }}/RECORDS/{{ section[0] }}/{{ subsection[0] }}/{{ file }}" target="_blank">{{ file }}</a></li>
       {% endfor %}
     </ul>
     {% else %}
