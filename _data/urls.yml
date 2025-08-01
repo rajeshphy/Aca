@@ -95,13 +95,25 @@
     - 2024-PBAS-CAS-Form.PDF
     - 2024-Convocation.PDF
   E._Exam:
-    []
-  F._DA:
+    - 2025-08-PG-4-Evaluation.jpg
+    - 2025-02-UG-3-Evaluation.jpg
+    - 2024-12-UG-6-Evaluation.jpg
+    - 2024-11-PG-2-Evaluation.jpg
+    - 2024-08-UG-1-Evaluation.jpg
+    - 2024-07-UG-1-Evaluation.jpg
+    - 2024-05-UG-2-Evaluation.jpg
+    - 2023-11-UG-3-Evaluation.jpg
+    - 2023-11-PG-2-Evaluation.jpg
+    - 2023-10-PG-4-Evaluation.jpg
+    - 2023-09-UG-6-Evaluation.jpg
+    - 2023-09-UG-1-Evaluation.jpg
+  F._Practical_Exam:
+    - 2025-07-UG(Old)-1-SPC.jpg
+    - 2025-07-UG-1-SPC.jpg
+  Z._DA:
     - DA-2025.PDF
     - DA-2024.PDF
     - DA-2023.PDF
-  G._Question:
-    - 2024-PG-4-Question.pdf
 
 06_License_ID:
   ID:
@@ -111,4 +123,8 @@
     - AADHAR.pdf
   Insurance:
     - Z-Health-Insurance.pdf
+
+07_Questions:
+  SKMU_Questions:
+    - 2024-PG-4-All-Question.pdf
 
