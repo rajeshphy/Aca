@@ -124,10 +124,12 @@
 
 06_License_ID:
   ID:
-    - PAN.pdf
-    - DL.pdf
-    - DCD_ID.pdf
-    - AADHAR.pdf
+    - 8_DCD_ID.pdf
+    - 5_DL.pdf
+    - 4_PAN.pdf
+    - 3_Passport.pdf
+    - 2_Voter.pdf
+    - 1_AADHAR.pdf
   Insurance:
     - Z-Health-Insurance.pdf
 
