@@ -1,0 +1,16 @@
+# rename files inside directory say PDF with pdf-o.txt containing file names inside PDF and pdf-n.txt containing new file names
+
+paste pdf-o.txt pdf-n.txt | while IFS=$'\t' read -r o n; do mv "PDF/$o" "PDF/$n"; done
+
+
+# Remove first page of each file inside directory A
+
+for f in A/*.pdf; do qpdf --replace-input --pages "$f" 2-z -- "$f"; done
+
+# count files in the pdf directory:
+
+n=0; ls pdf | while read -r x; do ((n++)); done; echo "$n"
+
+ls pdf|wc
+
+#

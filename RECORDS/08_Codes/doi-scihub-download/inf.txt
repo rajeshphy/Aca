@@ -1,0 +1,108 @@
+Czechoslovak Journal of Physics , Properties of two-variable expansions of scattering amplitude ,10.1007/bf01593857
+Physical Review C , New methods for solving the Bethe-Goldstone equation ,10.1103/PhysRevC.12.2077
+Physical Review C , Reply to "Comment on `New methods for solving the Bethe-Goldstone equation' " ,10.1103/PhysRevC.14.2321
+Journal of Physics A: Mathematical and General Physics , The recursion method of a linear operator inversion ,10.1088/0305-4470/9/1/004
+Physical Review C , Moshinsky brackets for light nuclei ,10.1103/PhysRevC.15.423
+Journal of Mathematical Physics , Generalized method of a resolvent operator expansion ,10.1063/1.523333
+Physical Review C , Recurrence relations for reaction matrices ,10.1103/PhysRevC.18.1078
+Journal of Physics A: Mathematical and General Physics , The recursion method of a linear operator inversion. II ,10.1088/0305-4470/11/8/011
+Journal of Mathematical Physics , Generalized method of a resolvent operator expansion. II ,10.1063/1.524014
+Physical Review C , Comment on "Truncated space calculation of `exact' bound state energies" ,10.1103/PhysRevC.20.384
+Czechoslovak Journal of Physics , Comparison of Brueckner theory with “exact” results for H3and He4nuclei ,10.1007/bf01596296
+Journal of Mathematical Physics , Generalized method of a resolvent operator expansion. III ,10.1063/1.524648
+Journal of Physics A: Mathematical and General Physics , Kinetic few-body propagator by exact inversion ,10.1088/0305-4470/13/7/020
+Letters in Mathematical Physics , Soliton-shaped potentials and the generalized power-series method ,10.1007/bf00420695
+Letters in Mathematical Physics , Analytic solution of the general anharmonic-oscillator problem ,10.1007/bf02285312
+Physics Letters A , The harmonic quadrupole oscillator and its anharmonic multipole descendants ,10.1016/0375-9601(81)90241-3
+Physical Review D , Symmetrically anharmonic oscillators ,10.1103/PhysRevD.24.903
+Journal of Physics A: Mathematical and General Physics , Exact solution of the Schrodinger and Klein-Gordon equations for generalised Hulthen potentials ,10.1088/0305-4470/14/2/015
+Physical Review D , Comment on the Green's function for the anharmonic oscillators ,10.1103/PhysRevD.26.3750
+Journal of Physics A: Mathematical and General Physics , Elementary bound states for the power-law potentials ,10.1088/0305-4470/15/7/022
+Physics Letters A , Analytic green function and bound states for the screened coulomb potential V(r) = F/r2 + G/r + H/(r + z2) ,10.1016/0375-9601(83)90364-x
+Journal of Physics A: Mathematical and General Physics , Continued fractions and the potential models of confinement-reply to a comment ,10.1088/0305-4470/16/1/029
+Journal of Mathematical Physics , Extended continued fractions and energies of the anharmonic oscillators ,10.1063/1.525841
+Journal of Physics A: Mathematical and General Physics , On exact solutions of the Schrodinger equation ,10.1088/0305-4470/16/2/011
+Journal of Physics A: Mathematical and General Physics , Potential r2+λr2/(1+gr2) and the analytic continued fractions ,10.1088/0305-4470/16/2/012
+Journal of Physics A: Mathematical and General Physics , The recursion method of a linear operator inversion. III ,10.1088/0305-4470/16/14/022
+Journal of Physics A: Mathematical and General Physics , Few-body anharmonic oscillators and the matrix continued fractions ,10.1088/0305-4470/16/3/023
+Journal of Physics A: Mathematical and General Physics , Schrodinger equation as recurrences. I. Band-matrix Hamiltonians ,10.1088/0305-4470/16/17/016
+Physics Letters A , A new treatment of singular potentials ,10.1016/0375-9601(84)90095-1
+Physics Letters A , On the Klein-Gordon equation with the screened Coulomb potential ,10.1016/0375-9601(84)90683-2
+Physics Letters A , Feshbach method in application to the general polynomial potential ,10.1016/0375-9601(84)90714-x
+Physical Review A , Two continued-fractional treatments of multichannel scattering ,10.1103/PhysRevA.30.2080
+Journal of Mathematical Physics , Chain models and their effective Hamiltonians ,10.1063/1.526049
+Journal of Physics A: Mathematical and General Physics , Fixed-point perturbation theory and the potential r2+ λr2/(1+gr2). II. Construction of the solutions ,10.1088/0305-4470/17/18/015
+Journal of Physics A: Mathematical and General Physics , Fixed-point perturbation theory and the potential r <sup,10.1088/0305-4470/17/18/014
+Journal of Physics A: Mathematical and General Physics , Schrodinger equation as recurrences. II. General solutions and their physical asymptotics ,10.1088/0305-4470/17/8/016
+Physics Letters A , Minimally relativistic Schrödinger equation and the linearly rising potential ,10.1016/0375-9601(85)90606-1
+Journal of Physics A: Mathematical and General Physics , The anharmonic oscillator problem: a new algebraic solution ,10.1088/0305-4470/18/13/029
+Physics Letters A , Polynomial potentials and a hidden symmetry of the Hill-determinant eigenvalue method ,10.1016/0375-9601(86)90132-5
+Physics Letters A , An asymptotic formula for the r2q anharmonic bound states ,10.1016/0375-9601(86)90712-7
+Physical Review A , Iterative solutions of the Lippmann-Schwinger <i,10.1103/PhysRevA.34.2697
+Physical Review D , Sextic-oscillator puzzle and its solution ,10.1103/physrevd.34.1224
+Journal of Physics A: Mathematical and General Physics , Potential V(r)=μr <sup,10.1088/0305-4470/19/12/017
+Physics Letters A , Perturbation theory with band-matrix propagators ,10.1016/0375-9601(87)90181-2
+Physics Letters A , Perturbation theory with a tridiagonal zeroth-order hamiltonian ,10.1016/0375-9601(87)90722-5
+[Undefined series for scimag] , DOI: 10.1016/0375-96018790722-5</font,10.1016/0375-96018790722-5
+Czechoslovak Journal of Physics , Solution of the coupled nonlinear algebraic equations appearing in the fixed-point perturbation theory ,10.1007/bf01597452
+Physical Review A , Modified Rayleigh-Schrödinger perturbation theory ,10.1103/PhysRevA.35.2448
+Journal of Physics A: Mathematical and General Physics , A simplified fixed-point perturbation theory. II. An application to the first few Pade potentials ,10.1088/0305-4470/20/7/021
+Journal of Physics A: Mathematical and General Physics , The Hill determinant approach to the Coulomb plus linear confinement ,10.1088/0305-4470/20/6/023
+Journal of Physics A: Mathematical and General Physics , A simplified fixed-point perturbation theory. I. The method ,10.1088/0305-4470/20/4/025
+Physics Letters A , An extrapolative diagonalization of incomplete hamiltonians ,10.1016/0375-9601(88)90199-5
+International Journal of Radiation Applications and Instrumentation. Part B. Nuclear Medicine and Biology , The fall in the incorporation of labelled iron into the bone marrow during enhanced erythropoiesis: This paradox explained by changes in ferrokinetics and cytokinetics using the model of mice affected by thyroid hormones ,10.1016/0883-2897(88)90006-2
+Journal of Mathematical Physics , Padé oscillators and a new formulation of perturbation theory ,10.1063/1.528104
+Journal of Mathematical Physics , On the power-series construction of bound states. I. The energies as zeros of the infinite Hill determinants ,10.1063/1.528190
+Journal of Mathematical Physics , Vectorial continued fractions and an algebraic construction of effective Hamiltonians ,10.1063/1.528166
+Journal of Mathematical Physics , Singular anharmonicities and the analytic continued fractions ,10.1063/1.528614
+Physical Review A , Perturbation theory without unperturbed solutions ,10.1103/PhysRevA.39.5336
+Journal of Mathematical Physics , On the power-series construction of Schrödinger bound states. II. The effective Hill determinants ,10.1063/1.528460
+Journal of Mathematical Physics , Singular anharmonicities and the analytic continued fractions. II. The potentials V(r)=ar2+br−4+cr−6 ,10.1063/1.528867
+Czechoslovak Journal of Physics , The exact bound-state ansaetze as zero-order approximations in perturbation theory I. The formalism and padé oscillators ,10.1007/bf01597944
+Czechoslovak Journal of Physics , Polynomial oscillators in Heisenberg picture ,10.1007/bf01598761
+Czechoslovak Journal of Physics , The spiked harmonic oscillatorV(r)=r2+λr−4as a challenge to perturbation theory ,10.1007/bf01598976
+Czechoslovak Journal of Physics , The exact bound-state ansaetze as zero-order approximations in perturbation theory II. An illustration:V(r)=r2+fr2/(1+gr2) ,10.1007/bf01624069
+Journal of Mathematical Physics , On the elementary Schrödinger bound states and their multiplets ,10.1063/1.529548
+Physical Review A , Riccati-Padé quantization and oscillators <i,10.1103/PhysRevA.48.4170
+International Journal of Immunopharmacology , Microcytic anemia and changes in ferrokinetics as late after-effects of glucan administration in murine hepatitis virus-infected C57BL/10ScSnPh mice ,10.1016/0192-0561(94)90118-x
+Czechoslovak Journal of Physics , A new form of re-arrangement of the Rayleigh-Schrödinger perturbation series ,10.1007/bf01689602
+Journal of Physics A: Mathematical and General Physics , A generalized Morse asymmetric potential and multiplets of its non-numerical exact bound states ,10.1088/0305-4470/27/22/021
+Journal of Physics A: Mathematical and General Physics , Classification of oscillators in the Heisenberg-matrix representation ,10.1088/0305-4470/27/14/022
+Radiation Research , Radioprotection of Mouse Hemopoiesis by Dipyridamole and Adenosine Monophosphate in Fractionated Treatment ,10.2307/3578962
+Journal of Physics A: Mathematical and General Physics , Bound-state method with elementary-product wavefunctions ,10.1088/0305-4470/28/21/029
+Blood , Synergistic effect of granulocyte colony-stimulating factor and drugs elevating extracellular adenosine on neutrophil production in mice ,10.1182/blood.v86.10.3692.bloodjournal86103692
+Journal of Physics A: Mathematical and General Physics , Screened Coulomb potential in a semi-relativistic Pauli - Schrödinger equation ,10.1088/0305-4470/29/19/027
+Journal of Physics A: Mathematical and General Physics , Comment on the letter `A new efficient method for calculating perturbation energies using functions which are not quadratically integrable' by L Skála and J Cízek ,10.1088/0305-4470/29/16/039
+Journal of Physics A: Mathematical and General Physics , Strong-coupling expansions for the -symmetric oscillators ,10.1088/0305-4470/31/50/008
+Behavioural Pharmacology , COMPARISON OF VARIOUS METHODS OF POPULATION SAMPLE FORMING USING TYPE A BEHAVIOUR PATTERN (TABP) SCORE RELATED GENOTYPE ,10.1097/00008877-199808001-00212
+Behavioural Pharmacology , THE EFFECT OF THE FIRST HUNDRED ,10.1097/00008877-199808001-00213
+Radiation Research , Pretreatment with Granulocyte Colony-Stimulating Factor Reduces Myelopoiesis in Irradiated Mice ,10.2307/3579949
+Journal of Physics A: Mathematical and General Physics , A family of complex potentials with real spectrum ,10.1088/0305-4470/32/17/303
+European Journal of Haematology , Influence of the joint treatment with granulocyte colony-stimulating factor and drugs elevating extracellular adenosineon erythropoietic recovery following 5-fluorouracil-induced haematotoxicityin mice ,10.1034/j.1600-0609.2000.065005310.x
+Radiation Research , Radioprotective Action of Extracellular Adenosine on Bone Marrow Cells in Mice Exposed to Gamma Rays as Assayed by the Micronucleus Test ,10.2307/3580280
+Modern Physics Letters A , GENERALIZED CONTINUITY EQUATION AND MODIFIED NORMALIZATION IN PT-SYMMETRIC QUANTUM MECHANICS ,10.1142/S0217732301005333
+Physics of Atomic Nuclei , SolvablePT-symmetric Hamiltonians ,10.1134/1.1490125
+Journal of Physics A: Mathematical and General Physics , The interplay of supersymmetry and PT symmetry in quantum mechanics: a case study for the Scarf II potential ,10.1088/0305-4470/35/41/311
+European Journal of Haematology , Elevation of extracellular adenosine mobilizes haematopoietic progenitor cells and granulocytes into peripheral blood and enhances the mobilizing effects of granulocyte colony-stimulating factor ,10.1034/j.1600-0609.2003.00120.x
+Journal of Physics A: Mathematical and General Physics , Low-lying spectra in anharmonic three-body oscillators with a strong short-range repulsion ,10.1088/0305-4470/36/38/310
+Journal of Clinical Periodontology , Genetic variations in the matrix metalloproteinase-1 promoter and risk of susceptibility and/or severity of chronic periodontitis in the Czech population ,10.1111/j.1600-051x.2004.00547.x
+Czechoslovak Journal of Physics , Weakly non-Hermitian square well ,10.1007/s10582-005-0108-9
+Czechoslovak Journal of Physics , (mathcal{P}mathcal{T})-supersymmetric partner of a short-range square well ,10.1007/s10582-005-0122-y
+Nephrology Dialysis Transplantation , Haplotype analysis of the RAGE gene: identification of a haplotype marker for diabetic nephropathy in type 2 diabetes mellitus ,10.1093/ndt/gfh711
+Physics Letters A , Comment on: “Solution of the Dirac equation for the Woods–Saxon potential with spin and pseudospin symmetry” [Phys. Lett. A 338 (2005) 90] ,10.1016/j.physleta.2005.10.086
+International Journal of Modern Physics A , -SYMMETRIC SUPERSYMMETRY IN A SOLVABLE SHORT-RANGE MODEL ,10.1142/S0217751X0602951X
+Journal of Physics A: Mathematical and General Physics , Closed formula for the metric in the Hilbert space of a -symmetric model ,10.1088/0305-4470/39/32/S15
+Journal of Physics A: Mathematical and General Physics , Spiked potentials and quantum toboggans ,10.1088/0305-4470/39/42/008
+Journal of Physics A Mathematical and Theoretical , Maximal couplings in -symmetric chain models with the real spectrum of energies ,10.1088/1751-8113/40/18/012
+Radiation Research , Inhibition of Cyclooxygenase 2 in Mice Increases Production of G-CSF and Induces Radioprotection ,10.1667/rr1387.1
+Experimental Biology and Medicine , Homeostatic Action of Adenosine A3 and A1 Receptor Agonists on Proliferation of Hematopoietic Precursor Cells ,10.3181/0802-rm-43
+Journal of Physics A Mathematical and Theoretical , Horizons of stability ,10.1088/1751-8113/41/24/244027
+Journal of Physics A Mathematical and Theoretical , {\cal PT} -symmetric deformations of Calogero models ,10.1088/1751-8113/41/19/194010
+Journal of Physics A Mathematical and Theoretical , Identification of observables in quantum toboggans ,10.1088/1751-8113/41/21/215304
+Journal of Physics A Mathematical and Theoretical , Conditional observability versus self-duality in a schematic model ,10.1088/1751-8113/41/30/304027
+Journal of Physics Conference Series , Quantum toboggans: models exhibiting a multisheeted ,10.1088/1742-6596/128/1/012046
+European Journal of Haematology , Granulocyte colony-stimulating factor and drugs elevating extracellular adenosine synergize to enhance haematopoietic reconstitution in irradiated mice ,10.1111/j.1600-0609.1998.tb01019.x
+Journal of Physics A Mathematical and Theoretical , Anomalous real spectra of non-Hermitian quantum graphs in a strong-coupling regime ,10.1088/1751-8113/43/33/335303
+International Journal of Theoretical Physics , Ad Hoc Physical Hilbert Spaces in Quantum Mechanics ,10.1007/s10773-014-2376-2
+Journal of Physics Conference Series , Branched Hamiltonians for a Class of Velocity Dependent Potentials ,10.1088/1742-6596/839/1/012011
+Izvestiya Mathematics , On eigenvalues of a PT-symmetric operator in a thin layer ,10.1070/SM8657

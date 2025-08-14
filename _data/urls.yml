@@ -140,3 +140,120 @@
   SKMU_Questions:
     - 2024-PG-4-All-Question.pdf
 
+08_Codes:
+  A-CLI:
+    - read.txt
+  doi-scihub-download:
+    - inf.txt
+    - dow.sh
+  libgen-doi-extract:
+    - url.txt
+    - cod.sh
+
+09_Articles:
+  Znojil:
+    - Radiation_Research_Radioprotective_Action_of_Extracellular_Adenosine_on_Bone_Marrow_Cells_in_Mice_Exposed_to_Gamma_Rays_as_Assayed_by_the_Micronucleus_Test_.pdf
+    - Radiation_Research_Radioprotection_of_Mouse_Hemopoiesis_by_Dipyridamole_and_Adenosine_Monophosphate_in_Fractionated_Treatment_.pdf
+    - Radiation_Research_Pretreatment_with_Granulocyte_Colony-Stimulating_Factor_Reduces_Myelopoiesis_in_Irradiated_Mice_.pdf
+    - Radiation_Research_Inhibition_of_Cyclooxygenase_2_in_Mice_Increases_Production_of_G-CSF_and_Induces_Radioprotection_.pdf
+    - PR_D_Symmetrically_anharmonic_oscillators_.pdf
+    - PR_D_Sextic-oscillator_puzzle_and_its_solution_.pdf
+    - PR_D_Comment_on_the_Green's_function_for_the_anharmonic_oscillators_.pdf
+    - PR_C_Reply_to__Comment_on_`New_methods_for_solving_the_Bethe-Goldstone_equation'___.pdf
+    - PR_C_Recurrence_relations_for_reaction_matrices_.pdf
+    - PR_C_New_methods_for_solving_the_Bethe-Goldstone_equation_.pdf
+    - PR_C_Moshinsky_brackets_for_light_nuclei_.pdf
+    - PR_C_Comment_on__Truncated_space_calculation_of_`exact'_bound_state_energies__.pdf
+    - PR_A_Two_continued-fractional_treatments_of_multichannel_scattering_.pdf
+    - PR_A_Riccati-Padé_quantization_and_oscillators__i.pdf
+    - PR_A_Perturbation_theory_without_unperturbed_solutions_.pdf
+    - PR_A_Modified_Rayleigh-Schrödinger_perturbation_theory_.pdf
+    - PR_A_Iterative_solutions_of_the_Lippmann-Schwinger__i.pdf
+    - PL_A_The_harmonic_quadrupole_oscillator_and_its_anharmonic_multipole_descendants_.pdf
+    - PL_A_Polynomial_potentials_and_a_hidden_symmetry_of_the_Hill-determinant_eigenvalue_method_.pdf
+    - PL_A_Perturbation_theory_with_band-matrix_propagators_.pdf
+    - PL_A_PERTURBATION_THEORY_WITH_A_TRIDIAGONAL_ZEROTH-ORDER_HAMILTONIAN.pdf
+    - PL_A_Perturbation_theory_with_a_tridiagonal_zeroth-order_hamiltonian_.pdf
+    - PL_A_On_the_Klein-Gordon_equation_with_the_screened_Coulomb_potential_.pdf
+    - PL_A_Minimally_relativistic_Schrödinger_equation_and_the_linearly_rising_potential_.pdf
+    - PL_A_Feshbach_method_in_application_to_the_general_polynomial_potential_.pdf
+    - PL_A_Comment_on__“Solution_of_the_Dirac_equation_for_the_Woods–Saxon_potential_with_spin_and_pseudospin_symmetry”_[Phys._Lett._A_338_(2005)_90]_.pdf
+    - PL_A_Analytic_green_function_and_bound_states_for_the_screened_coulomb_potential_V(r)_=_F_r2_+_G_r_+_H_(r_+_z2)_.pdf
+    - PL_A_An_extrapolative_diagonalization_of_incomplete_hamiltonians_.pdf
+    - PL_A_An_asymptotic_formula_for_the_r2q_anharmonic_bound_states_.pdf
+    - PL_A_A_new_treatment_of_singular_potentials_.pdf
+    - Physics_of_Atomic_Nuclei_SolvablePT-symmetric_Hamiltonians_.pdf
+    - Nephrology_Dialysis_Transplantation_Haplotype_analysis_of_the_RAGE_gene__identification_of_a_haplotype_marker_for_diabetic_nephropathy_in_type_2_diabetes_mellitus_.pdf
+    - Modern_PL_A_GENERALIZED_CONTINUITY_EQUATION_AND_MODIFIED_NORMALIZATION_IN_PT-SYMMETRIC_QUANTUM_MECHANICS_.pdf
+    - Letters_in_Mathematical_Physics_Soliton-shaped_potentials_and_the_generalized_power-series_method_.pdf
+    - Letters_in_Mathematical_Physics_Analytic_solution_of_the_general_anharmonic-oscillator_problem_.pdf
+    - JP_Conference_Series_Quantum_toboggans__models_exhibiting_a_multisheeted_.pdf
+    - JP_Conference_Series_Branched_Hamiltonians_for_a_Class_of_Velocity_Dependent_Potentials_.pdf
+    - JP_A_Mathematical_and_Theoretical_Maximal_couplings_in_-symmetric_chain_models_with_the_real_spectrum_of_energies_.pdf
+    - JP_A_Mathematical_and_Theoretical_Identification_of_observables_in_quantum_toboggans_.pdf
+    - JP_A_Mathematical_and_Theoretical_Horizons_of_stability_.pdf
+    - JP_A_Mathematical_and_Theoretical_Conditional_observability_versus_self-duality_in_a_schematic_model_.pdf
+    - JP_A_Mathematical_and_Theoretical_Anomalous_real_spectra_of_non-Hermitian_quantum_graphs_in_a_strong-coupling_regime_.pdf
+    - JP_A_Mathematical_and_Theoretical_{\cal_PT}_-symmetric_deformations_of_Calogero_models_.pdf
+    - JP_A__MGP_The_recursion_method_of_a_linear_operator_inversion._III_.pdf
+    - JP_A__MGP_The_recursion_method_of_a_linear_operator_inversion._II_.pdf
+    - JP_A__MGP_The_recursion_method_of_a_linear_operator_inversion_.pdf
+    - JP_A__MGP_The_interplay_of_supersymmetry_and_PT_symmetry_in_quantum_mechanics__a_case_study_for_the_Scarf_II_potential_.pdf
+    - JP_A__MGP_The_Hill_determinant_approach_to_the_Coulomb_plus_linear_confinement_.pdf
+    - JP_A__MGP_The_anharmonic_oscillator_problem__a_new_algebraic_solution_.pdf
+    - JP_A__MGP_Strong-coupling_expansions_for_the_-symmetric_oscillators_.pdf
+    - JP_A__MGP_Spiked_potentials_and_quantum_toboggans_.pdf
+    - JP_A__MGP_Screened_Coulomb_potential_in_a_semi-relativistic_Pauli_-_Schrödinger_equation_.pdf
+    - JP_A__MGP_Schrodinger_equation_as_recurrences._II._General_solutions_and_their_physical_asymptotics_.pdf
+    - JP_A__MGP_Schrodinger_equation_as_recurrences._I._Band-matrix_Hamiltonians_.pdf
+    - JP_A__MGP_Potential_V(r)=μr__sup.pdf
+    - JP_A__MGP_Potential_r2+λr2_(1+gr2)_and_the_analytic_continued_fractions_.pdf
+    - JP_A__MGP_On_exact_solutions_of_the_Schrodinger_equation_.pdf
+    - JP_A__MGP_Low-lying_spectra_in_anharmonic_three-body_oscillators_with_a_strong_short-range_repulsion_.pdf
+    - JP_A__MGP_Kinetic_few-body_propagator_by_exact_inversion_.pdf
+    - JP_A__MGP_Fixed-point_perturbation_theory_and_the_potential_r2+_λr2_(1+gr2)._II._Construction_of_the_solutions_.pdf
+    - JP_A__MGP_Fixed-point_perturbation_theory_and_the_potential_r__sup.pdf
+    - JP_A__MGP_Few-body_anharmonic_oscillators_and_the_matrix_continued_fractions_.pdf
+    - JP_A__MGP_Exact_solution_of_the_Schrodinger_and_Klein-Gordon_equations_for_generalised_Hulthen_potentials_.pdf
+    - JP_A__MGP_Elementary_bound_states_for_the_power-law_potentials_.pdf
+    - JP_A__MGP_Continued_fractions_and_the_potential_models_of_confinement-reply_to_a_comment_.pdf
+    - JP_A__MGP_Comment_on_the_letter_`A_new_efficient_method_for_calculating_perturbation_energies_using_functions_which_are_not_quadratically_integrable'_by_L_Skála_and_J_Cízek_.pdf
+    - JP_A__MGP_Closed_formula_for_the_metric_in_the_Hilbert_space_of_a_-symmetric_model_.pdf
+    - JP_A__MGP_Classification_of_oscillators_in_the_Heisenberg-matrix_representation_.pdf
+    - JP_A__MGP_Bound-state_method_with_elementary-product_wavefunctions_.pdf
+    - JP_A__MGP_A_simplified_fixed-point_perturbation_theory._II._An_application_to_the_first_few_Pade_potentials_.pdf
+    - JP_A__MGP_A_simplified_fixed-point_perturbation_theory._I._The_method_.pdf
+    - JP_A__MGP_A_generalized_Morse_asymmetric_potential_and_multiplets_of_its_non-numerical_exact_bound_states_.pdf
+    - JP_A__MGP_A_family_of_complex_potentials_with_real_spectrum_.pdf
+    - Journal_of_Clinical_Periodontology_Genetic_variations_in_the_matrix_metalloproteinase-1_promoter_and_risk_of_susceptibility_and_or_severity_of_chronic_periodontitis_in_the_Czech_population_.pdf
+    - JMP_Vectorial_continued_fractions_and_an_algebraic_construction_of_effective_Hamiltonians_.pdf
+    - JMP_Singular_anharmonicities_and_the_analytic_continued_fractions._II._The_potentials_V(r)=ar2+br−4+cr−6_.pdf
+    - JMP_Singular_anharmonicities_and_the_analytic_continued_fractions_.pdf
+    - JMP_Padé_oscillators_and_a_new_formulation_of_perturbation_theory_.pdf
+    - JMP_On_the_power-series_construction_of_Schrödinger_bound_states._II._The_effective_Hill_determinants_.pdf
+    - JMP_On_the_power-series_construction_of_bound_states._I._The_energies_as_zeros_of_the_infinite_Hill_determinants_.pdf
+    - JMP_On_the_elementary_Schrödinger_bound_states_and_their_multiplets_.pdf
+    - JMP_Generalized_method_of_a_resolvent_operator_expansion._III_.pdf
+    - JMP_Generalized_method_of_a_resolvent_operator_expansion._II_.pdf
+    - JMP_Generalized_method_of_a_resolvent_operator_expansion_.pdf
+    - JMP_Extended_continued_fractions_and_energies_of_the_anharmonic_oscillators_.pdf
+    - JMP_Chain_models_and_their_effective_Hamiltonians_.pdf
+    - Izvestiya_Mathematics_On_eigenvalues_of_a_PT-symmetric_operator_in_a_thin_layer_.pdf
+    - International_Journal_of_Theoretical_Physics_Ad_Hoc_Physical_Hilbert_Spaces_in_Quantum_Mechanics_.pdf
+    - International_Journal_of_Immunopharmacology_Microcytic_anemia_and_changes_in_ferrokinetics_as_late_after-effects_of_glucan_administration_in_murine_hepatitis_virus-infected_C57BL_10ScSnPh_mice_.pdf
+    - IJMP_A_-SYMMETRIC_SUPERSYMMETRY_IN_A_SOLVABLE_SHORT-RANGE_MODEL_.pdf
+    - Experimental_Biology_and_Medicine_Homeostatic_Action_of_Adenosine_A3_and_A1_Receptor_Agonists_on_Proliferation_of_Hematopoietic_Precursor_Cells_.pdf
+    - European_Journal_of_Haematology_Influence_of_the_joint_treatment_with_granulocyte_colony-stimulating_factor_and_drugs_elevating_extracellular_adenosineon_erythropoietic_recovery_following_5-fluorouracil-induced_haematotoxicityin_mice_.pdf
+    - European_Journal_of_Haematology_Granulocyte_colony-stimulating_factor_and_drugs_elevating_extracellular_adenosine_synergize_to_enhance_haematopoietic_reconstitution_in_irradiated_mice_.pdf
+    - European_Journal_of_Haematology_Elevation_of_extracellular_adenosine_mobilizes_haematopoietic_progenitor_cells_and_granulocytes_into_peripheral_blood_and_enhances_the_mobilizing_effects_of_granulocyte_colony-stimulating_factor_.pdf
+    - CJP_Weakly_non-Hermitian_square_well_.pdf
+    - CJP_The_spiked_harmonic_oscillatorV(r)=r2+λr−4as_a_challenge_to_perturbation_theory_.pdf
+    - CJP_The_exact_bound-state_ansaetze_as_zero-order_approximations_in_perturbation_theory_II._An_illustration_V(r)=r2+fr2_(1+gr2)_.pdf
+    - CJP_The_exact_bound-state_ansaetze_as_zero-order_approximations_in_perturbation_theory_I._The_formalism_and_padé_oscillators_.pdf
+    - CJP_Solution_of_the_coupled_nonlinear_algebraic_equations_appearing_in_the_fixed-point_perturbation_theory_.pdf
+    - CJP_Properties_of_two-variable_expansions_of_scattering_amplitude_.pdf
+    - CJP_Polynomial_oscillators_in_Heisenberg_picture_.pdf
+    - CJP_Comparison_of_Brueckner_theory_with_“exact”_results_for_H3and_He4nuclei_.pdf
+    - CJP_A_new_form_of_re-arrangement_of_the_Rayleigh-Schrödinger_perturbation_series_.pdf
+    - CJP_(mathcal{P}mathcal{T})-supersymmetric_partner_of_a_short-range_square_well_.pdf
+
