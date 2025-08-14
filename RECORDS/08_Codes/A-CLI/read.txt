@@ -13,4 +13,6 @@ n=0; ls pdf | while read -r x; do ((n++)); done; echo "$n"
 
 ls pdf|wc
 
-#
+# to count total pages in files inside dir
+
+ c=0; for f in *.pdf; do ((c+= $(pdfinfo "$f" | awk '/Pages:/ {print $2}'))); done; echo "Total pages: $c"
