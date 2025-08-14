@@ -20,7 +20,7 @@ for section in RECORDS/*/; do
         echo "  $subsection_name:" >> "$output_file"
 
         # Get sorted list of files (descending)
-        sorted_files=$(ls -1 "$subsection" 2>/dev/null | sort -r)
+        sorted_files=$(ls -1 "$subsection" 2>/dev/null | sort )
 
         if [ -z "$sorted_files" ]; then
             echo "    []" >> "$output_file"
