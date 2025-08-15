@@ -16,3 +16,7 @@ ls pdf|wc
 # to count total pages in files inside dir
 
  c=0; for f in *.pdf; do ((c+= $(pdfinfo "$f" | awk '/Pages:/ {print $2}'))); done; echo "Total pages: $c"
+
+# To see columns seperated by say ","
+
+awk -F',' '{print $3}' inf.txt
