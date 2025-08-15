@@ -26,7 +26,8 @@ while IFS=',' read -r journal title doi; do
     if [ -n "$pdf_link" ]; then
         # Create safe PDF filename: JournalName - PaperTitle.pdf
         pdf_name="${journal} - ${title}.pdf"
-        pdf_name=$(echo "$pdf_name" | tr ' /:*?"<>|' '_' )
+        #pdf_name=$(echo "$pdf_name" | tr ' /:*?"<>|' '_' )
+        pdf_name=$(echo "$pdf_name" | tr ' /:*?\"<>|' '_' | sed -E -e 's/[;,]+/_/g' -e 's/_+/_/g' -e 's/([A-Za-z])_([A-Za-z])/\1\2/g' -e 's/[._-]+/-/g' -e 's/\)\^([0-9]+)/\1/g' -e 's/[()]//g' -e 's/^_+//; s/_+$//; s/^-+//; s/-+$//')
 
         # Try to download PDF
         if ! wget -q --show-progress "$pdf_link" -O "$pdf_dir/$pdf_name"; then
