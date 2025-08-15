@@ -1,0 +1,12 @@
+I will paste a list of research paper references.
+Your task is to:
+	1.	Search for and find the correct DOI for each paper.
+	2.	Output the result in CSV format with columns in this exact order:
+Year, Paper Name, DOI, Authors, Venue/Details
+	3.	If a DOI is not available, put arXiv:<ID> or ISBN:<number> (for books).
+	4.	Do not use quotation marks around the fields unless there’s a comma inside the field.
+	5.	Preserve the exact spelling of authors’ names from the original reference.
+	6.	Make sure year is a four-digit number from the reference.
+	7.	Paper name should be title case exactly as in the reference.
+	8.	DOI should be just the DOI number without URL prefix (10.xxxx/...).
+	9.	Venue/Details should be everything after the title in the reference (journal, volume, pages, etc.).

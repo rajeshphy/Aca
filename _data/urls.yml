@@ -149,6 +149,8 @@
   libgen-doi-extract:
     - cod.sh
     - url.txt
+  Prompt:
+    - Doi-Extraction.txt
 
 09_Articles:
   Fernandez:
