@@ -153,6 +153,11 @@
     - Doi-Extraction.txt
 
 09_Articles:
+  Fellow-Smith:
+    - 1951-The-Factorization-Method.pdf
+    - 1975-The-Hamiltonian-H-eq-minus-1-2-d2-dx2-plus-x2-2-plus-lambda-x2-Reobserved.pdf
+    - 1995-On-A-Novel-Supersymmetric-Connections-Between-Harmonic-And-Isotonic-Oscillators.pdf
+    - 2008-A-Quantum-Exactly-Solvable-Non-Linear-Oscillator-Related-With-The-Isotonic-Oscillator.pdf
   Fernandez:
     - 1998-Bender_CM-Boettcher_S-Real_Spectra_in_Non-Hermitian_Hamiltonians_Having_PT_Symmetry.pdf
     - 1998-Fernandez_FM-Guardiola_R-Ros_J-Znojil_M-Strong-coupling_expansions_for_the_PT-symmetric_oscillators_Vx=aix+bx2+cix3.pdf
