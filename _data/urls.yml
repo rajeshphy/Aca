@@ -152,9 +152,9 @@
     - cod.sh
     - url.txt
   Papers-Tex:
-    - PT-Symmetry.tex
-    - QAHO-HD_2024.tex
-    - REHO_2023.tex
+    - 2023_REHO.tex
+    - 2024_QAHO-HD.tex
+    - 2025_PT-Symmetry.tex
   Prompt:
     - Doi-Extraction.txt
 
