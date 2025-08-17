@@ -1,0 +1,1244 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{times, amssymb, amsmath, graphicx, tabularx, booktabs, subfiles, amsthm,enumitem,xcolor,braket, subcaption}
+
+\newcommand{\td}[1]{\tilde{#1}}
+
+
+\title{Exactly Solvable Quantum Anisotropic Harmonic Oscillator Potentials with Linear and/or Quadratic Perturbations in Higher Dimensions}
+\author{ABC}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+
+%%
+
+%%
+
+
+
+% \tableofcontents
+% Abstract and Keywords
+\begin{abstract}
+    This paper presents a comprehensive study of rational extensions of the quantum anisotropic and anharmonic oscillator (QAAO) potentials under diverse perturbative frameworks. Beginning with one-dimensional (1D) systems, we demonstrate the existence of rationally extended potentials for imaginary linear perturbations with their exact bound state solutions and derive the corresponding wavefunctions. In two-dimensional (2D) case, we construct the rational extensions for QAAOs with quadratic ($\lambda \, xy$) type of perturbations (where $\lambda$ being real or imaginary) and obtain their solutions analytically. We extend our discussion to the three-dimensional (3D) systems with combinations of linear and quadratic perturbations, as well as combinations of purely quadratic perturbations and obtain their corresponding solutions analyticaly.
+    For the potentials with imaginary perturbations, we construct the corresponding $\mathcal{PT}$-symmetric systems, supported by appropriate parity operators, and identify parameter regimes where the spectra remain real (unbroken $\mathcal{PT}$-symmetry). Additionally, we investigate the constraints on perturbation parameters and angular frequencies required to preserve spectral reality. Various properties of these systems including the conditions for the degeneracy in the higher dimensions are discussed. The behaviors of the potentials with their ground state wavefunctions are also shown graphically.
+\end{abstract}
+
+% Introduction Section
+
+\section{Introduction}
+The role of quantum harmonic oscillator is well known and has numerous applications across various areas of theoretical as well as experimental physics, particularly in the case involving isotropic or anisotropic materials where the restoring forces are linear in nature. However,  for anisotropic materials where the restoring forces are non-linear, such systems  are modeled as quantum anisotropic and aharmonic oscillators (QAAO) type. The properties of these anisotropic materials are generally studied by obtaining their exact or approximate solutions.  
+The Quantum mechanics often faces the challenge of finding exact analytical solutions for the Schrödinger equation when dealing with more general or new type of QAAO potentials. With the conjecture that the non-Hermitian Hamiltonians exhibit Parity-Time ($\mathcal{PT}$) symmetry \cite{bender1998real} and the subsequent realization that they exhibit real spectra when $\mathcal{PT}$ symmetry remains unbroken \cite{bender2002complex, khare2000pt}, the charm of $\mathcal{PT}$ symmetric quantum mechanics has drawn a lot of interest. This has led to the exploration of non-Hermitian quantum systems, particularly those with $\mathcal{PT}$ symmetry, and the search for real spectra in such systems.  Subsequently, Mostafazadeh \cite{mostafazadeh2002pseudo1, mostafazadeh2002pseudo2, mostafazadeh2002pseudo3} introduced the concept of pseudo-Hermitian Hamiltonians and showed that all the $\mathcal{PT}$ symmetric Hamiltonians studied in the literature exhibited pseudo-Hermiticity. Pseudo-Hermiticity was studied using gauge-like transformation \cite{ahmed2002pseudo}, where it was shown that the eigenstates of the $\mathcal{PT}$-symmetric Hamiltonians fail to satisfy the $\mathcal{PT}$-symmetric orthogonality conditions, indicating a shortcoming in the theoretical framework of $\mathcal{PT}$-symmetric quantum mechanics.
+
+Bender and others \cite{bender1998real} generalised Bessis's example \cite{bessis} (which involved the 1D-quantum anharmonic complex potential $x^2+ix^3$) and considered the potential $x^2-(ix)^N$ for real $N$. They demostrated that the spectrum is real at various $\mathcal{PT}$ phase transition points. In the work by Fernández \cite{fernandez2016non}, a general coordinate-momentum transformation was shown, which simplified the derivation of Ahmed \cite{ahmed2002pseudo} and Rath and Mallick \cite{rath2015zero}. In the available literature, the solution of one dimensional harmonic oscillator $(\omega_1^2 x^2)$ with a linear type perturbation $(\lambda_0 x)$ is well known \cite{singh2019pt} and solved simply by coordinate shifting. The complex and  $\mathcal{PT}$ symmetric version of this potential is equivalent to one of the simplest form of the Bender's problem for $N=1$, which is exactly solvable  and the spectrum is always real for any values of $\lambda$.  The same is further extended to the two-dimensional hermitian QAAO case with quadratic type perturbation ($\frac{\lambda_1}{2} xy$) and solved the system analytically. The system was made non-hermitian but $\mathcal{PT}$ symmetric by considering $\lambda$ as imaginary and shown that the system will exhibit real spectra under unbroken $\mathcal{PT}$ symmetry \cite{mandal2013pt}. Recently, after the discovery of exceptional orthogonal polynomials (EOPs) \cite{gomez2010extension, gomez2009extended, quesne2008exceptional}, it has been observed that many conventional potentials have been rationally extended and obtained their bound as well as scattering states solutions using the expressions of these EOPs \cite{Kumar:2024tsz}. Similarly, the conventional 1D harmonic oscillator potential is also extended and obtained their solutions in terms of exceptional Hermite polynomials for even co-dimensions of $m$ \cite{mandal2013pt} and discussed its different properties in details in ref. \cite{kumar2023rationally}. This problem is further extended for the case of higher dimensional quantum anisotropic harmonic oscillator (QAHO) potentials for both even as well as odd co-dimensions of $m$ and obtained their solutions in terms of exceptional Hermite and the exceptional Laguerre polynomials \cite{gomez2013rational, bonneux2018exceptional}. As far  our knowlwdge is concerned the exact solution of a more general type of harmonic oscillator potentials in three dimension with combination of quadratic and linear perturbations $(\lambda xy + \lambda_o z )$ or combination of quadratic perturbation $(\lambda_1 xy + \lambda_2 yz + \lambda_3 xz)$ with $\lambda$'s being real or imaginary are not available in the literature and needs more attention. Further, it will be more interesting to construct the rationally extended real as well as complex and $\mathcal{PT}$ symmetric potentials correponding to these conventional QAAO potentials with their various other properties. 
+
+
+This manuscript addresses the problem by deriving analytical solutions for potentials with quadratic pururbations in higher dimensions through coordinate transformation. We begin by considering the potential, which includes either linear or quadratic perturbations. In the first step, we eliminate the perturbation terms by transforming to the tilde coordinates, resulting in a pure anisotropic potential. Transformations include coordinate shifting to absorb the linear perturbation and coordinate rotation to absorb the quadratic perturbation. In the second step, we extend this potential rationally, following the well-known procedure discussed in Refs. \cite{marquette2013two} and \cite{Kumar:2024tsz} . The resulting rationally extended (RE) potential in the tilde coordinates is parameterized by $m$. Finally, applying the inverse coordinate transformation, we obtain the rational extension of the original perturbed potential. In all these transformations, Laplacian operators $\nabla^2$ remains invariant. We also give an expression for the transformation realtion between new and old coordinates and show that $\mathcal{PT}$-symmetric Hamiltonians are obtained for selected parity operators. 
+
+The structure of our presentation is organized as follows: 
+%section 2, provides a concise introduction to Similarity Transformation and the concept of $\mathcal{PT}$ symmetry in higher dimension. 
+In sections $2$, we delve into a thorough analysis of real and $\mathcal {PT}$-symmetric complex perturbed quantum harmonic oscillators (QHO) in $1D$ and generate a corresponding new family of $m$-dependent RE potentials. We show that the RE real potential is acceptable only for even $m$. However, the complex and PT symmetric case is defined for all integers (even and odd) of $m$. In section $3$, we consider $2D$ real and complex $\mathcal{PT}$-symmetric QAAO potential with quadratic perturbations defined on the full-line and discuss the various conditions for the spectrum to be real. These potentials are then extended rationally for even co-dimensions of $m_1$ and $m_2$, and their solutions are obtained in terms of exceptional Hermite polynomials . The degeneracy conditions, along with some examples in both real and $\mathcal{PT}$-symmetric cases, are also discussed. Thereafter, a $3D$ case of QAAO potentials is considered with combinations of linear and/or quadratic perturbations and constructed a family of anisotropic $3D$ QAHO potentials with their analytical solutions in section $4$. We show that the pseudo-Hermitian Hamiltonians are $\mathcal{PT}$-symmetric for selected parity operators, and we obtain their exact solutions and finally construct the corresponding RE  potentials with perturbation terms. Finally in Section $5$, we sumarize our findings.
+
+
+
+
+\section{Construction of one-dimensional rationally extended potentials}
+Let's start with a well-known one-dimensional quantum harmonic oscillator (QHO) potential $V(\omega_x,x)$ (defined on the full line i.e., $-\infty<x<\infty$) with \( \omega_1 \) as the angular frequency satisfying the Schr\"odinger equation in units of \(\hbar = 2M = 1\), given by
+
+\begin{equation}\label{1D-SE}
+\left[-\frac{d^2 }{dx^2} +V(x) \right] \Psi = E \Psi\qquad\mbox{where}\qquad V(x)=\frac{1}{4}\omega_1^2 x^2.
+\end{equation}
+% The solution of this potential is well known in terms of Hermite polynomials \( H_n(x) \) \cite{greiner2001quantum}. We list its wavefunctions and energy eigenvalues which will be used in coming section,
+% \begin{align}\label{QHO-psi}
+%     \psi_n(x) &\propto e^{-\frac{\omega_1}{2}x^2} H_n\left(\sqrt{\omega_1}x\right),\\\label{QHO-E}
+%     E_n(\omega_1)&=\left(n+\frac{1}{2}\right)\omega_1;\quad n=0,1,2...
+% \end{align}
+we now introduce a linear perturbation \( \lambda_0 x\) given by
+\begin{equation}\label{1D-V-I}
+V^{l}(x) =V(x) + \lambda_0 x ,
+\end{equation}
+which can be reduced to the standard form of QHO \cite{greiner2001quantum} by shifting the coordinate $x\rightarrow \td{x}$ and get
+\begin{align}\label{1D-V'}
+\td{V}^l(\td{x}) &= \frac{1}{4}\omega_1^2 \td{x}^2 - \frac{\lambda_0^2}{\omega_1^2}\quad\mbox{where}\quad \td{x} = x + \frac{2\lambda_0}{ \omega_1^2},
+\end{align}
+The tilde quantity in rest sections of this paper represents the expression in new coordinate. 
+The solution of this potential is same as the QHO except the energy eigenvalues are shifted by \(\lambda_0^2/\omega_1^2\). The spectra of Eq. (\ref{1D-V'}) are real for any value of \( \lambda_0 \) (real or imaginary) and for imaginary $\lambda_0$ i.e., \( \lambda_0=i\gamma_0 \), the system is complex and $\mathcal{PT}$ symmetric. The energy eigenvalues
+\begin{equation}
+	E\rightarrow \tilde{E}_n^l(\omega_1)=\left(n+\frac{1}{2}\right) \omega_1+\frac{\gamma^2_0}{\omega^2_1};\quad n=0,1,2...
+\end{equation} 
+The wavefunctions are the same as those of the QHO except for a shift in the coordinate \( x \rightarrow \tilde{x} \). Therefore, the wavefunctions are given by
+% \begin{equation}\label{1D-psi}
+%     \psi_n^l(x,i\gamma_0)\propto e^{-\frac{\omega_1}{4} \left(x + i\frac{2\gamma_0}{\omega_1^2}\right)^2} H_n\left(\sqrt{\frac{\omega_1}{2}} \left(x + i\frac{2\gamma_0}{\omega_1^2}\right)\right)
+% \end{equation}
+\begin{equation}\label{1D-psi}
+  \td{\psi}_n^l(\td{x})=\psi_n(\td{x}),\quad\text{Here,}\quad \td{\omega_1}=\omega_1.
+\end{equation}
+which exhibit unbroken \( \mathcal{PT} \) symmetry for any real values of $\gamma_0$ and satisfy
+\begin{align}
+    \begin{split}
+    \mathcal{PT}\;\td{\psi}_n^l(\td{x})&=(-1)^n\;\td{\psi}_n^l(\td{x})
+    \end{split}
+\end{align}
+
+\subsection{Rational extension}
+The rational extension of the potential (\ref{1D-SE}) defined on the full line can be easily obtained by using the results discussed in \cite{marquette2013two, Kumar:2024tsz} for even co-dimension\footnote{If we consider the potential defined on the half-line, the corresponding rational extension will be acceptable for all positive integer values of $m$ \cite{Kumar:2024tsz}. In this manuscript, we consider the potential defined on the full-line only. The same procedure may also be adopted to handle the potentials defined on the half-line.} of $m$  and we list potential, wavefunction and energy of rationally extended Quantum Harmonic Oscillator (RE-QHO) potential as the results will be used in the coming sections. 
+\begin{equation}\label{1D-V-RE-x}
+  V_{RE,m}(x) = V(x) + V_{rat,m}\left(x\right), \quad -\infty < x < \infty
+\end{equation}
+where $V_{rat,m}(x)$ is given by 
+\begin{equation}\label{rat}
+    V_{rat,m}(x)=-2\left[\frac{\mathcal{H}_m''\left(\sqrt{\frac{\omega_1}{2}} x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)} - \left[\frac{\mathcal{H}_m'\left(\sqrt{\frac{\omega_1}{2}} x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)}\right]^2 + \frac{\omega_1}{2}\right]
+\end{equation}
+with $m=0,2,4,...,$. The ground state, excited state and energy eigen values are given as 
+\begin{eqnarray}\label{1D-psi-RE-x}
+  \psi_{RE,m,0}(x) &=& \frac{\zeta\left(\omega_1,x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)}\nonumber\\
+\mbox{and} \quad 
+  \psi_{RE,m,n+1}(x) &=& \frac{\zeta\left(\omega_1,x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)}\hat{H}_{m,n+1}\left(\sqrt{\frac{\omega_1}{2}} x\right),
+\end{eqnarray}
+with  $\zeta(\omega_1,x)=e^{- \frac{\omega_1 }{4}x^2}$ respectively, where \( n = 0, 1, 2, \dots \) and \(\hat{H}_{m,0}(x) = 1\). Here $\hat{H}_{m,n+1}(x)$ is the exceptional Hermite polynomial \cite{marquette2013two} given by
+\begin{align}
+  \hat{H}_{m,n+1}(x) &= \mathcal{H}_m(x) H_{n+1}(x) + H_n(x) \frac{d}{dx} \mathcal{H}_m(x),
+\end{align}
+where \( H_n(x) \) is the classical Hermite polynomial and \( \mathcal{H}_m(x) \) is the pseudo Hermite polynomial. The energy eigenvalues \cite{Kumar:2024tsz} are given by
+\begin{equation}\label{1D-E_RE-x}
+E_{RE,m, n+1}(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad E_{RE,m,0}(\omega_{1})=0.
+\end{equation}
+Therefore the rational extension of linearly perturbed potential (\ref{1D-V'}) in new coordinate $\td{V}^l(\td{x})$ is obtained using above results as
+\begin{equation}\label{1D-V-RE-I}
+    \tilde{V}_{RE,m}^l(\td{x}) = \td{V}^l(\td{x}) + V_{rat,m}\left(\td{x}\right), \quad -\infty < x < \infty
+\end{equation}
+with new frequency $\td{\omega}_1=\omega_1$. In the old coordinates $\tilde{V}_{RE,m}^l(\td{x})$ changes to $V_{RE,m}^l(x)$ and we have perturbation term.
+% 
+When \(\lambda_0\) is real, \(\tilde{x}\) is also real, and the potential becomes singular for odd \( m \) due to the presence of a \(\frac{1}{\tilde{x}^2}\) term, which diverges at the origin. As a result, only even \( m \) values are allowed. While even \( m \) may also appear to diverge at certain values of \(\tilde{x}\), the polynomial in the denominators of the rational terms has only complex roots, preventing such divergences.
+% 
+The corresponding ground and the excited state eigenfunctions are given by
+\begin{eqnarray}\label{1D-psi-RE-I}
+		\td{\psi}_{RE,m,0}^l(\td{x}) &=& \frac{\zeta\left(\omega_1,\td{x}\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} \td{x}\right)}\nonumber\\
+\mbox{and} \quad 
+    \td{\psi}_{RE,m,n+1}^l(\td{x}) &=& \frac{\zeta\left(\omega_1,\td{x}\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} \td{x}\right)}\hat{H}_{m,n+1}\left(\sqrt{\frac{\omega_1}{2}} \td{x}\right).
+\end{eqnarray}
+The energy eigenvalues of $\td{V}^l_{RE,m}(\td{x})$ are same as $V_{RE,m}(x)$ as energy factor of $\frac{\text{$\lambda $o}^2}{\omega_1^2}$ cancels out \cite{Kumar:2024tsz} and are given by
+\begin{equation}\label{1D-E_RE-I}
+	\td{E}_{RE,m, n+1}^l(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad \td{E}_{RE,m,0}^l(\omega_{1})=0.
+\end{equation}
+
+\subsubsection {Complex and $\mathcal{PT}$ symmetric case} 
+For imaginary \(\lambda_0 = i\gamma_0\), the extended potential (\ref{1D-V-RE-I}) is complex, \(\mathcal{PT}\)-symmetric, and well-defined for all \( m \), as can be verified from Table \ref{Tab:1D-V-}, which presents it in terms of \(\lambda_0\) and in the old coordinates. Similar to the real case, in this case the energy eigenvalues are also real and independednt of the parameter $\gamma_0$. The ground and the excited state wavefunctions (\ref{1D-psi-RE-I}) also satisfy
+
+\begin{eqnarray}
+		\mathcal{PT}\;\td{\psi}_{RE,m,0}^l(\td{x})&=&\td{\psi}_{RE,m,0}^l(\td{x})\nonumber\\
+	\mbox{and} \quad  \mathcal{PT}\;\td{\psi}_{RE,m,n+1}^l(\td{x})&=&(-1)^{n+1}\;\td{\psi}_{RE,m,n+1}^l(\td{x})
+\end{eqnarray}
+respectively. The potential in Eq. (\ref{1D-psi-RE-I}) when expressed in terms of the old coordinates \( x \) 
+has the following form as listed in Table \ref{Tab:1D-V-}. The corresponding ground and the excited state eigenfunctions for the first few values of \( m \) are listed in Table \ref{Tab:1D-psi0-} and Table \ref{Tab:1D-psin-}, respectively. 
+The plot for the imaginary value of \(\lambda_0\), specifically \(\lambda_0 = i\), is provided in Fig.~\ref{fig:1D-V-}. The corresponding ground-state wavefunction is shown in Fig.~\ref{fig:1D-psi0-}.
+
+
+%%%%%%%Table and Figure -1D %%%%%%
+
+\begin{table}[htp]%htp
+  \centering
+  \renewcommand{\arraystretch}{1.5} % Increase row height
+  \setlength{\tabcolsep}{1em} % Increase column padding
+  \begin{tabularx}{\columnwidth}{|c|X|}
+  \toprule
+  {\bf m} & $\mathbf{V_{RE,m}^l(x)}$ \\
+  \toprule
+  0 & $\frac{\omega_1^2 x^2}{4} + \lambda_0 x - \omega_1$ \\
+  \hline
+  1 & $\frac{\omega_1^2 x^2}{4} + \lambda_0 x - \omega_1 + \frac{2 \omega_1^4}{(2 \lambda_0 + \omega_1^2 x)^2}$ \\
+  \hline
+  2 & $\frac{\omega_1^2 x^2}{4} + \lambda_0 x - \omega_1 - \frac{8 \omega_1^7}{\left(4 \lambda_0^2 + \omega_1^3 + \omega_1^4 x^2 + 4 \lambda_0 \omega_1^2 x\right)^2} + \frac{4 \omega_1^4}{4 \lambda_0^2 + \omega_1^3 + \omega_1^4 x^2 + 4 \lambda_0 \omega_1^2 x}$ \\
+  \hline
+  3 & $\frac{\omega_1^2 x^2}{4} + \lambda_0 x - \omega_1 - \frac{24 \omega_1^7}{\left(4 \lambda_0^2 + 3 \omega_1^3 + \omega_1^4 x^2 + 4 \lambda_0 \omega_1^2 x\right)^2} + \frac{4 \omega_1^4}{4 \lambda_0^2 + 3 \omega_1^3 + \omega_1^4 x^2 + 4 \lambda_0 \omega_1^2 x} + \frac{2 \omega_1^4}{(2 \lambda_0 + \omega_1^2 x)^2}$ \\
+  \bottomrule
+  \end{tabularx}
+  \caption{Potentials $V_{RE,m}^l(x)$ for different $m$ values in old coordinates.}
+  \label{Tab:1D-V-}
+\end{table}
+
+
+\begin{table}[htp]%htp
+  \centering
+  \renewcommand{\arraystretch}{2} % Increase row height
+  \setlength{\tabcolsep}{1em} % Increase column padding
+  \begin{tabularx}{\textwidth}{|c|X|}
+    \toprule
+    {\bf m} & $\mathbf{\psi_{RE,m,0}^l(x)}$ \\
+    \toprule
+    0 & $\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)$ \\
+    \midrule
+    1 & $\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)\left[\frac{(-\omega_1)^{3/2}}{\sqrt{2} (2 \lambda_0 + x \omega_1^2)}\right]$ \\
+    \midrule
+    2 & $\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)\left[-\frac{\omega_1^3}{2 (4 \lambda_0^2 + 4 x \lambda_0 \omega_1^2 + \omega_1^3 + x^2 \omega_1^4)}\right]$ \\
+    \midrule
+    3 & $\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)\left[\frac{(-\omega_1)^{9/2}}{2 \sqrt{2} (2 \lambda_0 + x \omega_1^2) (4 \lambda_0^2 + 4 x \lambda_0 \omega_1^2 + \omega_1^3 (3 + x^2 \omega_1))}\right]$ \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Table for $\psi_{RE,m,0}^l(x)$ with $m$ values 0 to 3 in old coordinates.}
+  \label{Tab:1D-psi0-}
+\end{table}
+
+
+\begin{table}[htp]%htp
+  \centering
+  \renewcommand{\arraystretch}{2.2} % Increase row height for better readability
+  \setlength{\tabcolsep}{0.5em} % Adjust column padding
+  \begin{tabularx}{\textwidth}{|c|X}
+  \toprule
+  {\bf m} & $\mathbf{\psi_{RE,m,n+1}^l(x)}$ \\
+  \toprule
+  0 & 
+  $\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)\left[\frac{\left(2 \lambda_0 + \omega_1^2 x\right)}{\omega_1} H_n\left(\sqrt{\frac{\omega_1}{2}}\left(x + \frac{2 \lambda_0}{\omega_1^2}\right)\right) 
+  - \sqrt{2} n \sqrt{\omega_1} H_{n-1}\left(\sqrt{\frac{\omega_1}{2}}\left(x + \frac{2 \lambda_0}{\omega_1^2}\right)\right)\right]$ \\
+  \midrule
+  1 & 
+  $\scriptstyle\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)\left[\frac{\left(4 \lambda_0^2 + \omega_1^3 + \omega_1^4 x^2 + 4 \lambda_0 \omega_1^2 x\right)}{2 \lambda_0 \omega_1 + \omega_1^3 x} H_n\left(\sqrt{\frac{\omega_1}{2}}\left(x + \frac{2 \lambda_0}{\omega_1^2}\right)\right) 
+  - \sqrt{2} n \omega_1^{3/2} \frac{\left(2 \lambda_0 + \omega_1^2 x\right)}{\omega_1} H_{n-1}\left(\sqrt{\frac{\omega_1}{2}}\left(x + \frac{2 \lambda_0}{\omega_1^2}\right)\right)\right]$ \\
+  \midrule
+  2 & 
+  $\scriptstyle\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)\left[\frac{\left(8 \lambda_0^3 + 6 \lambda_0 \omega_1^3 (\omega_1 x^2 + 1) + \omega_1^5 x (\omega_1 x^2 + 3) + 12 (\lambda_0^2) \omega_1^2 x\right)}{4 \lambda_0^2 \omega_1 + \omega_1^4 + \omega_1^5 x^2 + 4 \lambda_0 \omega_1^3 x} H_n\left(\sqrt{\frac{\omega_1}{2}}\left(x + \frac{2 \lambda_0}{\omega_1^2}\right)\right) 
+  - \sqrt{2} n \sqrt{\omega_1} H_{n-1}\left(\sqrt{\frac{\omega_1}{2}}\left(x + \frac{2 \lambda_0}{\omega_1^2}\right)\right)\right]$ \\
+  \midrule
+  3 & 
+  $\zeta\left(\omega_1,x + \frac{2\lambda_0}{\omega_1^2}\right)\frac{\left(16 \lambda_0^4 + 24 (\lambda_0^2) \omega_1^3 (\omega_1 x^2 + 1) + 8 \lambda_0 \omega_1^5 x (\omega_1 x^2 + 3) + \omega_1^6 (\omega_1^2 x^4 + 6 \omega_1 x^2 + 3) + 32 \lambda_0^3 \omega_1^2 x\right)}{\omega_1 \left(2 \lambda_0 + \omega_1^2 x\right) \left(4 \lambda_0^2 + \omega_1^3 (\omega_1 x^2 + 3) + 4 \lambda_0 \omega_1^2 x\right)} H_n\left(\sqrt{\frac{\omega_1}{2}}\left(x + \frac{2 \lambda_0}{\omega_1^2}\right)\right)$ \\
+  \bottomrule
+  \end{tabularx}
+  \caption{Table for $\psi_{RE,m,n+1}^l(x)$ with $m$ values 0 to 3 in old coordinates.}
+  \label{Tab:1D-psin-}
+\end{table}
+
+%%%%Figure%%%%
+\begin{figure}[htp]%h!
+  \centering
+  \IfFileExists{complex-V.jpeg}{
+      \includegraphics[height=0.55\textheight]{complex-V.jpeg}
+  }{
+      \fbox{\textbf{Figure Missing}}
+  }
+  \caption{Plots of Real and Imaginary components of $V^l_{RE,m}(x)$ vs $x$ for the first few $m$ with $\omega_x=2$.}
+  \label{fig:1D-V-}
+\end{figure}
+
+
+
+\begin{figure}[htp]%h!
+  \centering
+  \IfFileExists{Wave0.jpeg}{
+      \includegraphics[height=0.55\textheight]{Wave0.jpeg}
+  }{
+      \fbox{\textbf{Figure Missing}}
+  }
+  \caption{Plots of Real and Imaginary components of $\psi^l_{RE,m,0}(x)$ vs $x$ for the first few $m$ with $\omega_x=2$.}
+  \label{fig:1D-psi0-}
+\end{figure}
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Two-dimensional QAAO potential with quadratic perturbation}
+
+In this section, we consider a 2D quantum anisotropic and anharmonic oscillator potential with a quadratic perturbation term $\frac{\lambda}{2} xy$ (with $\lambda$ being real or imaginary) and angular frequencies \( \omega_1 \) and \( \omega_2 \) along the \( x \) and \( y \) axes, respectively, given by
+\begin{equation}\label{2D-V-II}
+  V(x,y)= \frac{1}{4}\omega_1^2x^2+\frac{1}{4}\omega_2^2y^2+\frac{\lambda}{2} xy.
+\end{equation}
+%This problem is discussed in detail by Mandal et al. \cite{mandal2013pt}. 
+The transformation coordinates \cite{mandal2013pt} from old to new coordinates and vice versa are given by
+\begin{align}\label{2D-xy}
+  \begin{split}
+  \begin{aligned}
+      x &= a\td{x}+b\td{y}, \\
+      y &= -b\td{x}+a\td{y},
+  \end{aligned}
+  & 
+  \left\{
+  \begin{aligned}
+      \td{x} &= ax-by, \\
+      \td{y} &=bx+ay,
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+where \( k =\frac{\omega_1^2-\omega_2^2}{\sqrt{4\lambda^2+(\omega_1^2-\omega_2^2)^2}}\), and $a=\sqrt{\frac{1-k}{2}}$, $b=\sqrt{\frac{1+k}{2}}$. The angular frequencies in the new coordinates ($\td{\omega}_1$ and $\td{\omega}_2$) are given by
+\begin{align}\label{2D-omega'}
+  \begin{split}
+    \td{\omega}_1 &= \sqrt{\frac{1}{2} \left(\omega_1^2+\omega_2^2-\sqrt{4\lambda^2+(\omega_1^2-\omega_2^2)^2}\right)}\\
+ \mbox{and} \quad \td{\omega}_2 &= \sqrt{\frac{1}{2} \left(\omega_1^2+\omega_2^2+\sqrt{4\lambda^2+(\omega_1^2-\omega_2^2)^2}\right)}
+  \end{split}
+\end{align}
+respectively. On using the above co-ordinate transformations (\ref{2D-xy}), the resulting uncoupled potential in the new co-ordinates, $\tilde{V}(\td{x},\td{y})$ becomes
+\begin{equation}\label{2D-V-II'}
+  \tilde{V}(\td{x},\td{y})= \td{V}(\td{x})+\td{V}(\td{y}).  
+\end{equation}
+where, $\td{V}(\td{x}),\;\td{V}(\td{y})$ represents QHO potential (\ref{1D-SE}) in new coordinates with new angular frequencies.
+Similarly corresponding wavefunctions $\td{\psi}_{n_1,n_2}(\td{x},\td{y})$ and the energy eigenvalues $\td{E}_{n_1,n_2}(\td{\omega}_1,\td{\omega}_2)$ are given by
+\begin{align}\label{2D-psi-II'}
+  \tilde{\psi}_{n_1,n_2}(\td{x},\td{y}) &\propto
+  \td{\psi}_{n_1}(\td{x})\;\td{\psi}_{n_2}(\td{y}),\quad n_1,n_2 = 0,1,2,\cdots, \\\label{2D-E-II'}
+  \mbox{and}\quad \tilde{E}_{n_1,n_2}(\td{\omega}_1,\td{\omega}_2) &= \left(n_1+\frac{1}{2}\right)\td{\omega}_1+\left(n_2+\frac{1}{2}\right)\td{\omega}_2,
+\end{align}
+respectively, where $\td{\psi}_{n}(\td{x})$ is the eigenfunction of the 1D-QHO in new coordinates with new angular frequencies defined by (\ref{2D-omega'}).
+The spectrum is real within specific ranges when \(\lambda\) is either real or purely imaginary, discussed below as the hermitian and the non-hermitian $\mathcal{PT}$ symmetric cases, respectively.\\
+
+{\bf Case(a) Hermitian case:} When $\lambda$ is real, the conditions for real spectra is
+\begin{equation}
+  \sqrt{4 \lambda ^2+(\omega _1^2-\omega_2^2)^2}\leq\omega_1^2+\omega_2^2,\label{real2D}
+\end{equation}
+which implies a restriction on $\lambda$ i.e., $|\lambda| \leq \omega_1 \omega_2$.
+The potential $V(x,y)$ satisfy $\eta$-pseudo hermicity condition as $\eta$ is an identity $\mathbb{I}$ for this case. \\
+
+{\bf Case(b) Non-hermitian and $\mathcal{PT}$ symmetric case:} When $\lambda$ is imaginary, say $\lambda=i\gamma$, the system is non-hermitian and $\mathcal{PT}$ symmetric and the spectrum will be real only when the following conditions must be satisfied i.e.,
+\begin{align}\label{img2D}
+  \begin{split}
+    \sqrt{-4\gamma ^2+(\omega _1^2-\omega _2^2)^2}&\le\omega _1^2+\omega _2^2,\\
+   \mbox{and}\quad -4 \gamma ^2+(\omega _1^2-\omega _2^2)^2&>0.
+  \end{split}
+\end{align}
+These conditions imply a restriction on $\lambda$ i.e., $|\lambda|< \frac{1}{2} |\omega _1^2-\omega _2^2|$.
+The $\eta$ for imaginary $\lambda$ is not identity and is given by 
+\begin{equation}
+  \eta=\left(
+\begin{array}{cc}
+ -k & -\sqrt{1-k^2}  \\
+ \sqrt{1-k^2}  & -k \\
+\end{array}
+\right)
+\end{equation}
+and the potential $V(x,y)$ satisfy $\eta$-pseudo hermicity condition as
+\begin{equation}
+  V^{\dagger}=\eta V \eta^{-1}.
+\end{equation}
+The system is $\mathcal{PT}$ symmetric for the parity operators $P_1$ and $P_2$ given in (\ref{2D-P}) and the eigenfunction, $\tilde{\psi}_{n_1,n_2}(\td{x},\td{y})$, satisfies the following relations \cite{pollett1995elliptic}
+\begin{align*}
+P_1T\tilde{\psi}_{n_1,n_2}(\td{x},\td{y}) &= (-1)^{n_1}\tilde{\psi}_{n_1,n_2}(\td{x},\td{y}) = \pm\tilde{\psi}_{n_1,n_2}(\td{x},\td{y}), \\
+P_2T\tilde{\psi}_{n_1,n_2}(\td{x},\td{y})&= (-1)^{n_2}\tilde{\psi}_{n_1,n_2}(\td{x},\td{y}) = \pm\tilde{\psi}_{n_1,n_2}(\td{x},\td{y}),
+\end{align*}
+and hence the $\mathcal{PT}$ symmetry is unbroken.
+
+\subsection{Rational Extension}
+At the outset, it is important to note that the rational extension of the quantum anharmonic oscillator (QAHO) potentials in two dimensions can be performed in four distinct ways \cite{Kumar:2024tsz}, leading to four different forms of rationally extended potentials. These possibilities include both $x$ and $y$ on the full line, both on the half line, and one on the full line while the other is on the half line. For the sake of simplicity, we consider one specific case (when both $x$ and $y$ defined on full axes) in this manuscript. The other three cases follow directly from the same approach and can be easily derived. 
+
+As shown in our recent work \cite{Kumar:2024tsz} that the rational extension of these QAHO potentials in two or higher dimensions is simply the sum of the rational extensions of QAHO potentials along each dimension. Here again, only even codimensions are possible, as the new coordinates \(\tilde{x}\) and \(\tilde{y}\) are linear functions of the old coordinates \(x\) and \(y\). Consequently, when the old coordinates approach zero, the new coordinates also approach zero, causing the \(\frac{1}{\tilde{x}^2}\) and \(\frac{1}{\tilde{y}^2}\) terms, which appear for odd \( m \), to diverge. Thus, the rationally extended potential corresponding to the potential (\ref{2D-V-II'}) 
+for even co-dimensions of $m_1$ and $m_2$ will be 
+\begin{align}\label{2D-V-RE-II}
+  \td{V}_{RE,m_1,m_2}(\td{x},\td{y}) &= \td{V}_{RE,m_1}(\td{x})+\td{V}_{RE,m_2}(\td{y}),
+\end{align}
+where $\td{V}_{RE,m_1}(\td{x})$ and $\td{V}_{RE,m_2}(\td{y})$ are the rational extension of QHO in new coordinates along $\td{x}$ and $\td{y}$ axes. Doing inverse coordinate transformation we get the expression of rationally extended potential $V_{RE,m_1,m_2}(x,y)$ in old coordinates but in terms of new frequencies $\td{\omega}_1$ and $\td{\omega}_2$ as shown in Table-\ref{Tab:2D-V-} for the first few values of \( m_1 \) and \( m_2 \).
+The corresponding eigenfunctions and the energy eigenvalues are given using (\ref{1D-psi-RE-x}) and (\ref{1D-E_RE-x}) in new coordinates as 
+\begin{align}\label{2D-psi-RE-II}
+	\td{\psi}_{RE,m_1,m_2,0,0}(\td{x},\td{y}) &\propto \td{\psi}_{RE,m_1,0}(\td{x})\;\td{\psi}_{RE,m_2,0}(\td{y})\\
+  \td{\psi}_{RE,m_1,m_2,n_1+1,n_2+1}(x,y) &\propto \td{\psi}_{RE,m_1,n_1+1}(\td{x})\;\td{\psi}_{RE,m_2,n_2+1}(\td{y})\\
+  \begin{split}
+ \mbox{and} \quad \td{E}_{RE,m_1,m_2,n_1+1,n_2+1}(\td{\omega}_1,\td{\omega}_2) &=\td{E}_{RE,m_1,n_1+1}(\td{\omega}_1)+\td{E}_{RE,m_2,n_2+1}(\td{\omega}_2)
+\end{split}
+\end{align}
+\begin{equation}
+	\mbox{with} \quad \td{E}_{RE,m_1,m_2,0,0}(\td{\omega}_{1},\td{\omega}_{2}) =0, \quad n_1, n_2=0,1,2.......,\nonumber
+\end{equation}
+respectively. 
+% Here the eigenfunctions $\td{\psi}_{RE,m_1,n_1+1}(\td{x})$ or $\td{\psi}_{RE,m_2,n_2+1}(\td{y})$ and the energy eigenvalues $\td{E}_{RE,m_1,n_1+1}(\td{\omega}_1)$ or $\td{E}_{RE,m_2,n_2+1}(\td{\omega}_2)$ are equivalent to the expressions obtained in the 1D case which can easily be obtained from Eqs. (\ref{1D-psi-RE-I}) and (\ref{1D-E_RE-I}) respectively by putting $\lambda_0=0$. 
+The rationally extended potential $\td{V}_{RE,m_1,m_2}(\td{x},\td{y})$  is regular for even $m$ irrespective of $\lambda$ being real or imaginary. In the real case, the spectrum will be real only when the same condition (\ref{real2D}) as defined in the conventional case is satisfied. However, in the case of imaginary $\lambda=i\gamma$, the potential $\td{V}_{RE,m_1,m_2}(\td{x},\td{y})$ is also $\mathcal{PT}$ symmetry under both the parity operators $P\rightarrow P_1$ or $P_2$ (\ref{2D-P}) and the spectrum is unbroken under the same restrictions defined for the conventional case (\ref{img2D}). The ground and the excited state eigenfunctions corresponding to this RE potentials also satisfy
+ \begin{align*}
+ 	PT\;\td{\psi}_{RE,m_1,m_2,0,0}(\td{x},\td{y}) &= \td{\psi}_{RE,m_1,m_2,0,0}(\td{x},\td{y})\\
+ 	PT\;\td{\psi}_{m_1,m_2,n_1+1,n_2+1}(\td{x},\td{y})&= (-1)^{n_1+n_2+2}\td{\psi}_{m_1,m_2,n_1,n_2}(\td{x},\td{y}) = \pm\td{\psi}_{m_1,m_2,n_1,n_2}(\td{x},\td{y}).
+ \end{align*}    
+respectively.
+
+
+\subsection{Conditions for Degeneracy}
+The system will show degeneracy when the ratio of angular frequencies in new coordinates is a rational number. i.e.,
+\begin{equation}
+  \frac{\td{\omega}_1}{\td{\omega}_2}=\frac{\td{r}}{\td{s}},
+\end{equation}
+in the potential $\td{V}(\td{x},\td{y})$ given by
+\begin{equation}\label{2D-V-degeneracy}
+  \td{V}(\td{x},\td{y})= \frac{1}{4}\left(\td{\omega}_1^2\td{x}^2+\td{\omega}_2^2\td{y}^2\right).
+\end{equation}
+Similarly $\frac{r}{s}$ represents the frequency ratio $\frac{\omega_1}{\omega_2}$ in old coordinates which can be irrational. Substituting the values of $\td{\omega}_1$ and $\td{\omega}_2$ from Eq. (\ref{2D-omega'}) and simplifying for $\lambda$ (depends on $\td{r},\td{s},r,s,\omega_1,\omega_2$) we get
+\begin{equation}\label{2D-lambda}
+  \lambda(r,s,\td{r},\td{s},\omega_1,\omega_2)=\frac{\sqrt{(\td{r}^4+\td{s}^4)-\left(\frac{\td{r}\td{s}}{rs}\right)^2(r^4+s^4)}}{\td{r}^2+\td{s}^2}\;\omega_1\omega_2
+\end{equation}
+The energy eigenvalues of degenerate potential (\ref{2D-V-degeneracy}) are given by
+\begin{equation}\label{2D-degeneracy}
+  \td{E}_{n_1,n_2}(\td{r},\td{s},\td{\omega}_2) = \left(\td{r} n_1+ \td{s} n_2+\frac{\td{r}+\td{s}}{2}\right)\frac{\td{\omega}_2}{\td{s}}.
+\end{equation}
+It can be seen that the degeneracy is seen only when $\lambda$ is satisfied by the above equation. To illustrate, we consider some explicit examples of real and $\mathcal{PT}$ symmetric cases discussed below:
+
+\subsubsection{Examples of real case}
+
+{\bf Example 1: For equal angular frequencies \(\omega_1= \omega_2 = \omega\)}\\
+
+This is the case of an isotropic oscillator with perturbation. In this case, the parameter $a$ and $b$ in (\ref{2D-xy}) is $\sqrt{\frac{1}{2}}$ as $k=0$ and therefore the coordinate transformation relation from old to new coordinates and new angular frequencies simplifies to
+\begin{align}
+  \begin{split}
+  \begin{aligned}
+    \td{x}&=\frac{1}{\sqrt{2}}\left(x+y\right),\\
+    \td{y}&=\frac{1}{\sqrt{2}}\left(y-x\right), 
+  \end{aligned}
+  & \qquad
+  \left\{
+  \begin{aligned}
+    \td{\omega}_{1}&=\sqrt{\omega^2-\lambda},\\
+    \td{\omega}_{2}&=\sqrt{\omega^2+\lambda}.
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+The degeneracy condition given by Eq. (\ref{2D-lambda}) simplifies to
+\begin{equation}
+  \lambda(\td{r},\td{s},\omega)=\frac{|\td{r}^2-\td{s}^2|}{\td{r}^2+\td{s}^2}\;\omega^2.
+\end{equation}
+ When $\lambda$ is zero then $\td{r}=\td{s}$ as a result energy eigenvalues given by Eq. \ref{2D-degeneracy} becomes
+\begin{equation}
+  E_{\lambda=0}=\left(n_1+n_2+1\right)\omega
+\end{equation}
+and the system is $n+1$-fold degenerate, where $n=n_1+n_2$ and represents the $n^{th}$ excited state. \\
+
+{\bf Example 2: Irrational Angular Frequencies \((\omega_1, \omega_2, \lambda) = \left(1, \sqrt{2}, \frac{\sqrt{14}}{13}\right)\)}\\
+
+The potential in Eq. (\ref{2D-V-II}) can be reduced to a standard form of QHO using the transformation given by Eq. (\ref{2D-xy}) with $k=-\frac{13}{\sqrt{15}}$ giving
+\[\tilde{V}(\td{x},\td{y})=\frac{1}{4} \left(\frac{12}{13} \td{x}^2+\frac{27}{13}\td{y}^2\right)\]
+The angular frequencies in new coordinates have ratio $\td{\omega}_1:\td{\omega}_2=2:3$ and the system is degenerate.\\
+
+{\bf Example 3: Rational Angular Frequencies \((\omega_1, \omega_2, \lambda) = \left(1, 2, \frac{\sqrt{7}}{2}\right)\)}\\
+
+The perturbed potential has the form
+\begin{equation}\label{img-example-2D}
+  V(x,y)= \frac{1}{4}\left(\frac{1}{2}x^2+\frac{9}{2}y^2\right)+ \frac{\sqrt{7}}{4} xy.
+\end{equation}
+Doing coordinate transformation similar to the above example, but using  $k=-\frac{3}{4}$ gives
+\[\tilde{V}(\td{x},\td{y})=\frac{1}{4} \left(\frac{1}{2} \td{x}^2+\frac{9}{2}\td{y}^2\right),\]
+and the angular frequencies in new coordinates have ratio $\td{\omega}_1:\td{\omega}_2=1:3$ and the system is degenerate. The corresponding rational extension \( V_{RE,0,2}(x, y) \) for \( m_1, m_2 = 0, 2 \) and \( m_1, m_2 = 2, 2 \) are
+\begin{align*}
+  V_{RE,0,2}(x, y) &=V(x,y) -\frac{1}{\sqrt{2}} \\
+  &\quad - 2 \left( \frac{3}{2\sqrt{2}} 
+  - \frac{72 \left( \frac{x}{2\sqrt{2}} + \frac{1}{2} \sqrt{\frac{7}{2}} y \right)^2}
+         {\left( -2 - 3\sqrt{2} \left( \frac{x}{2\sqrt{2}} + \frac{1}{2} \sqrt{\frac{7}{2}} y \right)^2 \right)^2} 
+  - \frac{6\sqrt{2}}
+         {-2 - 3\sqrt{2} \left( \frac{x}{2\sqrt{2}} + \frac{1}{2} \sqrt{\frac{7}{2}} y \right)^2} \right)
+\end{align*}
+
+%The rational extension for \( m_1, m_2 = 2, 2 \) is:
+and
+\begin{align*}
+  V_{RE,2,2}(x, y) &= V(x,y)-2 \left( \frac{1}{2\sqrt{2}} 
+  - \frac{8 \left( \frac{1}{2} \sqrt{\frac{7}{2}} x - \frac{y}{2\sqrt{2}} \right)^2}
+         {\left( -2 - \sqrt{2} \left( \frac{1}{2} \sqrt{\frac{7}{2}} x - \frac{y}{2\sqrt{2}} \right)^2 \right)^2} 
+  - \frac{2\sqrt{2}}
+         {-2 - \sqrt{2} \left( \frac{1}{2} \sqrt{\frac{7}{2}} x - \frac{y}{2\sqrt{2}} \right)^2} \right) \\
+  &\quad - 2 \left( \frac{3}{2\sqrt{2}} 
+  - \frac{72 \left( \frac{x}{2\sqrt{2}} + \frac{1}{2} \sqrt{\frac{7}{2}} y \right)^2}
+         {\left( -2 - 3\sqrt{2} \left( \frac{x}{2\sqrt{2}} + \frac{1}{2} \sqrt{\frac{7}{2}} y \right)^2 \right)^2} 
+  - \frac{6\sqrt{2}}
+         {-2 - 3\sqrt{2} \left( \frac{x}{2\sqrt{2}} + \frac{1}{2} \sqrt{\frac{7}{2}} y \right)^2} \right)
+\end{align*}
+
+respectively. The plot of the potential is shown in Fig.~\ref{fig:2D-V-re}.
+
+\subsubsection{Example of complex and $\mathcal{PT}$ symmetric case}
+
+ As in the real case, the system is also degenerate in the complex and $\mathcal{PT}$-symmetric cases.  For example, if we consider \((\omega_1, \omega_2, \lambda) = \left(1, 3, i\sqrt7\right)\), the conventional potential has the form
+\begin{equation}\label{img-example-2D}
+  V(x,y)= \frac{1}{4}\left(x^2+9y^2\right)+ i\frac{\sqrt{7}}{2} xy.
+\end{equation}
+Using the transformation given by Eq. (\ref{2D-xy}) with $k=-\frac{4}{3}$ reduces the anharmonic potential to
+\[\tilde{V}(\td{x},\td{y})=\frac{1}{4} \left(2 \td{x}^2+8\td{y}^2\right)\]
+and therefore the ratio of angular frequencies in new coordinates is $\td{\omega}_1:\td{\omega}_2=1:2$ and the system is degenerate. The rationally extended potential corresponding to the potential (\ref{img-example-2D}) for $m_1,m_2=2,2$ will be 
+\begin{align*}
+  \begin{split}
+  V_{RE,2,2}(x,y) &= V(x,y)-2 \left(-\frac{128 \left(\sqrt{\frac{7}{6}} y+\frac{i x}{\sqrt{6}}\right)^2}{\left(-2-4 \sqrt{2} \left(\sqrt{\frac{7}{6}} y+\frac{i x}{\sqrt{6}}\right)^2\right)^2}-\frac{8 \sqrt{2}}{-2-4 \sqrt{2} \left(\sqrt{\frac{7}{6}} y+\frac{i x}{\sqrt{6}}\right)^2}+\sqrt{2}\right)\\&-2 \left(-\frac{32 \left(\sqrt{\frac{7}{6}} x-\frac{i y}{\sqrt{6}}\right)^2}{\left(-2-2 \sqrt{2} \left(\sqrt{\frac{7}{6}} x-\frac{i y}{\sqrt{6}}\right)^2\right)^2}-\frac{4 \sqrt{2}}{-2-2 \sqrt{2} \left(\sqrt{\frac{7}{6}} x-\frac{i y}{\sqrt{6}}\right)^2}+\frac{1}{\sqrt{2}}\right).
+\end{split}
+\end{align*}
+The plot for real and imaginary part of this potential is shown in Fig. \ref{fig:2D-V-img}.
+
+%%%%Tables and Figure%%%%%
+ 
+%%%%%% 2D %%%%%%
+
+\begin{table}[htp]%[htp]
+  \centering
+  \renewcommand{\arraystretch}{1.5} % Increase row height
+  \setlength{\tabcolsep}{1em} % Increase column padding
+  \begin{tabularx}{\columnwidth}{|c|X|}
+    \toprule
+    $\mathbf{m_1,m_2}$ & $\mathbf{V_{RE,m_1,m_2}(x,y)}$ \\
+    \toprule
+    $\mathbf{0,0}$ &$ V(x,y)-\td{\omega}_1-\td{\omega}_2 $ \\
+    \hline
+    $\mathbf{0,2}$ &$V(x,y)-\td{\omega}_1-\td{\omega}_2+\frac{4 \td{\omega}_2 \left(\td{\omega}_2 (a y+b x)^2-1\right)}{\left(\td{\omega}_2 (a y+b x)^2+1\right)^2} $\\
+    \hline
+    $\mathbf{2,2}$ &$V(x,y)-\td{\omega}_1-\td{\omega}_2 +\frac{4 \td{\omega}_2 \left(\td{\omega}_2 (a y+b x)^2-1\right)}{\left(\td{\omega}_2 (a y+b x)^2+1\right)^2}+\frac{4 \td{\omega}_1 \left(\td{\omega}_1(a x - b y)^2 -1\right)}{\left((a x - b y)^2 \td{\omega}_1+1\right)^2}$ \\
+    \hline
+    $\mathbf{2,4}$ &$V(x,y)-\td{\omega}_1-\td{\omega}_2$\\
+      & $+\frac{4 \left(2 - (b (x - 2 y) + a (2 x + y)) (a (-2 x + y) + b (x + 2 y)) \td{\omega}_1 + (a x - b y)^2 \left(-2 a b x y + a^2 (2 x^2 + y^2) + b^2 (x^2 + 2 y^2)\right) \td{\omega}_1^2\right)}{(b x + a y)^2 \left(1 + (a x - b y)^2 \td{\omega}_1\right)^2}$\\
+      & $+\frac{4 \left(42 - 18 (b x + a y)^2 \td{\omega}_2\right)}{(b x + a y)^2 \left(3 + (b x + a y)^2 \td{\omega}_2 \left(6 + (b x + a y)^2 \td{\omega}_2\right)\right)}+\frac{576 \left(-1 - 2 (b x + a y)^2 \td{\omega}_2\right)}{\left(3 b x + 3 a y + 6 (b x + a y)^3 \td{\omega}_2 + (b x + a y)^5 \td{\omega}_2^2\right)^2}$\\
+    \bottomrule
+    \end{tabularx}  
+    \caption{Potentials $V_{RE,m_1,m_2}(x,y)$ for even $(m_1,m_2)$ values in old coordinates.}
+\label{Tab:2D-V-}
+\end{table}
+
+
+
+
+
+
+
+\begin{figure}[htp]%[htp]
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-02.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-02.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$V_{RE,,m_1=0,m_2=2}(x,y)$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-22.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-22.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$V_{RE,m_1=2,m_2=2}(x,y)$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-24.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-24.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$V_{RE,m_1=2,m_2=4}(x,y)$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-44.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-44.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$V_{RE,m_1=4,m_2=4}(x,y)$}
+  \end{minipage}
+  \caption{Plots of the rationally extended potentials \( V_{RE,m_1,m_2}(x,y) \) as functions of \( x \) and \( y \) for different values of \( m_1 \) and \( m_2 \).}
+  \label{fig:2D-V-re}
+\end{figure}
+
+\begin{figure}[htp] % [htp]
+  \centering
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-re02.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-re02.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$Re[V_{RE,m_1=0,m_2=2}(x,y)]$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-img02.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-img02.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$Im[V_{RE,m_1=0,m_2=2}(x,y)]$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-re22.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-re22.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$Re[V_{RE,m_1=2,m_2=2}(x,y)]$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \IfFileExists{2D-V-img22.jpeg}{
+      \includegraphics[width=\textwidth]{2D-V-img22.jpeg}
+    }{
+      \fbox{\textbf{Figure Missing}}
+    }
+    \caption*{$Im[V_{RE,m_1=2,m_2=2}(x,y)]$}
+  \end{minipage}
+  \caption{Plots of \( V_{RE, m_1, m_2}(x, y) \) vs. \( x \) and \( y \), showing the Real part (left) and Imaginary part (right) for various values of \( m_1 \) and \( m_2 \), with imaginary \( \lambda \).}
+  \label{fig:2D-V-img}
+\end{figure}
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%--------3D-------
+\section{Three-dimensional QAAO potentials}
+We consider a three-dimensional QAAO potentials (defined on the full-line)  with  combination of a linear and a quadratic perturbations  $\lambda_0z+\frac{\lambda}{2}xy$ or of only quadratic perturbations $(\lambda_1 xy +\lambda_2 yz +\lambda_3 zx)$. In each case, we will decouple the perturbed potential using a coordinate transformations. 
+
+\subsection{Combination of a linear and a quadratic perturbations}
+In this section, we consider a three-dimensional QAAO potential $V^{lq}(x,y,z)$ with a linear and a quadratic perturbations, given by
+\begin{equation}\label{3D-V-III}
+V^{lq}(x,y,z) = \frac{1}{4} \left(\omega_{x}^2 x^2 + \omega_{y}^2 y^2 + \omega_{z}^2 z^2\right) + \lambda_{0} z + \frac{\lambda}{2} xy.
+\end{equation}
+which can be written in terms of one-dimensional potential with linear perturbation $V(\omega_{z},z,\lambda_0)$ and two-dimensional anisotropic potential with a quadratic perturbation $V(x,y)$ as 
+\begin{equation}
+  V^{lq}(x, y, z) =  V(x, y)+ V^l(z),
+\end{equation}
+which can be further decoupled in the tilde co-ordinates using the transformations (\ref{1D-V'}) and (\ref{2D-V-II'}) as
+\begin{equation}
+	\td{V}^{lq}(\td{x}, \td{y}, \td{z}) =  \td{V}(\td{x}, \td{y})+ \td{V}^l(\td{z}).
+\end{equation}
+ Thus, the eigenfunctions of this equation can be easily obtained by using Eqs.  (\ref{1D-psi}) and (\ref{2D-psi-II'}) and given as 
+\begin{equation}\label{lq_ef}
+  \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}) \propto \td{\psi}_{n_1, n_2}(\td{x}, \td{y}) \td{\psi}^l_{n_3}( \td{z})
+\end{equation}
+and the energy eigenvalues are given by the sum of energy eigenvalues of 2D and 1D cases as
+\begin{equation}\label{lq_en}
+  \td{E}^{lq}_{n_1, n_2, n_3}(\td{\omega}_1, \td{\omega}_2, \td{\omega}_3) = \td{E}_{n_1, n_2}(\td{\omega}_1, \td{\omega}_2) + \td{E}_{n_3}(\td{\omega}_3)
+\end{equation}
+In the hermitian case, both parameters $\lambda_0$ and $\lambda$ are real, and hence the energy spectrum will be real only when the equation (\ref{real2D}) is satisfied. However, in the non-Hermitian and $\mathcal{PT}$-symmetric cases, one or both of the parameters must be imaginary.  Depending on the real and imaginary values of $\lambda$ and $\lambda_0$, the following cases of non-Hermitian and $\mathcal {PT}$-symmetric systems arise:
+
+\begin{enumerate}
+  \item {\bf When only $\lambda_0$ is imaginary (say $\lambda_0=i\gamma_0$)}
+  
+  The system is $\mathcal{PT}$-symmetric for the parity operator $\mathcal{P}_2$ given in Eq. (\ref{3D-P}) given by
+  \begin{equation}
+    \begin{aligned}
+        \mathcal{P}_2&= \begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & -1    
+        \end{bmatrix}.
+    \end{aligned}
+  \end{equation}
+  Here the $\mathcal{PT}$-symmetry is unbroken and the energy eigenvalues (\ref{lq_en}) will be real for all values of $\gamma_0$ and the eigenfuntions (\ref{lq_ef}) satisfy
+  \begin{equation}
+  	\mathcal{P}_2 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_3} \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}).\nonumber
+  \end{equation}
+  \item {\bf When only $\lambda$ is imaginary (say $\lambda=i\gamma$)}
+  
+  The potential is $\mathcal{PT}$ symmetric
+  %\begin{equation}
+   % V_{PT}= \frac{1}{4}(\omega_x^2x^2+\omega_y^2y^2+\omega_z^2z^2)+i\gamma_0z+i\frac{\gamma}{2}xy
+ % \end{equation}
+  under the parity operators $\mathcal{P}_1$ and $\mathcal{P}_3$ given by
+  \begin{equation}
+    \begin{aligned}
+        \mathcal{P}_1&= \begin{bmatrix}
+            -1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1    
+        \end{bmatrix} ; \quad &
+        \mathcal{P}_3 &= \begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & -1 & 0 \\
+            0 & 0 & 1
+        \end{bmatrix}
+    \end{aligned}
+  \end{equation}
+  respectively. Simialr to the 2D case, the spectrum will be real when the conditions (\ref{img2D}) are satisfied and the eigenfunctions (\ref{lq_ef}) satisfy
+  \begin{equation}
+  	\mathcal{P}_1 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=\mathcal{P}_3 T \psi^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_1+n_2} \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}).\nonumber	
+  \end{equation} 
+ \item {\bf When both $\lambda_0$ and $\lambda$ are imaginary}
+ 
+ In this case, the potential is still $\mathcal{PT}$ symmetric
+under the parity operators $\mathcal{P}_4$ given by
+ \begin{equation}
+ \begin{aligned}
+ 	\mathcal{P}_4&= \begin{bmatrix}
+ 		-1 & 0 & 0 \\
+ 		0 & -1 & 0 \\
+ 		0 & 0 & -1    
+ 	\end{bmatrix}, 
+ \end{aligned}
+ \end{equation} 
+ and the eigenfunctions satisfy
+ \begin{equation}
+ \mathcal{P}_4 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_1+n_2+n_3}\td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}). \nonumber
+ \end{equation} 
+\end{enumerate}
+
+\subsubsection{Rational Extension of $\td{V}^{lq}(\td{x}, \td{y}, \td{z})$}
+The rational extension of the real and all the $\mathcal{PT}$-symmetric cases of the potential $\td{V}^{lq}(\td{x}, \td{y}, \td{z})$ in the tilde co-ordinates is simply the sum of the rational extensions of the 2D AHO and the 1D AHO potentials given by Eqs. (\ref{2D-V-RE-II}) and  (\ref{1D-V-RE-I}) respectively as
+\begin{align}
+  \begin{split}
+    \td{V}^{lq}_{RE,m_1,m_2,m_3}(\td{x}, \td{y}, \td{z}) &= \td{V}_{RE,m_1,m_2}(\td{x}, \td{y})+\td{V}^l_{RE,m_3}(\td{z})
+  \end{split}
+\end{align}
+where $\td{V}_{RE,m_1,m_2}(\td{x}, \td{y})$ and $\td{V}^l_{RE,m_3}(\td{z})$ are rationally extended potentials corresponding to the potentials $\td{V}(\td{x},\td{y})$ and $\td{V}^l(\td{z})$ given by Eqs. (\ref{2D-V-II'}) and (\ref{1D-V'}) respectively. To get the above extended potential in terms of old co-ordinates, we use the inverse co-ordinate trasformations. Thus, the ground and the excited state eigenfunctions with their corresponding energy eigenvalues are given by
+\begin{align}
+	\td{\psi}^{lq}_{RE,m_1,m_2,m_3,0,0,0}(\td{x}, \td{y}, \td{z})&\propto \td{\psi}_{RE,m_1,m_2,0,0}(\td{x}, \td{y})\;\td{\psi}^l_{RE,m_3,0}(\td{z}),
+\end{align}
+\begin{align}
+  \td{\psi}^{lq}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{x}, \td{y}, \td{z})&\propto \td{\psi}_{RE,m_1,m_2,n_1+1,n_2+1}(\td{x}, \td{y})\;\td{\psi}^l_{RE,m_3,n_3+1}(\td{z})
+\end{align}
+and 
+\begin{align}
+  \td{E}^{lq}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)&=\td{E}_{RE,m_1,m_2,n_1+1,n_2+1}(\td{\omega}_1,\td{\omega}_2)+\td{E}^l_{RE,m_3,n_3+1}(\td{\omega}_3)
+\end{align}
+with
+\begin{equation}
+	\td{E}^{lq}_{RE,m_1,m_2,m_3,0,0,0}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)=\td{E}_{RE,m_1,m_2,0,0}(\td{\omega}_1,\td{\omega}_2)+\td{E}^l_{RE,m_3,0}(\td{\omega}_3)\nonumber
+\end{equation}
+respectively. Here $n_1,n_2,n_3=0,1,2,.....,$. Similar to the conventional cases, there are three possibilities to make the system complex and $\mathcal{PT}$-symmetric. The spectrum of all these systems are also real and the $\mathcal{PT}$-symmetry is unbroken under the restrictions defined in the Eqs. (\ref{real2D}) and (\ref{img2D}). However, the values of $m_1, m_2$ and $m_3$ are different for different cases discussed as below:
+\begin{itemize}
+\item {{\bf When both $\lambda$ and $\lambda_0$ are real}: 
+In this case, the potential will be regular for even values of $m_1,m_2$ and $m_3$.}
+
+\item{{\bf When $\lambda$ is real and $\lambda_0$ is imaginary}:
+In this case, the potential will be regular for even values of $m_1,m_2$ and all values (even and odd) of $m_3$.}
+\item{{\bf When $\lambda$ is imaginary and $\lambda_0$ is real}:
+	In this case,  $m_1,m_2$ and $m_3$ all are even.}
+\item{{\bf When both $\lambda$ and $\lambda_0$ are imaginary}:
+	Here, $m_1,m_2$ are even and all values of $m_3$ (even and odd).}	
+\end{itemize}
+
+%%%% QUADRATIC PERTURBATION %%%%%
+
+
+\subsection{3D QAAO with Combinations of Quadratic Perturbations}
+Now, we consider another example of a three-dimensional QAAO potential with a combination of quadratic perturbations given by
+\begin{equation}
+V(x,y,z) = \frac{1}{4}\left(\omega_x^2x^2 + \omega_y^2y^2 + \omega_z^2z^2 + 2\lambda_1 xy + 2\lambda_2 yz + 2\lambda_3 zx\right). \label{3D-V}
+\end{equation}
+The perturbed potential can, in principle, be decoupled into the standard form of QHO by applying a coordinate transformation. However, it is important to note that for a general perturbation of the form \(\lambda_1 xy + \lambda_2 yz + \lambda_3 zx\), it is not always possible to find a general coordinate transformation with arbitrary frequencies that will reduce the potential to a pure anisotropic oscillator in the new coordinates. Transformations can, however, be derived for specific cases. 
+For example, when two frequencies are equal, such as \(\omega_x = \omega_y=\omega\;\text{(say)}\), the potential in (\ref{3D-V}) simplifies to
+\begin{equation}
+V^{q}(x,z,y) = \frac{1}{4}\left(\;\omega^2(x^2 + y^2) + \omega_z^2z^2 + 2\lambda_1 xy + 2\lambda_2 yz + 2\lambda_3 zx\right). \label{special-3D}
+\end{equation}
+The general transformations reduce to two special cases: either \(\lambda_1 = 0\) with \(\lambda_2\ne\lambda_3\), and \(\lambda_1 \neq 0\) with \(\lambda_2 = \lambda_3\). These cases will be analyzed in the following subsection under the assumption of positive \(\lambda\) values. 
+%Transformations involving changes in the signs of \(\lambda\)'s can be derived.
+
+
+%%%%%%%%%%%%%%%%Case-I%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{ For $\mathbf{\lambda_1=0}$ and $\mathbf{\lambda_2\ne \lambda_3}$}
+In this case, the potential (\ref{special-3D}) is defined as
+\begin{equation}
+	V^{q_1}(x,y,z)=\frac{1}{4}\left(\omega^2(x^2+y^2)+\omega_z^2z^2+2\lambda_2 yz+2\lambda_3 zx\right)\label{vq}
+\end{equation}
+To solve this problem, we use the following coordinate transformations from old to new and vice-versa given as
+\begin{align}\label{3D-xyz-IV}
+  \begin{split}
+  \begin{aligned}
+      x &= a d \td{y} + bd\td{z} - c\td{x}, \\
+      y &= d\; \td{x} + ac\td{y} + bc\td{z} \\
+      z &=a\td{z} - b\td{y}, 
+  \end{aligned}
+  & 
+  \left\{
+  \begin{aligned}
+    \td{x} &= - cx + d\;y  , \\
+    \td{y} &=ad\;x + acy - bz, \\
+    \td{z} &= bd\;x + bcy + az.
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+where \(k = \frac{\omega^2 - \omega_3^2}{\sqrt{4 \lambda_2^2 + 4 \lambda_3^2 + \left(\omega^2 - \omega_3^2\right)^2}}\), $c=\frac{\lambda_2}{\sqrt{\lambda_2^2+\lambda_3^2}}$ and $d=\frac{\lambda_3}{\sqrt{\lambda_2^2+\lambda_3^2}}$. The other two parameters $a$ and $b$ are same as defined in the 2D case by Eq. (\ref{2D-xy}). Thus, the potential in the new co-ordinate will be
+\begin{equation}
+\tilde{V}^{q}(\td{x},\td{y},\td{z})=\frac{1}{4}\left(\td{\omega}_1^2\td{x}^2+\td{\omega}_2^2 \td{y}^2+\td{\omega}_3^2\td{z}^2\right)	\label{V_q}
+\end{equation}
+where the new frequencies are given by
+\begin{align}\label{3D-omega'-IV}
+  \begin{split}
+    \td{\omega}_1 &= \omega, \\
+    \td{\omega}_2 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 - \sqrt{4(\lambda_2^2 + \lambda_3^2) + \left(\omega^2-\omega_3^2\right)^2}\right)}, \\
+    \td{\omega}_3 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 + \sqrt{4(\lambda_2^2 + \lambda_3^2) + \left(\omega^2-\omega_3^2\right)^2}\right)}.
+  \end{split}
+\end{align}
+\subsubsection*{Rational Extension:}
+
+Similar to the 2D case, to get the rational extension of the above potential (\ref{vq}), we use the starting potential (\ref{V_q}) and get the corresponding RE potential in the new co-ordinates which is transformed back to  the old co-ordinates with perturbation terms using the inverse co-ordinate transformation (\ref{3D-xyz-IV}). The expression of the RE potential in the new co-ordinate is given as 
+% It has been shown in a paper \cite{Kumar:2024tsz} that the rational extension of the anharmonic oscillator potential is simply the sum of the rational extensions of the QHO along each dimension. Summing the rational extensions along each dimension, and doing the inverse transformation, we get the rationally extended potential with perturbation terms as
+\begin{align}
+	\td{V}^{q_1}_{RE,m_1,m_2,m_3}(\td{x},\td{y},\td{z})= \td{V}_{RE,m_1}(\td{x})+\td{V}_{RE,m_2}(\td{y})+\td{V}_{RE,m_3}(\td{z})
+\end{align}
+where $(\td{V}_{RE,m_1}(\td{x}),\;\td{V}_{RE,m_2}(\td{y}),\;\td{V}_{RE,m_3}(\td{z}))$ are given by Eq. (\ref{1D-V-RE-x}) but in new angular frequency and coordinates. Similarly the ground and the excited state eigenfunctions are written using rationally extended eigenfunctions in new coordinates and angular frequency as
+\begin{align}\nonumber
+	\td{\psi}^{q_1}_{RE,m_1,m_2,m_3,0,0,0}(\td{x},\td{y},\td{z})\propto \td{\psi}_{RE,m_1,0}(\td{x})\;
+  \td{\psi}_{RE,m_2,0}(\td{y})\; \td{\psi}_{RE,m_3,0}(\td{z})
+\end{align}
+and 
+\begin{align}
+	\td{\psi}^{q_1}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{x},\td{y},\td{z})\propto \td{\psi}_{RE,m_1,n_1+1}(\td{x})\;
+  \td{\psi}_{RE,m_2,n_2+1}(\td{y})\; \td{\psi}_{RE,m_3,n_3+1}(\td{z})
+\end{align}
+respectively. The corresponding energy eigenvalues in new angular frequency are given as
+\begin{align}\nonumber
+	\td{E}^{q_1}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)&=\td{E}_{RE,m_1,n_1+1}\left(\td{\omega}_1\right)\\
+	&+\td{E}_{RE,m_2,n_2+1}\left(\td{\omega}_2\right)+\td{E}_{RE,m_3,n_3+1}\left(\td{\omega}_3\right)
+\end{align}
+with
+\begin{align}
+	\td{E}^{q_1}_{RE,m_1,m_2,m_3,0,0,0}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)&=0
+\end{align}
+The conditions on $\lambda$'s for real spectra are as follows:
+  % Conditions
+\begin{enumerate}
+  \item {\bf Hermitian case:} When $\lambda$'s are real, then real spectra are seen under the following condition
+  \begin{equation}\label{cond-3D-r-1}
+      0 \leq \lambda_2^2 + \lambda_3^2 \leq \omega^2 \omega_3^2
+  \end{equation}   
+
+  \item {\bf Non-Hermitian and $\mathcal{PT}$-symmetric case:} With imaginary $\lambda$'s, the system shows $\eta$-pseudo-hermiticity and hence the system is $\mathcal{PT}$- symmetric for the different parity operators $\mathcal{P}$ dependeing on whether one or both the coupling parameters ($\lambda_2$ and $\lambda_3$) are imaginary. Thus, we have three different cases discussed as below:  
+  
+    {\bf (a) When $\lambda_3$ is real and $\lambda_2$ is imaginary (say $\lambda_2=i\gamma_2$)}\\ 	
+    The system exhibits \(\mathcal{PT}\) symmetry with the parity operator \(\mathcal{P}_{3}\) (Eq. (\ref{3D-P})), defined as 
+    \[\mathcal{P}_{3} : x \rightarrow x, \quad y \rightarrow -y, \quad z \rightarrow z.\] and the real spectra is seen when \\
+    \[-\frac{1}{4}(\omega^2-\omega_3^2)^2 \leq -\gamma_2^2 + \lambda_3^2 \leq \omega^2 \omega_3^2.\]
+    
+    {\bf (b) When $\lambda_3$ is imaginary (say $\lambda_3=i\gamma_3$) and $\lambda_2$ is real}\\ 
+     Here \(\mathcal{PT}\) symmetry is defined by the parity operator \(\mathcal{P}_{1}\) (Eq. (\ref{3D-P})), where 
+    \[\mathcal{P}_{1} : x \rightarrow -x, \quad y \rightarrow y, \quad z \rightarrow z.\]
+    and the spectrum will be real when
+
+    \[-\frac{1}{4}(\omega^2-\omega_3^2)^2 \leq \lambda_2^2 - \gamma_3^2 \leq \omega^2 \omega_3^2.\]
+
+  { \bf (c) When both $\lambda$'s are imaginary (say, $\lambda_2=i\gamma_2$ and $\lambda_3=i\gamma_3$)}\\
+  	In this case the system is $\mathcal{PT}$ symmetric for the parity operator \(\mathcal{P}_{2}\) (Eq. (\ref{3D-P}))
+  	\begin{align*}
+  		\mathcal{P}_2& : x \rightarrow x, \quad y \rightarrow y, \quad z \rightarrow -z,
+  	\end{align*}
+  		 and the real spectra are observed under the following conditions
+  
+  \[ \gamma_2^2 + \gamma_3^2\leq\frac{1}{4}(\omega^2-\omega_3^2)^2.\]
+   \end{enumerate}
+
+\subsubsection*{Conditions for Degeneracy:}
+The condition for degeneracy in the system is given similar to the 2D case except $\lambda$ is replaced by $\sqrt{\lambda_2^2+\lambda_3^2}$ and is given by
+\begin{equation}
+  \sqrt{\lambda_2^2 + \lambda_3^2} =\frac{\sqrt{(\td{u}^4+\td{v}^4)-\left(\frac{\td{u}\td{v}}{uv}\right)^2(u^4+v^4)}}{\td{u}^2+\td{v}^2}\;\omega\omega_3
+\end{equation}
+where $\td{\omega}_2:\td{\omega}_3=\td{u}:\td{v}$ is a rational ratio and $\omega:\omega_3=u:v$ can be rational or irrational.
+%\subsubsection*{Case of Equal Frequencies:}
+As an illustration, we consider the case of three unequal frequencies (i.e., $\omega:\omega_z=\sqrt2:1$).
+\[V(x,y,z)=2 x^2+2 y^2+z^2+\frac{2}{5} \sqrt{7} y z+\frac{2}{5} \sqrt{7} x z\]
+In this case, the coordinate transformation can be carried out by substituting the parameter $k$ to $\frac{5}{9}$ as
+\begin{align*}
+  x&=-\frac{\tilde{x}}{\sqrt{2}}+\frac{\tilde{y}}{3} +\frac{1}{3}\sqrt{\frac{7}{2}}\tilde{z} \\
+  y&=\frac{\tilde{x}}{\sqrt{2}}+\frac{\tilde{y}}{3} +\frac{1}{3}\sqrt{\frac{7}{2}}\tilde{z} \\
+  z&=-\frac{ \sqrt7\tilde{y}}{3}+\frac{\sqrt2 \tilde{z}}{3}
+\end{align*}
+The potential in the new coordinates simplifies to
+\[\tilde{V}(\tilde{x},\tilde{y},\tilde{z})=2 \tilde{x}^2+\frac{3}{5}\tilde{y}^2+\frac{12}{5} \tilde{z}^2\]
+The degeneracy condition simplifies to
+\begin{equation}
+  \sqrt{\lambda_2^2 + \lambda_3^2} = \frac{\sqrt{2(\td{u}^2-\td{v}^2)^2-(\td{u}\td{v})^2}}{\td{u}^2+\td{v}^2}\;\omega^2
+\end{equation}
+For example, the following values of \((\lambda_2, \lambda_3)\), in units of \(\omega^2\), result in \(\td{u} : \td{v} = 2 : 1\) and therefore lead to degeneracy:  
+\[
+(\lambda_2, \lambda_3) = \left(\frac{\sqrt{7}}{5}, \frac{\sqrt{7}}{5}\right), \left(\frac{\sqrt6}{5}, \frac{\sqrt{8}}{5}\right), \left(0, \frac{\sqrt{14}}{5}\right), \cdots
+\]
+
+
+%Case-II%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{For $\mathbf{\lambda_1\ne0}$ and $\mathbf{|\lambda_2|=|\lambda_3|}$}
+Here, if we consider  $\lambda_2=\lambda_3=\lambda\text{(say)}$, with $\lambda$ being real or imaginary, the potential (\ref{3D-V}) becomes
+\begin{equation}
+  V^{q_2}(x,y,z)=\frac{1}{4}\left(\omega^2(x^2+y^2)+\omega_z^2z^2+2\lambda_1xy+2\lambda(yz+ zx)\right).
+\end{equation}
+The transformation relations from old to new coordinates and vice-versa are given by,
+\begin{align}\label{3D-xyz-V}
+  \begin{split}
+  \begin{aligned}
+      x &= \frac{a}{\sqrt2}\td{y}+\frac{b}{\sqrt2} \td{z}-\frac{\td{x}}{\sqrt{2}}, \\
+      y &= \frac{a}{\sqrt2} \td{y}+\frac{b}{\sqrt2}\td{z}+\frac{\td{x}}{\sqrt{2}},\\
+      z &=a\td{z}-b\td{y}, 
+  \end{aligned}
+  & 
+  \left\{
+  \begin{aligned}
+      \td{x} &= \frac{y}{\sqrt{2}}-\frac{x}{\sqrt{2}} , \\
+      \td{y} &=\frac{a}{\sqrt2} x+\frac{a}{\sqrt2}y-bz , \\
+      \td{z} &= \frac{b}{\sqrt2} x+\frac{b}{\sqrt2}y+az.
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+where \(k = \frac{ \omega^2 - \omega_3^2+q\lambda_1}{\sqrt{8 \lambda^2 + \left(\omega^2 - \omega_3^2+q\lambda_1\right)^2}}\), and the new frequencies are 
+\begin{align}
+  \label{3D-omega'-V}
+  \begin{split}
+    \td{\omega}_1 &= \sqrt{\omega^2 -  \lambda_1}, \\
+    \td{\omega}_2 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 +  \lambda_1 - \sqrt{8\lambda^2 + (\omega^2-\omega_3^2 +  \lambda_1)^2}\right)}, \\
+    \td{\omega}_3 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 +  \lambda_1 + \sqrt{8\lambda^2 + (\omega^2-\omega_3^2 +  \lambda_1)^2}\right)}.
+  \end{split}
+\end{align}
+
+\subsubsection*{Rational Extension}
+The rational extension of this potential is similar to the previous case except the new frequencies and new coordinates are given by Eqs. (\ref{3D-omega'-V}) and  (\ref{3D-xyz-V}) respectively. 
+
+
+The condition on $\lambda$'s for real spectra: From the expressions for the new angular frequencies (\ref{3D-omega'-V}), it is to be noted that the parameter \(\lambda_1\) is always real, whereas the parameter $\lambda$ can be either real or imaginary. This distinction gives rise to two possibilities for real spectra and the conditions for real spectra in each of these cases are discussed below: 
+
+  \begin{enumerate}
+      \item {\bf Hermitian case:} When $\lambda$ is real, then the real spectra are observed under the following conditions on $\lambda_1$ and $\lambda$ given as
+      \begin{equation}\label{cond-3D-r-2}
+        \begin{split}
+            -\omega^2\le\lambda_1\le \omega^2\qquad\qquad\\
+           \mbox{and} \quad 0\leq \lambda_1^2\leq \frac{(\omega^2+\lambda)\omega_z^2}{2}.
+        \end{split}  
+      \end{equation}
+
+      \item {\bf Non-Hermitian and $\mathcal{PT}$ symmetric case:} When $\lambda$ is imaginary, say $\lambda=i \gamma$, the allowed values of $\gamma^2$ for various ranges of $\lambda_1$ and $\omega$ are 
+      \begin{equation}\label{cond-3D-i-2}
+            -\omega^2\le\lambda_1\le\omega^2 \quad
+            \mbox{and}\quad 0\leq \gamma^2\leq \frac{(\omega^2-\omega_3^2+\lambda_1)^2}{8}
+        \end{equation}  
+      Since the system shows $\eta$-pseudo-hermiticity and hence the system has $\mathcal{PT}$-symmetry for some parity operator $\mathcal{P}_2$ (Eq. (\ref{3D-P})) i.e.,
+      \begin{align*}
+        \mathcal{P}_2& : x \rightarrow x, \quad y \rightarrow y, \quad z \rightarrow -z.
+      \end{align*}
+  \end{enumerate}
+
+  The above wavefunction when expressed in terms of old coordinates satisfy following relations 
+\[\mathcal{PT}\;\tilde{\psi}_{n_1,n_2,n_3}(\td{x},\td{y},\td{z})=\pm\;\tilde{\psi}_{n_1,n_2,n_3}(\td{x},\td{y},\td{z})\]
+as the new coordinates satisfy $\mathcal{PT}$ symmetry when expressed in terms of old coordinates
+\begin{align*}
+  \mathcal{PT}\;\td{x}(x,z,y)&=\pm\;\td{x}(x,z,y)\\
+  \mathcal{PT}\;\td{y}(x,z,y)&=\pm\;\td{y}(x,z,y)\\
+  \mathcal{PT}\;\td{z}(x,z,y)&=\pm\;\td{z}(x,z,y)
+\end{align*}
+
+\subsubsection*{Degeneracy Conditions:}
+
+Similar to the previous case, the condition for degeneracy in this case is given by
+\begin{equation}
+  \sqrt{8\lambda^2+\lambda_1^2}=\frac{|\td{v}^2-\td{u}^2|}{\td{v}^2+\td{u}^2}\;(2\omega^2+\lambda_1),
+\end{equation}
+which simplifies to following value of $\lambda$ as
+\begin{equation}
+  \lambda=\frac{\sqrt{\left(\frac{|\td{v}^2-\td{u}^2|}{\td{v}^2+\td{u}^2}(\lambda_1+2\omega^2)\right)^2-\lambda_1^2}}{2 \sqrt{2}}.
+\end{equation}
+Whenever this condition is satisfied, for some integer values of $\td{u},\td{v}$, the system will be degenerate. For example, when \(\lambda = \frac{\omega^2}{4}\sqrt{\frac{15}{2}}\) and \(\lambda_1 = \frac{\omega^2}{2}\), resulting in \(\td{u} : \td{v} = 1 : 3\), the system exhibits degeneracy.
+
+%Conclusion
+\section{Summary and Discussion}
+In this work, we explored the rational extensions of the quantum anisotropic harmonic oscillator (QAHO) under various perturbations in higher dimensions with their exact bound state solutions. First, we consider a simple case of $1D$ QHO with a linear perturbation and shown that the rational extensions exist for all integers of \(m\)  when the perturbation is imaginary but only of even $m$ when perturbation is real. It is also shown that the energy eigenvalues of the RE potentials are isospectral to the conventional one and the spectrum is always real in both the Hermitian as well as non-Hermitian $\mathcal{PT}$-symmetric cases. The expressions for the potentials with imaginary perturbations and the corresponding ground states for different \(m\) are derived and shown their behaviors graphically.
+
+In the higher dimensional cases with quadratic perturbations, we decouple the potentials via similarity transformations, reducing them to standard QAHO forms. Systems with imaginary perturbations exhibit $\mathcal{PT}$-symmetry, supported by suitable parity operators. The conditions for the real spectra (unbroken $\mathcal{PT}$-symmetry) with degeneracy conditions are also discussed. As an example, we consider $2D$-QAHO potential with quadratic perturbations and obtained the corresponding RE potentials with their exact solutions for even co-dimensions of $m_1$ and $m_2$. The conditions for the real spectra and the degeneracy in both the Hermitian and the non-Hermitian $\mathcal{PT}$-symmetric cases are discussed. The behaviors of these potentials (real and complex) with their ground state solutions are also shown graphically for different combinations of $m_1$ and $m_2$.  
+
+%Using recent work~\cite{Kumar:2024tsz}, we derive rational extensions of these potentials and their $\mathcal{PT}$-symmetric conditions. Rationally extended two dimensional Potentials corresponding to different even $(m_1,m_2)$ for real and imaginary perturbations are derived and plotted.
+As a last example, we consider the case of $3D$ QAHO potentials with combined linear and/or quadratic perturbations. First, we consider the potentials with linear and quadratic perturbations and constructed a three parameter ($m_1,m_2,m_3$) family of the RE Hermitian as well as non-Hermitian  $\mathcal{PT}$-symmetric systems with their exact bound state solutions. Conditions on perturbation parameters and angular frequencies ensuring real spectra for all possible combinations of $m_1,m_2$ and $m_3$ are also analyzed. Thereafter, we consider a more general form of the potential with combinations of quadratic perturbations only and solved this problem for some specific restrictions on perturbations parameters. The rational extension coprresponding to these potentials with the degeneracy conditions are also discussed.
+%Future work will address higher-dimensional systems with complex non-linear perturbations and new rationally extended potentials.
+%%%
+
+\section*{Acknowledgement}
+RKY acknowledges S.K.M. University, Dumka, for the grant sanctioned by University letter no. SKMU/CCDC/349, under the research project of the State Higher Education Council, Ranchi. AK is gratefel to Indian National Science Academy (INSA) for awarding INSA Honorary Scientist position at Savitribai Phule Pune University.
+
+%%%%
+
+
+\renewcommand{\theequation}{A.\arabic{equation}} % Prefix "B" for equations in Appendix B
+\setcounter{equation}{0}
+
+\section*{Appendix A: Similarity Transformation}
+
+The Schrödinger equation for a quantum system with a Hamiltonian \( H \) having coupled potential (potential with some perturbation term real or imaginary) is given by
+\begin{equation}
+    \hat{H}\ket{\psi_n}=E_n\ket{\psi_n},
+\end{equation}
+where \( \hat{H} \) is the Hamiltonian operator, \( \ket{\psi_n} \) is the eigenfunction, and \( E_n \) is the energy eigenvalue. If \( \hat{H} \) is pseudo-hermitian \cite{mostafazadeh2002pseudo1}, then there exists a Hamiltonian \( \hat{H}_o \) isospectral to \( \hat{H} \) in which the potential is decoupled into a set of exactly solvable independent potentials, and eigenvalues are real or occurs in complex conjugate pairs. If the eigenvalues of \( \hat{H} \) are real, then the Hamiltonian \( \hat{H}_0 \) is said to be hermitian, and the basis set \( \{\ket{\tilde{\psi}_n}\} \) is orthonormal. The Hamiltonian \( \hat{H} \) can be transformed into \( \hat{H}_0 \) by a similarity transformation using an invertible linear operator \( U \) as
+\begin{equation}\label{hermitian}
+    \hat{H}_0=U\hat{H}U^{-1},
+\end{equation}
+For a hermitian operator \( \hat{H} \), the unitary operator \( U \) satisfies \( U^{-1}=U^{\dagger} \). However, for non-hermitian operators \( \hat{H} \), this relation does not hold. The eigenfunctions of \( \hat{H}_0 \) are connected to those of \( \hat{H} \) by the relation
+\begin{equation}
+    \ket{\psi_n}=U\ket{\tilde{\psi}_n}.
+\end{equation}
+For real spectra the Hamiltonian \( \hat{H}_0 \) is hermitian, and therefore \( \hat{H}_0=\hat{H}_0^{\dagger} \), and (\ref{hermitian}) can be rewritten as
+\begin{equation}\label{hermitian-dag}
+    \hat{H}_0=\left(U^{-1}\right)^{\dagger}\hat{H}^{\dagger}U^{\dagger}.
+\end{equation}
+The eigenfunction \( \ket{\Psi_n} \) of the adjoint operator \( \hat{H}^{\dagger} \) is, therefore, given by
+\begin{equation}
+    \ket{\Psi_n}=\left(U^{-1}\right)^{\dagger}\ket{\tilde{\psi}_n}.
+\end{equation}
+Both sets of eigenfunctions \( \{\ket{\psi_n}\} \) and \( \{\ket{\Psi_n}\} \) form a biorthonormal basis. The basis set \( \{\ket{\psi_n}\} \) is orthonormal with the metric \( U^{\dagger}U=\eta\;(\text{say}) \) as
+\begin{equation}
+    \braket{\psi_n|\psi_m}=\braket{\tilde{\psi}_n|U^{\dagger}U|\tilde{\psi}_m}=\braket{\tilde{\psi}_n|\eta|\tilde{\psi}_m}=\delta_{nm}.
+\end{equation}
+On the other hand, the standard inner product
+\begin{equation}
+    \braket{\psi_n|\psi_m}=\braket{\tilde{\psi}_n|\left(U^{-1}\right)^{\dagger}U^{-1}|\tilde{\psi}_m}=\delta_{nm},
+\end{equation}
+is not necessarily finite. From (\ref{hermitian}) and (\ref{hermitian-dag}), one can express the \( \eta \)-pseudo-hermiticity of the Hamiltonian \( \hat{H} \) as 
+\begin{equation}\label{eta}
+    \hat{H}^{\dagger}=\eta\hat{H}\eta^{-1}.
+\end{equation}
+The commutation relation of operators \( [A,B]_{\psi} \) and \( [A',B']_{\tilde{\psi}} \) in the old and new basis, respectively, is given by
+\begin{equation}
+    [A,B]_{\psi}=U^{-1}\;[A',B']_{\tilde{\psi}}\;U.  
+\end{equation}
+In particular, the commutator \([x',p']=i I\) between the coordinates \( x' \) and \( p' \) is conserved under the similarity transformation, and therefore the commutation relation in the coupled coordinate system is
+\begin{equation}
+    [x,p]=i I.
+\end{equation}
+
+% %%%%%%% Appendix B %%%%%%%
+
+\renewcommand{\theequation}{B.\arabic{equation}} 
+\setcounter{equation}{0} % 
+
+
+\section*{Appendix B: The concept of \( \mathcal{PT} \)-Symmetry in higher dimensions}
+
+Here we will show that Dirac hermiticity can be generalized to non-hermitian Hamiltonians, which guarantees the reality of the spectra by introducing the concept of \( \mathcal{PT} \) symmetry \cite{bender1998real, bender1999pt}. Here \( \mathcal{P} \) stands for parity denoting space symmetry, and \( \mathcal{T} \) stands for time reversal symmetry, which is antilinear. A Hamiltonian is said to be \( \mathcal{PT} \) symmetric if it commutes with the product of the parity and time reversal operators, i.e.,
+\begin{equation}
+[H,\mathcal{PT}]=0\quad \text{and }\quad \mathcal{PT}\ket{\psi}=\pm\ket{\psi},
+\end{equation}
+and the \( \mathcal{PT} \)-symmetric Hamiltonian, \( H^{\mathcal{PT}} \), preserves the physical axioms of quantum mechanics and satisfies the equation
+\begin{equation}
+    \hat{H}=\chi\hat{H}\chi^{-1},
+\end{equation}
+where \( \chi \) denotes the \( \mathcal{PT} \) operator, differing from \( \eta \)-pseudo-hermiticity in (\ref{eta}) as the similarity transform yields \( \hat{H} \), not its adjoint. If the Hamiltonian commutes with the parity operator, i.e., \( [H,\mathcal{P}]=0 \), then the eigenfunctions of the Hamiltonian are also the eigenfunctions of the parity operator, and the Hamiltonian is said to be parity symmetric. The operator \( \mathcal{PT} \) is not linear like \( \mathcal{P} \) because \( \mathcal{T} \) is antilinear, and therefore \( \mathcal{PT} \) symmetry is more subtle than \( \mathcal{P} \) symmetry. Due to the antilinear nature of \( \mathcal{PT} \), the eigenstates of \( H \) may or may not be the eigenstates of \( \mathcal{PT} \). There are two possibilities: either the eigenstates of \( H \) are also the eigenstates of \( \mathcal{PT} \) or the eigenstates of \( H \) are not the eigenstates of \( \mathcal{PT} \). The \( \mathcal{PT} \) symmetry is \textit{unbroken} if all the eigenstates of the Hamiltonian are also the eigenstates of the \( \mathcal{PT} \) operator, and the system exhibits real spectra. The \( \mathcal{PT} \) symmetry is said to be \textit{broken} if the eigenstates of the Hamiltonian are not the eigenstates of the \( \mathcal{PT} \) operator, and the system exhibits complex spectra. The parity \( (\mathcal{P}) \) and time \( (\mathcal{T}) \) transformations in 1-D are defined as
+\begin{align*}
+\mathcal{P}&:x\rightarrow-x,\;i\rightarrow i\\
+\mathcal{T}&:x\rightarrow x,\;i\rightarrow -i
+\end{align*}
+In 2-D, the parity transform is defined in two discrete steps \cite{mandal2013pt}, say \( \mathcal{P}_1 \) and \( \mathcal{P}_2 \), as  
+\begin{align*}
+\mathcal{P}_1:&x=-x,\quad y=y\\
+\mathcal{P}_2:&x=x,\quad y=-y
+\end{align*}
+A matrix representation of \( \mathcal{P} \) (in any number of dimensions) has a determinant equal to \(-1\), distinguishing it from a rotation, which has a determinant equal to \(+1\). In matrix form, the above two parity operators are given by
+\begin{equation}\label{2D-P}
+\mathcal{P}_1=\begin{bmatrix}
+-1&0\\
+0&1
+\end{bmatrix};\quad\mbox{and}\quad
+\mathcal{P}_2=\begin{bmatrix}
+1&0\\
+0&-1
+\end{bmatrix}
+\end{equation}
+respectively. There are other possible transformations, provided they all satisfy the condition that the determinant of the transformation matrix is -1. This suggests that the parity operator is not unique and can be defined in many ways. Therefore, two more possibilities are
+\begin{equation}
+\mathcal{P}_3=\begin{bmatrix}
+0&1\\
+1&0
+\end{bmatrix};\quad \text{and }\quad
+\mathcal{P}_4=\begin{bmatrix}
+0&-1\\
+-1&0
+\end{bmatrix}
+\end{equation}
+Similarly, in 3D case, some parity transformation matrices are 
+\begin{equation}\label{3D-P}
+    \begin{aligned}
+        \mathcal{P}_1 &= \begin{bmatrix}
+            -1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1    
+        \end{bmatrix} ; \quad &
+        \mathcal{P}_2 &= \begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & -1
+        \end{bmatrix} ; \\
+        \mathcal{P}_3 &= \begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & -1 & 0 \\
+            0 & 0 & 1
+        \end{bmatrix} ; \quad &
+        \mathcal{P}_4 &= \begin{bmatrix}
+            -1 & 0 & 0 \\
+            0 & -1 & 0 \\
+            0 & 0 & -1
+        \end{bmatrix} .
+    \end{aligned}
+\end{equation}
+It can be seen that the first operator is defining the reflection about the plane \(x=0\), the second operator is defining the reflection about the plane \(z=0\), the third operator is defining the reflection about the plane \(y=0\), and the fourth operator is defining the space inversion.
+
+\begin{thebibliography}{10}
+
+  \bibitem{bender1998real}
+  Carl~M Bender and Stefan Boettcher.
+  \newblock Real spectra in non-hermitian hamiltonians having p t symmetry.
+  \newblock {\em Physical review letters}, 80(24):5243, 1998.
+  
+  \bibitem{bender2002complex}
+  Carl~M Bender, Dorje~C Brody, and Hugh~F Jones.
+  \newblock Complex extension of quantum mechanics.
+  \newblock {\em Physical Review Letters}, 89(27):270401, 2002.
+  
+  \bibitem{khare2000pt}
+  Avinash Khare and Bhabani~Prasad Mandal.
+  \newblock A pt-invariant potential with complex qes eigenvalues.
+  \newblock {\em Physics Letters A}, 272(1-2):53--56, 2000.
+  
+  \bibitem{mostafazadeh2002pseudo1}
+  Ali Mostafazadeh.
+  \newblock Pseudo-hermiticity versus pt symmetry: the necessary condition for
+    the reality of the spectrum of a non-hermitian hamiltonian.
+  \newblock {\em Journal of Mathematical Physics}, 43(1):205--214, 2002.
+  
+  \bibitem{mostafazadeh2002pseudo2}
+  Ali Mostafazadeh.
+  \newblock Pseudo-hermiticity versus pt-symmetry. ii. a complete
+    characterization of non-hermitian hamiltonians with a real spectrum.
+  \newblock {\em Journal of Mathematical Physics}, 43(5):2814--2816, 2002.
+  
+  \bibitem{mostafazadeh2002pseudo3}
+  Ali Mostafazadeh.
+  \newblock Pseudo-hermiticity versus pt-symmetry iii: Equivalence of
+    pseudo-hermiticity and the presence of antilinear symmetries.
+  \newblock {\em Journal of Mathematical Physics}, 43(8):3944--3951, 2002.
+  
+  \bibitem{ahmed2002pseudo}
+  Zafar Ahmed.
+  \newblock Pseudo-hermiticity of hamiltonians under gauge-like transformation:
+    real spectrum of non-hermitian hamiltonians.
+  \newblock {\em Physics Letters A}, 294(5-6):287--291, 2002.
+  
+  \bibitem{bessis}
+  D.~Bessis.
+  \newblock As cited in bender, c. m., and boettcher, s., real spectra in
+    non-hermitian hamiltonians having pt symmetry.
+  \newblock {\em Physical Review Letters}, 80(24):5243--5246, 1998.
+  
+  \bibitem{fernandez2016non}
+  Francisco~M Fern{\'a}ndez.
+  \newblock Non-hermitian hamiltonians and similarity transformations.
+  \newblock {\em International Journal of Theoretical Physics}, 55:843--850,
+    2016.
+  
+  \bibitem{rath2015zero}
+  Biswanath Rath and P~Mallick.
+  \newblock Zero energy correction method for non-hermitian harmonic oscillator
+    with simultaneous transformation of co-ordinate and momentum: Wave function
+    analysis under iso-spectral condition.
+  \newblock {\em arXiv preprint arXiv:1501.06161}, 2015.
+  
+  \bibitem{singh2019pt}
+  Astha Singh and Sudhir~R Jain.
+  \newblock A pt-symmetric simple harmonic oscillator.
+  \newblock {\em Pramana}, 92(4):47, 2019.
+  
+  \bibitem{mandal2013pt}
+  Bhabani~Prasad Mandal, Brijesh~Kumar Mourya, and Rajesh~Kumar Yadav.
+  \newblock Pt phase transition in higher-dimensional quantum systems.
+  \newblock {\em Physics Letters A}, 377(14):1043--1046, 2013.
+  
+  \bibitem{gomez2010extension}
+  David G{\'o}mez-Ullate, Niky Kamran, and Robert Milson.
+  \newblock An extension of bochner’s problem: exceptional invariant subspaces.
+  \newblock {\em Journal of Approximation Theory}, 162(5):987--1006, 2010.
+  
+  \bibitem{gomez2009extended}
+  David G{\'o}mez-Ullate, Niky Kamran, and Robert Milson.
+  \newblock An extended class of orthogonal polynomials defined by a
+    sturm--liouville problem.
+  \newblock {\em Journal of Mathematical Analysis and Applications},
+    359(1):352--367, 2009.
+  
+  \bibitem{quesne2008exceptional}
+  Christiane Quesne.
+  \newblock Exceptional orthogonal polynomials, exactly solvable potentials and
+    supersymmetry.
+  \newblock {\em Journal of Physics A: Mathematical and Theoretical},
+    41(39):392001, 2008.
+  
+  \bibitem{Kumar:2024tsz}
+  Rajesh Kumar, Rajesh~Kumar Yadav, and Avinash Khare.
+  \newblock {Rational Extension of Anisotropic Harmonic Oscillator Potentials in
+    Higher Dimensions}.
+  \newblock 11 2024.
+  
+  \bibitem{kumar2023rationally}
+  Rajesh Kumar, Rajesh~Kumar Yadav, and Avinash Khare.
+  \newblock Rationally extended harmonic oscillator potential, isospectral family
+    and the uncertainity relations.
+  \newblock {\em arXiv preprint arXiv:2304.11314}, 2023.
+  
+  \bibitem{gomez2013rational}
+  David G{\'o}mez-Ullate, Yves Grandati, and Robert Milson.
+  \newblock Rational extensions of the quantum harmonic oscillator and
+    exceptional hermite polynomials.
+  \newblock {\em Journal of Physics A: Mathematical and Theoretical},
+    47(1):015203, 2013.
+  
+  \bibitem{bonneux2018exceptional}
+  Niels Bonneux and Arno~BJ Kuijlaars.
+  \newblock Exceptional laguerre polynomials.
+  \newblock {\em Studies in Applied Mathematics}, 141(4):547--595, 2018.
+  
+  \bibitem{marquette2013two}
+  Ian Marquette and Christiane Quesne.
+  \newblock Two-step rational extensions of the harmonic oscillator: exceptional
+    orthogonal polynomials and ladder operators.
+  \newblock {\em Journal of Physics A: Mathematical and Theoretical},
+    46(15):155201, 2013.
+  
+  \bibitem{greiner2001quantum}
+  Walter Greiner.
+  \newblock {\em Quantum Mechanics: An Introduction}, chapter 11.5, page 290.
+  \newblock Springer-Verlag Berlin Heidelberg, 2001.
+  
+  \bibitem{pollett1995elliptic}
+  J~Pollett, O~M{\'e}plan, and C~Gignoux.
+  \newblock Elliptic eigenstates for the quantum harmonic oscillator.
+  \newblock {\em Journal of Physics A: Mathematical and General}, 28(24):7287,
+    1995.
+  
+    
+  \bibitem{bender1999pt}
+  Carl~M Bender, Stefan Boettcher, and Peter~N Meisinger.
+  \newblock Pt-symmetric quantum mechanics.
+  \newblock {\em Journal of Mathematical Physics}, 40(5):2201--2229, 1999.
+  
+  \end{thebibliography}
+     
+
+\end{document}
+

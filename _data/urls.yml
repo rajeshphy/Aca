@@ -151,6 +151,10 @@
   libgen-doi-extract:
     - cod.sh
     - url.txt
+  Papers-Tex:
+    - PT-Symmetry.tex
+    - QAHO-HD_2024.tex
+    - REHO_2023.tex
   Prompt:
     - Doi-Extraction.txt
 
