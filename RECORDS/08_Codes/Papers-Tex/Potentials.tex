@@ -1,0 +1,502 @@
+\documentclass[12pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath, amssymb, graphicx, tabularx, booktabs, amsthm, subfiles, enumitem, xcolor, braket, subcaption}
+
+%\numberwithin{equation}{section} % Number equations by section
+
+\title{Equation Lists}
+\author{}
+\date{}
+\newcommand{\td}[1]{\tilde{#1}}
+\begin{document}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ba}{\begin{eqnarray}}
+\newcommand{\ee}{\end{equation}}
+
+\section*{2023-Paper}
+\subsection*{$m$-dependent Potential}
+\begin{equation}
+V^-_m(x)=V(x)-2\left[ \frac{\mathcal{H}_m''}{\mathcal{H}_m}-\left(\frac{\mathcal{H}_m'}{\mathcal{H}_m}\right)^2+1\right],
+\end{equation} 
+
+\begin{equation}
+\psi^-_{0,m}(x)=\left( \frac{2^m m!}{\sqrt{\pi}}\right)^{ \frac{1}{2}}  \frac{e^{- \frac{x^2}{2}}}{\mathcal{H}_m(x)}, \label{RE-GS}
+\end{equation} 
+
+\begin{equation}
+\psi^-_{n+1,m}(x)=\frac{1}{\sqrt{E^+_{n,m}\;2^{n}n!\sqrt{\pi}}}\;\frac{e^{- \frac{x^2}{2}}}{\mathcal{H}_m(x)} y^m_{n+1}(x) \;,\qquad n=0,1,2...,	
+\end{equation}
+
+\begin{equation}\label{1}
+ E^-_{n+1,m}=2(n+m+1),\quad n=0,1,2,\cdots,\quad \text{and } E^-_{0,m}=0. 
+\end{equation} 
+
+\subsection*{$m$ and $\lambda$-dependent Potential}
+
+
+
+\begin{equation}
+\hat{V}^-_m(\lambda,x)=V^-_m(x)-2 \frac{d^2}{dx^2}\ln\left[\mathcal{I}_m(x)+\lambda\right],\label{ISO-V}
+\end{equation}
+
+\begin{equation}
+ \mathcal{I}_m(x)= \left( \frac{2^m m!}{\sqrt{\pi}}\right)\int^x_{-\infty} \left[ \frac{e^{- \frac{{x'}^2}{2}}}{\mathcal{H}_m(x')}\right]^2 dx'\label{I}.
+\end{equation}\\
+
+\begin{equation}
+\hat{\psi}^-_{0,m}(\lambda, x)= \sqrt{\lambda(1+\lambda)}\;
+\frac{\psi^-_{0,m}(x)}{\mathcal{I}_m(x)+\lambda}\,.\label{ISO-GS}
+\end{equation}
+
+\begin{align}
+\hat{\psi}^-_{n+1,m}(\lambda, x)&=\frac{1}{E^-_{n+1,m}} \hat{A}^{\dagger}A\psi^-_{n+1,m}(x)\label{ISO-ES},\qquad n=0,1,2,\cdots,\\
+&=\frac{e^{-\frac{x^2}{2}}}{\sqrt{2(n+m+1)2^nn!\sqrt{\pi}}} \left( \frac{y^m_{n+1}(x)}{\mathcal{H}_m(x)}+    H_n(x)\frac{d}{dx}\ln\left[\mathcal{I}_m(x)+\lambda\right]  \right)\nonumber
+\end{align}
+
+When $\lambda=0$ or $1$ (P or AM) the spectrum is strictily isospectral to the spectrum of starting potential.
+\begin{align}
+E^+_{n,m}&=2(n+m+1),\quad n=0,1,2,\cdots
+\end{align}
+
+
+\newpage
+\section*{2025-Paper}
+
+
+
+\begin{equation}\label{1D-SE}
+\left[-\frac{d^2 }{dx^2} +V(x) \right] \Psi = E \Psi\qquad\mbox{where}\qquad V(x)=\frac{1}{4}\omega_1^2 x^2.
+\end{equation}
+
+% \begin{align}\label{QHO-psi}
+%     \psi_n(x) &\propto e^{-\frac{\omega_1}{2}x^2} H_n\left(\sqrt{\omega_1}x\right),\\\label{QHO-E}
+%     E_n(\omega_1)&=\left(n+\frac{1}{2}\right)\omega_1;\quad n=0,1,2...
+% \end{align}
+
+\begin{equation}\label{1D-V-I}
+V^{l}(x) =V(x) + \lambda_0 x ,
+\end{equation}
+
+\begin{align}\label{1D-V'}
+\td{V}^l(\td{x}) &= \frac{1}{4}\omega_1^2 \td{x}^2 - \frac{\lambda_0^2}{\omega_1^2}\quad\mbox{where}\quad \td{x} = x + \frac{2\lambda_0}{ \omega_1^2},
+\end{align}
+
+\begin{equation}
+	E\rightarrow \tilde{E}_n^l(\omega_1)=\left(n+\frac{1}{2}\right) \omega_1+\frac{\gamma^2_0}{\omega^2_1};\quad n=0,1,2...
+\end{equation} 
+
+% \begin{equation}\label{1D-psi}
+%     \psi_n^l(x,i\gamma_0)\propto e^{-\frac{\omega_1}{4} \left(x + i\frac{2\gamma_0}{\omega_1^2}\right)^2} H_n\left(\sqrt{\frac{\omega_1}{2}} \left(x + i\frac{2\gamma_0}{\omega_1^2}\right)\right)
+% \end{equation}
+
+\begin{equation}\label{1D-psi}
+  \td{\psi}_n^l(\td{x})=\psi_n(\td{x}),\quad\text{Here,}\quad \td{\omega_1}=\omega_1.
+\end{equation}
+
+\begin{align}
+    \begin{split}
+    \mathcal{PT}\;\td{\psi}_n^l(\td{x})&=(-1)^n\;\td{\psi}_n^l(\td{x})
+    \end{split}
+\end{align}
+
+\subsection*{1D}
+\begin{equation}\label{1D-V-RE-x}
+  V_{RE,m}(x) = V(x) + V_{rat,m}\left(x\right), \quad -\infty < x < \infty
+\end{equation}
+
+\begin{equation}\label{rat}
+    V_{rat,m}(x)=-2\left[\frac{\mathcal{H}_m''\left(\sqrt{\frac{\omega_1}{2}} x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)} - \left[\frac{\mathcal{H}_m'\left(\sqrt{\frac{\omega_1}{2}} x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)}\right]^2 + \frac{\omega_1}{2}\right]
+\end{equation}
+
+\begin{eqnarray}\label{1D-psi-RE-x}
+  \psi_{RE,m,0}(x) &=& \frac{\zeta\left(\omega_1,x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)}\nonumber\\
+\mbox{and} \quad 
+  \psi_{RE,m,n+1}(x) &=& \frac{\zeta\left(\omega_1,x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} x\right)}\hat{H}_{m,n+1}\left(\sqrt{\frac{\omega_1}{2}} x\right),
+\end{eqnarray}
+
+\begin{align}
+  \hat{H}_{m,n+1}(x) &= \mathcal{H}_m(x) H_{n+1}(x) + H_n(x) \frac{d}{dx} \mathcal{H}_m(x),
+\end{align}
+
+\begin{equation}\label{1D-E_RE-x}
+E_{RE,m, n+1}(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad E_{RE,m,0}(\omega_{1})=0.
+\end{equation}
+
+\begin{equation}\label{1D-V-RE-I}
+    \tilde{V}_{RE,m}^l(\td{x}) = \td{V}^l(\td{x}) + V_{rat,m}\left(\td{x}\right), \quad -\infty < x < \infty
+\end{equation}
+
+\begin{eqnarray}\label{1D-psi-RE-I}
+		\td{\psi}_{RE,m,0}^l(\td{x}) &=& \frac{\zeta\left(\omega_1,\td{x}\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} \td{x}\right)}\nonumber\\
+\mbox{and} \quad 
+    \td{\psi}_{RE,m,n+1}^l(\td{x}) &=& \frac{\zeta\left(\omega_1,\td{x}\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_1}{2}} \td{x}\right)}\hat{H}_{m,n+1}\left(\sqrt{\frac{\omega_1}{2}} \td{x}\right).
+\end{eqnarray}
+
+\begin{equation}\label{1D-E_RE-I}
+	\td{E}_{RE,m, n+1}^l(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad \td{E}_{RE,m,0}^l(\omega_{1})=0.
+\end{equation}
+
+\begin{eqnarray}
+		\mathcal{PT}\;\td{\psi}_{RE,m,0}^l(\td{x})&=&\td{\psi}_{RE,m,0}^l(\td{x})\nonumber\\
+	\mbox{and} \quad  \mathcal{PT}\;\td{\psi}_{RE,m,n+1}^l(\td{x})&=&(-1)^{n+1}\;\td{\psi}_{RE,m,n+1}^l(\td{x})
+\end{eqnarray}
+
+\subsection*{2D}
+\begin{equation}\label{2D-V-II}
+  V(x,y)= \frac{1}{4}\omega_1^2x^2+\frac{1}{4}\omega_2^2y^2+\frac{\lambda}{2} xy.
+\end{equation}
+
+\begin{align}\label{2D-xy}
+  \begin{split}
+  \begin{aligned}
+      x &= a\td{x}+b\td{y}, \\
+      y &= -b\td{x}+a\td{y},
+  \end{aligned}
+  & 
+  \left\{
+  \begin{aligned}
+      \td{x} &= ax-by, \\
+      \td{y} &=bx+ay,
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+
+\begin{align}\label{2D-omega'}
+  \begin{split}
+    \td{\omega}_1 &= \sqrt{\frac{1}{2} \left(\omega_1^2+\omega_2^2-\sqrt{4\lambda^2+(\omega_1^2-\omega_2^2)^2}\right)}\\
+ \mbox{and} \quad \td{\omega}_2 &= \sqrt{\frac{1}{2} \left(\omega_1^2+\omega_2^2+\sqrt{4\lambda^2+(\omega_1^2-\omega_2^2)^2}\right)}
+  \end{split}
+\end{align}
+
+\begin{equation}\label{2D-V-II'}
+  \tilde{V}(\td{x},\td{y})= \td{V}(\td{x})+\td{V}(\td{y}).  
+\end{equation}
+
+\begin{align}\label{2D-psi-II'}
+  \tilde{\psi}_{n_1,n_2}(\td{x},\td{y}) &\propto
+  \td{\psi}_{n_1}(\td{x})\;\td{\psi}_{n_2}(\td{y}),\quad n_1,n_2 = 0,1,2,\cdots, \\\label{2D-E-II'}
+  \mbox{and}\quad \tilde{E}_{n_1,n_2}(\td{\omega}_1,\td{\omega}_2) &= \left(n_1+\frac{1}{2}\right)\td{\omega}_1+\left(n_2+\frac{1}{2}\right)\td{\omega}_2,
+\end{align}
+
+\begin{equation}
+  \sqrt{4 \lambda ^2+(\omega _1^2-\omega_2^2)^2}\leq\omega_1^2+\omega_2^2,\label{real2D}
+\end{equation}
+
+\begin{align}\label{img2D}
+  \begin{split}
+    \sqrt{-4\gamma ^2+(\omega _1^2-\omega _2^2)^2}&\le\omega _1^2+\omega _2^2,\\
+   \mbox{and}\quad -4 \gamma ^2+(\omega _1^2-\omega _2^2)^2&>0.
+  \end{split}
+\end{align}
+
+\begin{equation}
+  \eta=\left(
+\begin{array}{cc}
+ -k & -\sqrt{1-k^2}  \\
+ \sqrt{1-k^2}  & -k \\
+\end{array}
+\right)
+\end{equation}
+
+\begin{equation}
+  V^{\dagger}=\eta V \eta^{-1}.
+\end{equation}
+
+\subsection{}
+\begin{align}\label{2D-V-RE-II}
+  \td{V}_{RE,m_1,m_2}(\td{x},\td{y}) &= \td{V}_{RE,m_1}(\td{x})+\td{V}_{RE,m_2}(\td{y}),
+\end{align}
+
+\begin{align}\label{2D-psi-RE-II}
+	\td{\psi}_{RE,m_1,m_2,0,0}(\td{x},\td{y}) &\propto \td{\psi}_{RE,m_1,0}(\td{x})\;\td{\psi}_{RE,m_2,0}(\td{y})\\
+  \td{\psi}_{RE,m_1,m_2,n_1+1,n_2+1}(x,y) &\propto \td{\psi}_{RE,m_1,n_1+1}(\td{x})\;\td{\psi}_{RE,m_2,n_2+1}(\td{y})\\
+  \begin{split}
+ \mbox{and} \quad \td{E}_{RE,m_1,m_2,n_1+1,n_2+1}(\td{\omega}_1,\td{\omega}_2) &=\td{E}_{RE,m_1,n_1+1}(\td{\omega}_1)+\td{E}_{RE,m_2,n_2+1}(\td{\omega}_2)
+\end{split}
+\end{align}
+
+\begin{equation}
+	\mbox{with} \quad \td{E}_{RE,m_1,m_2,0,0}(\td{\omega}_{1},\td{\omega}_{2}) =0, \quad n_1, n_2=0,1,2.......,\nonumber
+\end{equation}
+
+\subsection{}
+\begin{equation}
+  \frac{\td{\omega}_1}{\td{\omega}_2}=\frac{\td{r}}{\td{s}},
+\end{equation}
+
+\begin{equation}\label{2D-V-degeneracy}
+  \td{V}(\td{x},\td{y})= \frac{1}{4}\left(\td{\omega}_1^2\td{x}^2+\td{\omega}_2^2\td{y}^2\right).
+\end{equation}
+
+\begin{equation}\label{2D-lambda}
+  \lambda(r,s,\td{r},\td{s},\omega_1,\omega_2)=\frac{\sqrt{(\td{r}^4+\td{s}^4)-\left(\frac{\td{r}\td{s}}{rs}\right)^2(r^4+s^4)}}{\td{r}^2+\td{s}^2}\;\omega_1\omega_2
+\end{equation}
+
+\begin{equation}\label{2D-degeneracy}
+  \td{E}_{n_1,n_2}(\td{r},\td{s},\td{\omega}_2) = \left(\td{r} n_1+ \td{s} n_2+\frac{\td{r}+\td{s}}{2}\right)\frac{\td{\omega}_2}{\td{s}}.
+\end{equation}
+
+\subsubsection{}
+\begin{align}
+  \begin{split}
+  \begin{aligned}
+    \td{x}&=\frac{1}{\sqrt{2}}\left(x+y\right),\\
+    \td{y}&=\frac{1}{\sqrt{2}}\left(y-x\right), 
+  \end{aligned}
+  & \qquad
+  \left\{
+  \begin{aligned}
+    \td{\omega}_{1}&=\sqrt{\omega^2-\lambda},\\
+    \td{\omega}_{2}&=\sqrt{\omega^2+\lambda}.
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+
+\begin{equation}
+  \lambda(\td{r},\td{s},\omega)=\frac{|\td{r}^2-\td{s}^2|}{\td{r}^2+\td{s}^2}\;\omega^2.
+\end{equation}
+
+\begin{equation}
+  E_{\lambda=0}=\left(n_1+n_2+1\right)\omega
+\end{equation}
+
+\begin{equation}\label{img-example-2D}
+  V(x,y)= \frac{1}{4}\left(\frac{1}{2}x^2+\frac{9}{2}y^2\right)+ \frac{\sqrt{7}}{4} xy.
+\end{equation}
+
+\subsubsection{}
+\begin{equation}\label{img-example-2D}
+  V(x,y)= \frac{1}{4}\left(x^2+9y^2\right)+ i\frac{\sqrt{7}}{2} xy.
+\end{equation}
+
+\subsection*{3D}
+
+\begin{equation}\label{3D-V-III}
+V^{lq}(x,y,z) = \frac{1}{4} \left(\omega_{x}^2 x^2 + \omega_{y}^2 y^2 + \omega_{z}^2 z^2\right) + \lambda_{0} z + \frac{\lambda}{2} xy.
+\end{equation}
+
+\begin{equation}
+  V^{lq}(x, y, z) =  V(x, y)+ V^l(z),
+\end{equation}
+
+\begin{equation}
+	\td{V}^{lq}(\td{x}, \td{y}, \td{z}) =  \td{V}(\td{x}, \td{y})+ \td{V}^l(\td{z}).
+\end{equation}
+
+\begin{equation}\label{lq_ef}
+  \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}) \propto \td{\psi}_{n_1, n_2}(\td{x}, \td{y}) \td{\psi}^l_{n_3}( \td{z})
+\end{equation}
+
+\begin{equation}\label{lq_en}
+  \td{E}^{lq}_{n_1, n_2, n_3}(\td{\omega}_1, \td{\omega}_2, \td{\omega}_3) = \td{E}_{n_1, n_2}(\td{\omega}_1, \td{\omega}_2) + \td{E}_{n_3}(\td{\omega}_3)
+\end{equation}
+
+  \begin{equation}
+    \begin{aligned}
+        \mathcal{P}_2&= \begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & -1    
+        \end{bmatrix}.
+    \end{aligned}
+  \end{equation}
+
+  \begin{equation}
+  	\mathcal{P}_2 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_3} \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}).\nonumber
+  \end{equation}
+
+  %\begin{equation}
+   % V_{PT}= \frac{1}{4}(\omega_x^2x^2+\omega_y^2y^2+\omega_z^2z^2)+i\gamma_0z+i\frac{\gamma}{2}xy
+ % \end{equation}
+
+  \begin{equation}
+    \begin{aligned}
+        \mathcal{P}_1&= \begin{bmatrix}
+            -1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1    
+        \end{bmatrix} ; \quad &
+        \mathcal{P}_3 &= \begin{bmatrix}
+            1 & 0 & 0 \\
+            0 & -1 & 0 \\
+            0 & 0 & 1
+        \end{bmatrix}
+    \end{aligned}
+  \end{equation}
+
+  \begin{equation}
+  	\mathcal{P}_1 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=\mathcal{P}_3 T \psi^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_1+n_2} \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}).\nonumber	
+  \end{equation} 
+
+ \begin{equation}
+ \begin{aligned}
+ 	\mathcal{P}_4&= \begin{bmatrix}
+ 		-1 & 0 & 0 \\
+ 		0 & -1 & 0 \\
+ 		0 & 0 & -1    
+ 	\end{bmatrix}, 
+ \end{aligned}
+ \end{equation} 
+
+ \begin{equation}
+ \mathcal{P}_4 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_1+n_2+n_3}\td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}). \nonumber
+ \end{equation} 
+
+\subsubsection{}
+\begin{align}
+  \begin{split}
+    \td{V}^{lq}_{RE,m_1,m_2,m_3}(\td{x}, \td{y}, \td{z}) &= \td{V}_{RE,m_1,m_2}(\td{x}, \td{y})+\td{V}^l_{RE,m_3}(\td{z})
+  \end{split}
+\end{align}
+
+\begin{align}
+	\td{\psi}^{lq}_{RE,m_1,m_2,m_3,0,0,0}(\td{x}, \td{y}, \td{z})&\propto \td{\psi}_{RE,m_1,m_2,0,0}(\td{x}, \td{y})\;\td{\psi}^l_{RE,m_3,0}(\td{z}),
+\end{align}
+
+\begin{align}
+  \td{\psi}^{lq}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{x}, \td{y}, \td{z})&\propto \td{\psi}_{RE,m_1,m_2,n_1+1,n_2+1}(\td{x}, \td{y})\;\td{\psi}^l_{RE,m_3,n_3+1}(\td{z})
+\end{align}
+
+\begin{align}
+  \td{E}^{lq}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)&=\td{E}_{RE,m_1,m_2,n_1+1,n_2+1}(\td{\omega}_1,\td{\omega}_2)+\td{E}^l_{RE,m_3,n_3+1}(\td{\omega}_3)
+\end{align}
+
+\begin{equation}
+	\td{E}^{lq}_{RE,m_1,m_2,m_3,0,0,0}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)=\td{E}_{RE,m_1,m_2,0,0}(\td{\omega}_1,\td{\omega}_2)+\td{E}^l_{RE,m_3,0}(\td{\omega}_3)\nonumber
+\end{equation}
+
+\subsection{}
+\begin{equation}
+V(x,y,z) = \frac{1}{4}\left(\omega_x^2x^2 + \omega_y^2y^2 + \omega_z^2z^2 + 2\lambda_1 xy + 2\lambda_2 yz + 2\lambda_3 zx\right). \label{3D-V}
+\end{equation}
+
+\begin{equation}
+V^{q}(x,z,y) = \frac{1}{4}\left(\;\omega^2(x^2 + y^2) + \omega_z^2z^2 + 2\lambda_1 xy + 2\lambda_2 yz + 2\lambda_3 zx\right). \label{special-3D}
+\end{equation}
+
+\subsubsection{}
+\begin{equation}
+	V^{q_1}(x,y,z)=\frac{1}{4}\left(\omega^2(x^2+y^2)+\omega_z^2z^2+2\lambda_2 yz+2\lambda_3 zx\right)\label{vq}
+\end{equation}
+
+\begin{align}\label{3D-xyz-IV}
+  \begin{split}
+  \begin{aligned}
+      x &= a d \td{y} + bd\td{z} - c\td{x}, \\
+      y &= d\; \td{x} + ac\td{y} + bc\td{z} \\
+      z &=a\td{z} - b\td{y}, 
+  \end{aligned}
+  & 
+  \left\{
+  \begin{aligned}
+    \td{x} &= - cx + d\;y  , \\
+    \td{y} &=ad\;x + acy - bz, \\
+    \td{z} &= bd\;x + bcy + az.
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+
+\begin{equation}
+\tilde{V}^{q}(\td{x},\td{y},\td{z})=\frac{1}{4}\left(\td{\omega}_1^2\td{x}^2+\td{\omega}_2^2 \td{y}^2+\td{\omega}_3^2\td{z}^2\right)	\label{V_q}
+\end{equation}
+
+\begin{align}\label{3D-omega'-IV}
+  \begin{split}
+    \td{\omega}_1 &= \omega, \\
+    \td{\omega}_2 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 - \sqrt{4(\lambda_2^2 + \lambda_3^2) + \left(\omega^2-\omega_3^2\right)^2}\right)}, \\
+    \td{\omega}_3 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 + \sqrt{4(\lambda_2^2 + \lambda_3^2) + \left(\omega^2-\omega_3^2\right)^2}\right)}.
+  \end{split}
+\end{align}
+
+\begin{align}
+	\td{V}^{q_1}_{RE,m_1,m_2,m_3}(\td{x},\td{y},\td{z})= \td{V}_{RE,m_1}(\td{x})+\td{V}_{RE,m_2}(\td{y})+\td{V}_{RE,m_3}(\td{z})
+\end{align}
+
+\begin{align}\nonumber
+	\td{\psi}^{q_1}_{RE,m_1,m_2,m_3,0,0,0}(\td{x},\td{y},\td{z})\propto \td{\psi}_{RE,m_1,0}(\td{x})\;
+  \td{\psi}_{RE,m_2,0}(\td{y})\; \td{\psi}_{RE,m_3,0}(\td{z})
+\end{align}
+
+\begin{align}
+	\td{\psi}^{q_1}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{x},\td{y},\td{z})\propto \td{\psi}_{RE,m_1,n_1+1}(\td{x})\;
+  \td{\psi}_{RE,m_2,n_2+1}(\td{y})\; \td{\psi}_{RE,m_3,n_3+1}(\td{z})
+\end{align}
+
+\begin{align}\nonumber
+	\td{E}^{q_1}_{RE,m_1,m_2,m_3,n_1+1,n_2+1,n_3+1}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)&=\td{E}_{RE,m_1,n_1+1}\left(\td{\omega}_1\right)\\
+	&+\td{E}_{RE,m_2,n_2+1}\left(\td{\omega}_2\right)+\td{E}_{RE,m_3,n_3+1}\left(\td{\omega}_3\right)
+\end{align}
+
+\begin{align}
+	\td{E}^{q_1}_{RE,m_1,m_2,m_3,0,0,0}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)&=0
+\end{align}
+
+  \begin{equation}\label{cond-3D-r-1}
+      0 \leq \lambda_2^2 + \lambda_3^2 \leq \omega^2 \omega_3^2
+  \end{equation}   
+
+\begin{equation}
+  \sqrt{\lambda_2^2 + \lambda_3^2} =\frac{\sqrt{(\td{u}^4+\td{v}^4)-\left(\frac{\td{u}\td{v}}{uv}\right)^2(u^4+v^4)}}{\td{u}^2+\td{v}^2}\;\omega\omega_3
+\end{equation}
+
+\begin{equation}
+  \sqrt{\lambda_2^2 + \lambda_3^2} = \frac{\sqrt{2(\td{u}^2-\td{v}^2)^2-(\td{u}\td{v})^2}}{\td{u}^2+\td{v}^2}\;\omega^2
+\end{equation}
+
+\subsubsection{}
+\begin{equation}
+  V^{q_2}(x,y,z)=\frac{1}{4}\left(\omega^2(x^2+y^2)+\omega_z^2z^2+2\lambda_1xy+2\lambda(yz+ zx)\right).
+\end{equation}
+
+\begin{align}\label{3D-xyz-V}
+  \begin{split}
+  \begin{aligned}
+      x &= \frac{a}{\sqrt2}\td{y}+\frac{b}{\sqrt2} \td{z}-\frac{\td{x}}{\sqrt{2}}, \\
+      y &= \frac{a}{\sqrt2} \td{y}+\frac{b}{\sqrt2}\td{z}+\frac{\td{x}}{\sqrt{2}},\\
+      z &=a\td{z}-b\td{y}, 
+  \end{aligned}
+  & 
+  \left\{
+  \begin{aligned}
+      \td{x} &= \frac{y}{\sqrt{2}}-\frac{x}{\sqrt{2}} , \\
+      \td{y} &=\frac{a}{\sqrt2} x+\frac{a}{\sqrt2}y-bz , \\
+      \td{z} &= \frac{b}{\sqrt2} x+\frac{b}{\sqrt2}y+az.
+  \end{aligned}
+  \right.
+  \end{split}
+\end{align}
+
+\begin{align}
+  \label{3D-omega'-V}
+  \begin{split}
+    \td{\omega}_1 &= \sqrt{\omega^2 -  \lambda_1}, \\
+    \td{\omega}_2 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 +  \lambda_1 - \sqrt{8\lambda^2 + (\omega^2-\omega_3^2 +  \lambda_1)^2}\right)}, \\
+    \td{\omega}_3 &= \sqrt{\frac{1}{2}\left(\omega^2+\omega_3^2 +  \lambda_1 + \sqrt{8\lambda^2 + (\omega^2-\omega_3^2 +  \lambda_1)^2}\right)}.
+  \end{split}
+\end{align}
+
+      \begin{equation}\label{cond-3D-r-2}
+        \begin{split}
+            -\omega^2\le\lambda_1\le \omega^2\qquad\qquad\\
+           \mbox{and} \quad 0\leq \lambda_1^2\leq \frac{(\omega^2+\lambda)\omega_z^2}{2}.
+        \end{split}  
+      \end{equation}
+
+      \begin{equation}\label{cond-3D-i-2}
+            -\omega^2\le\lambda_1\le\omega^2 \quad
+            \mbox{and}\quad 0\leq \gamma^2\leq \frac{(\omega^2-\omega_3^2+\lambda_1)^2}{8}
+        \end{equation}  
+
+\begin{equation}
+  \sqrt{8\lambda^2+\lambda_1^2}=\frac{|\td{v}^2-\td{u}^2|}{\td{v}^2+\td{u}^2}\;(2\omega^2+\lambda_1),
+\end{equation}
+
+\begin{equation}
+  \lambda=\frac{\sqrt{\left(\frac{|\td{v}^2-\td{u}^2|}{\td{v}^2+\td{u}^2}(\lambda_1+2\omega^2)\right)^2-\lambda_1^2}}{2 \sqrt{2}}.
+\end{equation}
+
+
+\end{document}
