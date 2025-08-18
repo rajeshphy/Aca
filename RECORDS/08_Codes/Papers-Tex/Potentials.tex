@@ -653,9 +653,10 @@ $m/\lambda =$ & $1\times 10^{-12}$ & $1\times 10^{-8}$ & $1\times 10^{-5}$ & $1\
 \section*{Uncertainty Calculations: 2024-Paper}
 
 \subsection*{Full Line Oscillator}
-\begin{equation}\label{FLO:V+}
-    V^+(x)=\frac{1}{4}\omega_x^2{x}^2,\qquad -\infty <x<\infty,
-\end{equation}
+
+\begin{align}\label{HLO:V-alpha+}\nonumber
+V_h^-(x, m, \frac{1}{2}) = V_h^+(x) - 2\left( \frac{\left[x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)\right]''}{x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)} - \left( \frac{\left[x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)\right]'}{x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)} \right)^2 + \frac{\omega_x}{2} \right); \qquad m = 0,1,2,\cdots \,.
+\end{align}
 
 \begin{table}[h!]
 \centering
@@ -674,14 +675,19 @@ $n \backslash m$ & 0     & 2       & 4       & 6       \\ \hline
 
 
 \subsection*{Half Line Oscillator}
-\begin{equation}\label{HLO:V+}
-    V_h^+(x)=\begin{cases}
-        \frac{1}{4}\omega_x^2 x^2 &,\qquad x>0\\
-        \infty &,\qquad x\leq 0\,.
-    \end{cases}
-\end{equation}
 
-{\bf $\alpha=-\frac{1}{2}$}
+
+\begin{align}
+\begin{split}\label{HLO:V-alpha-}\nonumber
+V_h^-(x,m,-\frac{1}{2}) &= V_h^+(x) - 2\left( \frac{L_m^{(-\frac{1}{2})''}
+\left(-\frac{\omega_x}{2} x^2\right)}{L_m^{(-\frac{1}{2})}
+\left(-\frac{\omega_x}{2} x^2\right)} - \left( \frac{L_m^{(-\frac{1}{2})'}
+\left(-\frac{\omega_x}{2} x^2\right)}{L_m^{(-\frac{1}{2})}
+\left(-\frac{\omega_x}{2} x^2\right)} \right)^2 + \frac{\omega_x}{2} \right);
+\qquad m=0,1,2,\cdots \,.
+    \end{split}
+\end{align}
+
 
 \begin{table}[h!]
 \centering
@@ -698,7 +704,10 @@ $n \backslash m$ & 0     & 1       & 2       & 3       \\ \hline
 \end{table}
 
 
-{\bf $\alpha=\frac{1}{2}$}
+\begin{align}\label{HLO:V-alpha+}\nonumber
+V_h^-(x, m, \frac{1}{2}) = V_h^+(x) - 2\left( \frac{\left[x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)\right]''}{x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)} - \left( \frac{\left[x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)\right]'}{x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)} \right)^2 + \frac{\omega_x}{2} \right); \qquad m = 0,1,2,\cdots \,.
+\end{align}
+
 
 \begin{table}[h!]
 \centering
