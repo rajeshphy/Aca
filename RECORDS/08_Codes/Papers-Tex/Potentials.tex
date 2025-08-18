@@ -60,21 +60,288 @@ E^+_{n,m}&=2(n+m+1),\quad n=0,1,2,\cdots
 
 
 \newpage
-\section*{2025-Paper}
+\section*{2024-Paper}
 
-
-
-\begin{equation}\label{1D-SE}
-\left[-\frac{d^2 }{dx^2} +V(x) \right] \Psi = E \Psi\qquad\mbox{where}\qquad V(x)=\frac{1}{4}\omega_1^2 x^2.
+\begin{equation}\label{FLO:V+}
+    V^+(x)=\frac{1}{4}\omega_x^2{x}^2,\qquad -\infty <x<\infty,
 \end{equation}
 
-% \begin{align}\label{QHO-psi}
-%     \psi_n(x) &\propto e^{-\frac{\omega_1}{2}x^2} H_n\left(\sqrt{\omega_1}x\right),\\\label{QHO-E}
-%     E_n(\omega_1)&=\left(n+\frac{1}{2}\right)\omega_1;\quad n=0,1,2...
-% \end{align}
+\begin{align}\label{FLO:psi+}
+ \psi_n^+(x)&\propto e^{-\frac{\omega_x}{4} x^2}H_n\left(\sqrt{\frac{\omega_x}{2}} x\right)\;  \nonumber
+\end{align} 
+
+\begin{equation}
+	E^+_n=\left(n+\frac{1}{2}\right)\omega_x\;,\quad n=0,1,2,\cdots
+\end{equation}
+
+\begin{align}
+    \label{FLO:V-}
+    V^-(x,m)&=V^+(x)-2\left[\frac{\mathcal{H}_m''\left(\sqrt{\frac{\omega_x}{2}} x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_x}{2}} x\right)}-\left[\frac{\mathcal{H}_m'\left(\sqrt{\frac{\omega_x}{2}} x\right)}{\mathcal{H}_m\left(\sqrt{\frac{\omega_x}{2}} x\right)}\right]^2+\frac{\omega_x}{2}\right], \quad -\infty<x<\infty\\
+    \begin{split} \label{FLO:psi-}
+        \psi^-_{0}(x,m)&=\phi_m^{-1}(x)\propto \frac{e^{- \frac{\omega_x }{4}x^2}}{\mathcal{H}_m\left(\sqrt{\frac{\omega_x}{2}} x\right)}\;,\qquad m=0,2,4,\cdots \\
+       \mbox{and} \quad  \psi^-_{n+1}(x,m)&\propto\frac{e^{- \frac{\omega_x }{4}x^2}}{\mathcal{H}_m\left(\sqrt{\frac{\omega_x}{2}} x\right)} \hat{H}_{n+1,m}\left(\sqrt{\frac{\omega_x}{2}} x\right) \;,\qquad n=0,1,2,\cdots\\
+    \end{split}
+\end{align}
+
+\begin{equation}
+\hat{H}_{n+1,m}(z)=\left[\mathcal{H}_m(z)H_{n+1}(z) + H_{n}(z)\frac{d}{dz}\mathcal{H}_m(z)\right],
+\end{equation}
+
+\begin{equation}\label{FLO:E-1D}
+E^-_{n+1,m}=E^+_{n,m}=E^+_{n}-\epsilon_m=(n + m + 1)\omega_x \quad 
+\text{ with }\quad E^-_{0,m}=0\,.
+\end{equation}
+
+\begin{equation}\label{HLO:V+}
+    V_h^+(x)=\begin{cases}
+        \frac{1}{4}\omega_x^2 x^2 &,\qquad x>0\\
+        \infty &,\qquad x\leq 0\,.
+    \end{cases}
+\end{equation}
+
+\begin{equation}\label{HLO:psi+}
+\psi_{h,n}^+(x,\alpha)\propto x^{\alpha +\frac{1}{2}} 
+e^{-\frac{\omega_x}{4} x^2} L_n^{(\alpha) }\left(\frac{\omega_x}{2} x^2\right);
+\quad n=0,1,2,\cdots\,.
+\end{equation} 
+
+
+\begin{equation}
+E^+_{h,n}(\alpha)=(2n+1+\alpha)\omega_x \qquad\text{ and}\qquad 
+\epsilon_{h,m}(\alpha)=-(2m+1+\alpha)\omega_x
+\end{equation}
+
+\begin{equation}\label{HLO:E+}
+E^+_{h,n,m}(\alpha)=E^+_{h,n}(\alpha)-\epsilon_{h,m}(\alpha) = 
+2(n+m+\alpha+1)\omega_x\,.
+\end{equation}
+
+\begin{align}\label{HLO:V-alpha+}
+V_h^-(x, m, \frac{1}{2}) = V_h^+(x) - 2\left( \frac{\left[x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)\right]''}{x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)} - \left( \frac{\left[x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)\right]'}{x L_m^{(\frac{1}{2})}\left(-\frac{\omega_x}{2} x^2\right)} \right)^2 + \frac{\omega_x}{2} \right); \qquad m = 0,1,2,\cdots \,.
+\end{align}
+
+\begin{align}
+\begin{split}\label{HLO:V-alpha-}
+V_h^-(x,m,-\frac{1}{2}) &= V_h^+(x) - 2\left( \frac{L_m^{(-\frac{1}{2})''}
+\left(-\frac{\omega_x}{2} x^2\right)}{L_m^{(-\frac{1}{2})}
+\left(-\frac{\omega_x}{2} x^2\right)} - \left( \frac{L_m^{(-\frac{1}{2})'}
+\left(-\frac{\omega_x}{2} x^2\right)}{L_m^{(-\frac{1}{2})}
+\left(-\frac{\omega_x}{2} x^2\right)} \right)^2 + \frac{\omega_x}{2} \right);
+\qquad m=0,1,2,\cdots \,.
+    \end{split}
+\end{align}
+
+\begin{equation}\label{HLO:psi-}
+\psi^-_{h,n}(x,m,\alpha)\propto x^{\alpha +\frac{3}{2}} e^{-\frac{\omega_x}{4}x^2}\frac{\hat{L}_{n,m}^{(\alpha)}(\frac{\omega_x}{2}x^2)}{L_m^{(\alpha) }\left(-\frac{\omega_x}{2}x^2  \right)}\,
+\end{equation}
+
+\begin{equation}
+ \hat{L}_{n,m}^{(\alpha)}(s)=L_{m}^{(\alpha)}(-s) L_n^{(\alpha+1)}(s)+L_{m-1}^{(\alpha+1)}(-s) L_{n}^{(\alpha)}(s)\,.
+\end{equation}
+
+\begin{equation}\label{HLO:E-}
+E^-_{h,n,m}(\alpha)=E^+_{h,n,m}(\alpha)=2\left(n+m+1+\alpha\right)\omega_x\,.
+\end{equation}
+
+\section*{In 2D}
+
+\begin{equation}
+V^+(x,y)=\frac{1}{4}\omega_x^2 x^2+\frac{1}{4}\omega_y^2 y^2; \quad -\infty<x<\infty,-\infty<y<\infty
+\end{equation}
+
+\begin{eqnarray}\label{FLO2D:psi+}
+\psi_{n_1,n_2}^+(x,y)&\propto& \psi_{n_1}^+(x)\psi_{n_2}^+(y)\nonumber\\
+&\propto&e^{-\frac{\omega_x x^2+\omega_y y^2}{4} } H_{n_1}\left(\sqrt{\frac{\omega_x}{2}} x\right) H_{n_2}\left(\sqrt{\frac{\omega_y}{2}} y\right)\; 
+\quad n_1,n_2=0,1,2,\cdots, 		
+\end{eqnarray}
+
+\begin{eqnarray}
+E^+_{n_1,n_2}=E^+_{n_1}+E^+_{n_2}
+\end{eqnarray}
+
+
+\begin{equation}\label{2D:V-}
+V^-(x,y,m_1,m_2)=V^-(x,m_1)+V^-(y,m_2)\,
+\end{equation}
+
+\begin{align} \label{2D:psi-}
+    \begin{split}
+        \psi^-_{0,0}(x,y,m_1,m_2)&=\phi_{m_1}^{-1}(x)\phi_{m_2}^{-1}(y), \\
+        \mbox{and} \quad  \psi^-_{n_1+1,n_2+1}(x,y,m_1,m_2)&=\psi^-_{n_1+1}(x,m_1)\psi^-_{n_2+1}(y,m_2)\;,\qquad n_1,n_2=0,1,2,\cdots\\
+    \end{split}
+\end{align}
+
+\begin{align}
+ E_{n_1+1,n_2+1,m_1,m_2}^-&=\left[\left(n_1+m_1+1\right)\omega_x
++\left(n_2+m_2+1\right)\omega_y \right] \quad \text{and}
+\quad E_{0,0,m_1,m_2}^-=0.
+\end{align}
+
+\begin{equation}\label{2DHLO:psi+}
+    \psi_{h,n_1,n_2}^+(x,y,\alpha,\beta)\propto  x^{\alpha +\frac{1}{2}}y^{\beta +\frac{1}{2}} e^{-\frac{\omega_xx^2+\omega_y y^2}{4}} L_{n_1}^{(\alpha) }\left(\frac{\omega_x}{2} x^2\right)L_{n_2}^{(\beta)}\left(\frac{\omega_y}{2} y^2\right); \quad n_1, n_2=0,1,2,\cdots
+\end{equation} 
+
+
+\begin{equation}\label{2DHLO:E+}
+    E^+_{h,n_1,n_2,\alpha,\beta}=[(2n_1+\alpha+1)\omega_x+(2n_2+\beta+1)\omega_y]-\epsilon_{h,m_1,m_2},
+\end{equation}
+
+\begin{align}
+V_h^-(x,y,m_1,m_2,\frac{1}{2}) &= V_h^-(x,m_1,\frac{1}{2}) + V_h^-(y,m_2,\frac{1}{2}) \\
+\psi_{h,n_1,n_2}^-(x,y,m_1,m_2,\frac{1}{2})&\propto\psi^-_{n_1}(x,m_1,\frac{1}{2})\psi^-_{n_2}(y,m_2,\frac{1}{2})\\
+\mbox{and} \quad	
+E_{h,n_1,n_2}^-(m_1,m_2,\frac{1}{2})&=\left[\left(2n_1+2m_1+3\right)\omega_x 
++\left(2n_2+2m_2+3\right) \omega_y \right]\,
+\end{align}
+
+\begin{align}
+    V_h^-(x,y,m_1,m_2,-\frac{1}{2}) &= V_h^-(x,m_1,-\frac{1}{2}) + V_h^-(y,m_2,-\frac{1}{2}) \\
+    \psi_{h,n_1,n_2}^-(x,y,m_1,m_2,-\frac{1}{2})&\propto\psi^-_{h,n_1}(x,m_1,-\frac{1}{2})\psi^-_{h,n_2}(y,m_2,-\frac{1}{2})\\
+    \mbox{and} \quad	
+E_{h,n_1,n_2}^-(m_1,m_2,\frac{1}{2})&=\left[\left(2n_1+2m_1+1\right)\omega_x
++\left(2n_2+2m_2+1\right) \omega_y \right]\,.
+\end{align}
+
+\begin{align}
+    V_h^-(x,y,m_1,m_2,\frac{1}{2},-\frac{1}{2}) &= V_h^-(x,m_1,\frac{1}{2}) + V_h^-(y,m_2,-\frac{1}{2}) \\
+    \psi_{h,n_1,n_2}^-(x,y,m_1,m_2,\frac{1}{2},-\frac{1}{2})&\propto\psi^-_{h,n_1}(x,m_1,\frac{1}{2})\psi^-_{h,n_2}(y,m_2,-\frac{1}{2})\\
+    \mbox{and} \quad	
+E_{h,n_1,n_2}^-(m_1,m_2,\frac{1}{2},-\frac{1}{2})&=\left[\left(2n_1+2m_1+3\right)\omega_x +\left(2n_2+2m_2+1\right)\omega_y\right]\,
+\end{align}
+
+
+\begin{equation}\label{GFHP-}
+	V^-_{fh}(x,y,m_1,m_2,\beta)=V^-(x,m_1)+V^-_h (y,m_2,\beta),
+\end{equation}
+
+\begin{equation}
+\psi^-_{fh,0,0}(x,y,m_1,m_2,\beta)\propto\psi^-_0 (x,m_1)\psi^-_{h,0}(y,m_2,\beta)
+\end{equation}
+
+\begin{equation}
+\psi^-_{fh,n_1+1,n_2}(x,y,m_1,m_2,\beta)\propto\psi^-_{n_1+1} (x,m_1)\psi^-_{h,n_2}(y,m_2,\beta);	
+\end{equation}
+
+\begin{equation}\label{fhg}
+	E^-_{fh,0,0}(m_2,\beta)=2(m_2+\beta+1)\omega_y.
+\end{equation}
+
+\begin{eqnarray}\label{fhexct}
+	E^-_{fh,n_1+1,n_2}(m_1,m_2,\beta)&=& E^+_{n_1}(m_1)+E^+_{h,n_2}(m_2,\beta)\nonumber\\
+	&=& (n_1+m_1+1)\omega_x+2(n_2+m_2+\beta+1)\omega_y		
+\end{eqnarray}
+
+\begin{align}
+    V^-_{fh}(x,y,m_1,m_2,1/2) &= V^-(x,m_1)+V_h^-(y,m_2,\frac{1}{2})
+\end{align}
+
+\begin{align}
+    \psi^-_{fh,0,0}(m_1,m_2,\frac{1}{2}) &\propto \psi^-_0 (x,m_1)\psi^-_{h,0}(y,m_2,\frac{1}{2})
+    \\ 
+    \psi^-_{n_1+1,n_2}(m_1,m_2,\frac{1}{2}) &\propto \psi^-_{n_1+1} (x,m_1)\psi^-_{h,n_2}(y,m_2,\frac{1}{2})
+\end{align}
+
+\begin{align} 
+    E^-_{0,0}(m_1,m_2,\frac{1}{2}) &=\left(2m_2+3\right)\omega_y\\
+    E^-_{n_1+1,n_2}(m_1,m_2,\frac{1}{2}) &= \left(n_1+2m_1+1\right)\omega_x+ \left(2n_2+2m_2+3\right)\omega_y
+\end{align}
+
+\begin{align}
+	V^-_{fh}(x,y,m_1,m_2,-1/2) &= V^-(x,m_1)+V_h^-(y,m_2,-\frac{1}{2})
+\end{align}
+
+\begin{align}
+	\psi^-_{fh,0,0}(m_1,m_2,-\frac{1}{2}) &\propto \psi^-_0 (x,m_1)\psi^-_{h,0}(y,m_2,-\frac{1}{2})  \\ 
+	\psi^-_{n_1+1,n_2}(m_1,m_2,-\frac{1}{2}) &\propto \psi^-_{n_1+1} (x,m_1)\psi^-_{h,n_2}(y,m_2,-\frac{1}{2})
+\end{align}
+
+\begin{align} 
+	E^-_{0,0}(m_1,m_2,-\frac{1}{2}) &=\left(2m_2+1\right)\omega_y\\
+	E^-_{n_1+1,n_2}(m_1,m_2,-\frac{1}{2}) &= \left(n_1+2m_1+1\right)\omega_x+ \left(2n_2+2m_2+1\right)\omega_y
+\end{align}
+
+\section*{In 3D}
+
+\begin{equation}
+V^+(x,y,z)=\frac{1}{4}\omega^2 (x^2+y^2)+\frac{1}{4}\omega_z^2 z^2; \quad -\infty<x,y,z<\infty
+\end{equation}
+
+\begin{equation}
+  V^+(r,z)=\frac{1}{4}\omega^2 r^2+\frac{1}{4}\omega_z^2 z^2\,
+\end{equation}
+
+\begin{equation}\label{cylinderical-SE}
+  \left[-\left(\frac{1}{r}\frac{\partial }{\partial r}r\frac{\partial }{\partial r}+\frac{1}{r^2}\frac{\partial^2 }{\partial \phi^2}+\frac{\partial^2 }{\partial z^2}\right)+V^+(r,z)\;\right]\psi^+(r,\phi,z)=E\psi^+ (r,\phi,z),
+\end{equation}
+
+\begin{equation}\label{rphiz}
+\psi^+ (r,\phi,z)=\frac{e^{i\gamma \phi} \zeta(r,z)}{r^{\frac{1}{2}}}\,.
+\end{equation}
+
+\begin{equation}
+\zeta(r,z) = R(r) Z(z)\,.
+\end{equation}
+
+\begin{equation}
+\left[-\frac{\partial^2}{\partial r^2}-\frac{\partial^2}{\partial z^2}
++V^+_{eff}(r,z)\right]\zeta(r,z)=E\;\zeta(r,z),
+\end{equation}
+
+\begin{equation}
+V^+_{eff}(r,z)=V^+(r,z)+\frac{\gamma^2-1/4}{r^2}\quad\text{with}\quad  
+\gamma=0,\pm1,\pm2,\cdots \,.
+\end{equation} 
+
+\begin{equation}
+R(r)\rightarrow R_{n_1}(r)\propto r^{|\gamma|+\frac{1}{2}}e^{-\frac{\omega}{4}r^2}L_{n_1}^{(|\gamma|)}\left(\frac{1}{2}\omega r^2\right); n_1=0,1,2,\cdots
+\end{equation}
+
+\begin{equation}
+Z(z)\rightarrow Z_{n_2}(z)\propto e^{-\frac{\omega_z z^2}{4}}H_{n_2}\left(\sqrt{\frac{\omega_z}{2}} z\right); n_2=0,1,2,\cdots
+\end{equation}
+
+\begin{equation}
+  E\rightarrow E_{n_1,n_2}=(2n_1+|\gamma|+1)\omega+\left(n_2+\frac{1}{2}\right)
+\omega_z\,.
+\end{equation}
+
+\begin{equation}\label{CYL:E+}
+ E^+_{n_1,n_2}=E_{n_1,n_2}-\epsilon_{m_1,m_2}=2(n_1+m_1+|\gamma|+1)\omega
++(n_2+m_2+1)\omega_z.
+\end{equation}
+
+\begin{align}
+    V_{eff}^-(m_1, m_2, r, z) &= \frac{1}{4}\omega^2 r^2 + \frac{\gamma^2 - \frac{1}{4}}{r^2} + \frac{2 | \gamma | }{r^2}-(2 m+1) \omega +\frac{1}{r^2} \nonumber\\
+    &\quad + \frac{2 r^2 \omega ^2 L_{m_1-1}^{(| \gamma | +1)}\left(-\frac{\omega r^2}{2}\right){}^2}{L_{m_1}^{(| \gamma |) }\left(-\frac{\omega r^2}{2}\right){}^2} \nonumber\\
+    &\quad + \frac{\omega  \left(\left(2 | \gamma | +r^2 \omega \right) L_{m_1-1}^{(| \gamma | +1)}\left(-\frac{\omega r^2}{2}\right)-r^2 \omega  L_{m-2}^{(| \gamma | +2)}\left(-\frac{\omega r^2}{2}\right)\right)}{L_{m_1}^{(| \gamma | )}\left(-\frac{\omega r^2}{2}\right)}\nonumber\\
+    &\quad + \frac{1}{2}\omega_z^2 z^2 - 2\left[\frac{\mathcal{H}_{m_2}''\left(\sqrt{\frac{\omega_z}{2}} z\right)}{\mathcal{H}_{m_2}\left(\sqrt{\frac{\omega_z}{2}} z\right)}-\left[\frac{\mathcal{H}_{m_2}'\left(\sqrt{\frac{\omega_z}{2}} z\right)}{\mathcal{H}_{m_2}\left(\sqrt{\frac{\omega_z}{2}} z\right)}\right]^2+\frac{\omega_z}{2}\right] \nonumber\\
+    \zeta_{n_1, n_2+1}^-(r, z, m_1, m_2) &\propto r^{|\gamma| + \frac{3}{2}} e^{-\frac{\omega r^2}{4}} \frac{\hat{L}_{n_1, m_1}^{(\gamma)}\left(\frac{1}{2}\omega r^2 \right)}{L_{m_1}^{(\gamma)}\left(-\frac{1}{2}\omega r^2 \right)}\; e^{-\frac{\frac{\omega_z}{2} z^2}{2}} \frac{\hat{H}_{n_z+1, m_2}\left(\sqrt{\frac{\omega_z}{2}} z \right)}{\mathcal{H}_{m_2}\left(\sqrt{\frac{\omega_z}{2}} z \right)} \nonumber\\
+    E^-_{n_1, n_2+1}(m_1, m_2) &= 2(n_1 + m_1 + |\gamma| + 1)\omega + \left(n_2 + m_2 + 1\right)\omega_z
+\end{align}
+
+\begin{eqnarray}
+\zeta_{0,0}^-(r,z,m_1,m_2)&\propto& r^{|\gamma| +\frac{3}{2}}  \frac{e^{-\frac{\omega r^2}{4}}L_{\text{m1}}^{(| \gamma | +1)}\left(-\frac{1}{2}\omega r^2)\right)}{L_{m_1}^{(|\gamma |)}\left(-\frac{1}{2}\omega r^2 \right)}\times
+\frac{e^{-\frac{\omega_z\;  z^2}{4}}}{\mathcal{H}_{m_2}^{}\left(\sqrt{\frac{\omega_z}{2}}  z \right)}  \nonumber\\
+\mbox{and} \quad E^-_{0,0,m_1,m_2}&=&2(m_1+|\gamma|+1)\omega
+\end{eqnarray}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\section*{2025-Paper}
 
 \begin{equation}\label{1D-V-I}
-V^{l}(x) =V(x) + \lambda_0 x ,
+V^{l}(x) =V(x) + \lambda_0 x ,\qquad V(x)=\frac{1}{4}\omega_1^2 
 \end{equation}
 
 \begin{align}\label{1D-V'}
@@ -85,19 +352,10 @@ V^{l}(x) =V(x) + \lambda_0 x ,
 	E\rightarrow \tilde{E}_n^l(\omega_1)=\left(n+\frac{1}{2}\right) \omega_1+\frac{\gamma^2_0}{\omega^2_1};\quad n=0,1,2...
 \end{equation} 
 
-% \begin{equation}\label{1D-psi}
-%     \psi_n^l(x,i\gamma_0)\propto e^{-\frac{\omega_1}{4} \left(x + i\frac{2\gamma_0}{\omega_1^2}\right)^2} H_n\left(\sqrt{\frac{\omega_1}{2}} \left(x + i\frac{2\gamma_0}{\omega_1^2}\right)\right)
-% \end{equation}
-
 \begin{equation}\label{1D-psi}
   \td{\psi}_n^l(\td{x})=\psi_n(\td{x}),\quad\text{Here,}\quad \td{\omega_1}=\omega_1.
 \end{equation}
 
-\begin{align}
-    \begin{split}
-    \mathcal{PT}\;\td{\psi}_n^l(\td{x})&=(-1)^n\;\td{\psi}_n^l(\td{x})
-    \end{split}
-\end{align}
 
 \subsection*{1D}
 \begin{equation}\label{1D-V-RE-x}
@@ -136,10 +394,6 @@ E_{RE,m, n+1}(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad E_{R
 	\td{E}_{RE,m, n+1}^l(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad \td{E}_{RE,m,0}^l(\omega_{1})=0.
 \end{equation}
 
-\begin{eqnarray}
-		\mathcal{PT}\;\td{\psi}_{RE,m,0}^l(\td{x})&=&\td{\psi}_{RE,m,0}^l(\td{x})\nonumber\\
-	\mbox{and} \quad  \mathcal{PT}\;\td{\psi}_{RE,m,n+1}^l(\td{x})&=&(-1)^{n+1}\;\td{\psi}_{RE,m,n+1}^l(\td{x})
-\end{eqnarray}
 
 \subsection*{2D}
 \begin{equation}\label{2D-V-II}
@@ -179,31 +433,7 @@ E_{RE,m, n+1}(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad E_{R
   \mbox{and}\quad \tilde{E}_{n_1,n_2}(\td{\omega}_1,\td{\omega}_2) &= \left(n_1+\frac{1}{2}\right)\td{\omega}_1+\left(n_2+\frac{1}{2}\right)\td{\omega}_2,
 \end{align}
 
-\begin{equation}
-  \sqrt{4 \lambda ^2+(\omega _1^2-\omega_2^2)^2}\leq\omega_1^2+\omega_2^2,\label{real2D}
-\end{equation}
 
-\begin{align}\label{img2D}
-  \begin{split}
-    \sqrt{-4\gamma ^2+(\omega _1^2-\omega _2^2)^2}&\le\omega _1^2+\omega _2^2,\\
-   \mbox{and}\quad -4 \gamma ^2+(\omega _1^2-\omega _2^2)^2&>0.
-  \end{split}
-\end{align}
-
-\begin{equation}
-  \eta=\left(
-\begin{array}{cc}
- -k & -\sqrt{1-k^2}  \\
- \sqrt{1-k^2}  & -k \\
-\end{array}
-\right)
-\end{equation}
-
-\begin{equation}
-  V^{\dagger}=\eta V \eta^{-1}.
-\end{equation}
-
-\subsection{}
 \begin{align}\label{2D-V-RE-II}
   \td{V}_{RE,m_1,m_2}(\td{x},\td{y}) &= \td{V}_{RE,m_1}(\td{x})+\td{V}_{RE,m_2}(\td{y}),
 \end{align}
@@ -220,58 +450,9 @@ E_{RE,m, n+1}(\omega_{1})=\left(n+m+1\right)\omega_1 \qquad\mbox{with}\quad E_{R
 	\mbox{with} \quad \td{E}_{RE,m_1,m_2,0,0}(\td{\omega}_{1},\td{\omega}_{2}) =0, \quad n_1, n_2=0,1,2.......,\nonumber
 \end{equation}
 
-\subsection{}
-\begin{equation}
-  \frac{\td{\omega}_1}{\td{\omega}_2}=\frac{\td{r}}{\td{s}},
-\end{equation}
 
-\begin{equation}\label{2D-V-degeneracy}
-  \td{V}(\td{x},\td{y})= \frac{1}{4}\left(\td{\omega}_1^2\td{x}^2+\td{\omega}_2^2\td{y}^2\right).
-\end{equation}
 
-\begin{equation}\label{2D-lambda}
-  \lambda(r,s,\td{r},\td{s},\omega_1,\omega_2)=\frac{\sqrt{(\td{r}^4+\td{s}^4)-\left(\frac{\td{r}\td{s}}{rs}\right)^2(r^4+s^4)}}{\td{r}^2+\td{s}^2}\;\omega_1\omega_2
-\end{equation}
-
-\begin{equation}\label{2D-degeneracy}
-  \td{E}_{n_1,n_2}(\td{r},\td{s},\td{\omega}_2) = \left(\td{r} n_1+ \td{s} n_2+\frac{\td{r}+\td{s}}{2}\right)\frac{\td{\omega}_2}{\td{s}}.
-\end{equation}
-
-\subsubsection{}
-\begin{align}
-  \begin{split}
-  \begin{aligned}
-    \td{x}&=\frac{1}{\sqrt{2}}\left(x+y\right),\\
-    \td{y}&=\frac{1}{\sqrt{2}}\left(y-x\right), 
-  \end{aligned}
-  & \qquad
-  \left\{
-  \begin{aligned}
-    \td{\omega}_{1}&=\sqrt{\omega^2-\lambda},\\
-    \td{\omega}_{2}&=\sqrt{\omega^2+\lambda}.
-  \end{aligned}
-  \right.
-  \end{split}
-\end{align}
-
-\begin{equation}
-  \lambda(\td{r},\td{s},\omega)=\frac{|\td{r}^2-\td{s}^2|}{\td{r}^2+\td{s}^2}\;\omega^2.
-\end{equation}
-
-\begin{equation}
-  E_{\lambda=0}=\left(n_1+n_2+1\right)\omega
-\end{equation}
-
-\begin{equation}\label{img-example-2D}
-  V(x,y)= \frac{1}{4}\left(\frac{1}{2}x^2+\frac{9}{2}y^2\right)+ \frac{\sqrt{7}}{4} xy.
-\end{equation}
-
-\subsubsection{}
-\begin{equation}\label{img-example-2D}
-  V(x,y)= \frac{1}{4}\left(x^2+9y^2\right)+ i\frac{\sqrt{7}}{2} xy.
-\end{equation}
-
-\subsection*{3D}
+\section*{3D-Quadratic+Linear}
 
 \begin{equation}\label{3D-V-III}
 V^{lq}(x,y,z) = \frac{1}{4} \left(\omega_{x}^2 x^2 + \omega_{y}^2 y^2 + \omega_{z}^2 z^2\right) + \lambda_{0} z + \frac{\lambda}{2} xy.
@@ -293,58 +474,6 @@ V^{lq}(x,y,z) = \frac{1}{4} \left(\omega_{x}^2 x^2 + \omega_{y}^2 y^2 + \omega_{
   \td{E}^{lq}_{n_1, n_2, n_3}(\td{\omega}_1, \td{\omega}_2, \td{\omega}_3) = \td{E}_{n_1, n_2}(\td{\omega}_1, \td{\omega}_2) + \td{E}_{n_3}(\td{\omega}_3)
 \end{equation}
 
-  \begin{equation}
-    \begin{aligned}
-        \mathcal{P}_2&= \begin{bmatrix}
-            1 & 0 & 0 \\
-            0 & 1 & 0 \\
-            0 & 0 & -1    
-        \end{bmatrix}.
-    \end{aligned}
-  \end{equation}
-
-  \begin{equation}
-  	\mathcal{P}_2 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_3} \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}).\nonumber
-  \end{equation}
-
-  %\begin{equation}
-   % V_{PT}= \frac{1}{4}(\omega_x^2x^2+\omega_y^2y^2+\omega_z^2z^2)+i\gamma_0z+i\frac{\gamma}{2}xy
- % \end{equation}
-
-  \begin{equation}
-    \begin{aligned}
-        \mathcal{P}_1&= \begin{bmatrix}
-            -1 & 0 & 0 \\
-            0 & 1 & 0 \\
-            0 & 0 & 1    
-        \end{bmatrix} ; \quad &
-        \mathcal{P}_3 &= \begin{bmatrix}
-            1 & 0 & 0 \\
-            0 & -1 & 0 \\
-            0 & 0 & 1
-        \end{bmatrix}
-    \end{aligned}
-  \end{equation}
-
-  \begin{equation}
-  	\mathcal{P}_1 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=\mathcal{P}_3 T \psi^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_1+n_2} \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}).\nonumber	
-  \end{equation} 
-
- \begin{equation}
- \begin{aligned}
- 	\mathcal{P}_4&= \begin{bmatrix}
- 		-1 & 0 & 0 \\
- 		0 & -1 & 0 \\
- 		0 & 0 & -1    
- 	\end{bmatrix}, 
- \end{aligned}
- \end{equation} 
-
- \begin{equation}
- \mathcal{P}_4 T\; \td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z})=(-1)^{n_1+n_2+n_3}\td{\psi}^{lq}_{n_1, n_2, n_3}(\td{x}, \td{y}, \td{z}). \nonumber
- \end{equation} 
-
-\subsubsection{}
 \begin{align}
   \begin{split}
     \td{V}^{lq}_{RE,m_1,m_2,m_3}(\td{x}, \td{y}, \td{z}) &= \td{V}_{RE,m_1,m_2}(\td{x}, \td{y})+\td{V}^l_{RE,m_3}(\td{z})
@@ -367,16 +496,12 @@ V^{lq}(x,y,z) = \frac{1}{4} \left(\omega_{x}^2 x^2 + \omega_{y}^2 y^2 + \omega_{
 	\td{E}^{lq}_{RE,m_1,m_2,m_3,0,0,0}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)=\td{E}_{RE,m_1,m_2,0,0}(\td{\omega}_1,\td{\omega}_2)+\td{E}^l_{RE,m_3,0}(\td{\omega}_3)\nonumber
 \end{equation}
 
-\subsection{}
-\begin{equation}
-V(x,y,z) = \frac{1}{4}\left(\omega_x^2x^2 + \omega_y^2y^2 + \omega_z^2z^2 + 2\lambda_1 xy + 2\lambda_2 yz + 2\lambda_3 zx\right). \label{3D-V}
-\end{equation}
+\section*{3D-Quadratic Only}
 
 \begin{equation}
 V^{q}(x,z,y) = \frac{1}{4}\left(\;\omega^2(x^2 + y^2) + \omega_z^2z^2 + 2\lambda_1 xy + 2\lambda_2 yz + 2\lambda_3 zx\right). \label{special-3D}
 \end{equation}
 
-\subsubsection{}
 \begin{equation}
 	V^{q_1}(x,y,z)=\frac{1}{4}\left(\omega^2(x^2+y^2)+\omega_z^2z^2+2\lambda_2 yz+2\lambda_3 zx\right)\label{vq}
 \end{equation}
@@ -434,19 +559,8 @@ V^{q}(x,z,y) = \frac{1}{4}\left(\;\omega^2(x^2 + y^2) + \omega_z^2z^2 + 2\lambda
 	\td{E}^{q_1}_{RE,m_1,m_2,m_3,0,0,0}(\td{\omega}_1,\td{\omega}_2,\td{\omega}_3)&=0
 \end{align}
 
-  \begin{equation}\label{cond-3D-r-1}
-      0 \leq \lambda_2^2 + \lambda_3^2 \leq \omega^2 \omega_3^2
-  \end{equation}   
+  
 
-\begin{equation}
-  \sqrt{\lambda_2^2 + \lambda_3^2} =\frac{\sqrt{(\td{u}^4+\td{v}^4)-\left(\frac{\td{u}\td{v}}{uv}\right)^2(u^4+v^4)}}{\td{u}^2+\td{v}^2}\;\omega\omega_3
-\end{equation}
-
-\begin{equation}
-  \sqrt{\lambda_2^2 + \lambda_3^2} = \frac{\sqrt{2(\td{u}^2-\td{v}^2)^2-(\td{u}\td{v})^2}}{\td{u}^2+\td{v}^2}\;\omega^2
-\end{equation}
-
-\subsubsection{}
 \begin{equation}
   V^{q_2}(x,y,z)=\frac{1}{4}\left(\omega^2(x^2+y^2)+\omega_z^2z^2+2\lambda_1xy+2\lambda(yz+ zx)\right).
 \end{equation}
@@ -478,25 +592,127 @@ V^{q}(x,z,y) = \frac{1}{4}\left(\;\omega^2(x^2 + y^2) + \omega_z^2z^2 + 2\lambda
   \end{split}
 \end{align}
 
-      \begin{equation}\label{cond-3D-r-2}
-        \begin{split}
-            -\omega^2\le\lambda_1\le \omega^2\qquad\qquad\\
-           \mbox{and} \quad 0\leq \lambda_1^2\leq \frac{(\omega^2+\lambda)\omega_z^2}{2}.
-        \end{split}  
-      \end{equation}
 
-      \begin{equation}\label{cond-3D-i-2}
-            -\omega^2\le\lambda_1\le\omega^2 \quad
-            \mbox{and}\quad 0\leq \gamma^2\leq \frac{(\omega^2-\omega_3^2+\lambda_1)^2}{8}
-        \end{equation}  
+\newpage
+
+
+
+\section*{Uncertainty Calculations: 2023-Paper}
+
 
 \begin{equation}
-  \sqrt{8\lambda^2+\lambda_1^2}=\frac{|\td{v}^2-\td{u}^2|}{\td{v}^2+\td{u}^2}\;(2\omega^2+\lambda_1),
-\end{equation}
+V^-_m(x)=V(x)-2\left[ \frac{\mathcal{H}_m''}{\mathcal{H}_m}-\left(\frac{\mathcal{H}_m'}{\mathcal{H}_m}\right)^2+1\right],
+\end{equation} 
+
+\begin{table}[htp]
+\centering
+\setlength{\tabcolsep}{1em} % spacing between columns
+\begin{tabularx}{\columnwidth}{@{}>{\bfseries}l *{3}{X}@{}}
+
+\toprule
+$m$ & $n=-1$ & $n=0$ & $n=1$ \\
+\toprule
+0 & $0.5$            & $1.5$     & $2.5$    \\
+2 & $\approx 0.5172$ & $\approx 1.554$  & $\approx 2.3412$ \\
+4 & $\approx 0.5212$ & $\approx 1.6152$ & $\approx 2.2102$ \\
+\bottomrule
+
+\end{tabularx}
+\caption{Uncertainty relation $\Delta x \, \Delta p$ for the potential $V^-_m(x)$ in the ground state, first excited state, and second excited state for $m=0,2,4$.}
+\label{tab-un-re}
+\end{table}
+
+
+
+
+
 
 \begin{equation}
-  \lambda=\frac{\sqrt{\left(\frac{|\td{v}^2-\td{u}^2|}{\td{v}^2+\td{u}^2}(\lambda_1+2\omega^2)\right)^2-\lambda_1^2}}{2 \sqrt{2}}.
+\hat{V}^-_m(\lambda,x)=V^-_m(x)-2 \frac{d^2}{dx^2}\ln\left[\mathcal{I}_m(x)+\lambda\right],\label{ISO-V}
 \end{equation}
+
+\begin{table}[htp]
+\centering
+\setlength{\tabcolsep}{1em} % spacing between columns
+\begin{tabularx}{\columnwidth}{@{}>{\bfseries}l *{6}{X}@{}}
+\toprule
+$m/\lambda =$ & $1\times 10^{-12}$ & $1\times 10^{-8}$ & $1\times 10^{-5}$ & $1\times 10^{-3}$ & $1\times 10^{-1}$ & $1\times 10^{2}$ \\
+\toprule
+0 & $\approx 0.5202$ & $\approx 0.5281$ & $\approx 0.5367$ & $\approx 0.5590$ & $\approx 0.5455$ & $\approx 0.5000$ \\
+2 & $\approx 0.5223$ & $\approx 0.5270$ & $\approx 0.5285$ & $\approx 0.5266$ & $\approx 0.5193$ & $\approx 0.5172$ \\
+4 & $\approx 0.5228$ & $\approx 0.5252$ & $\approx 0.5246$ & $\approx 0.5232$ & $\approx 0.5215$ & $\approx 0.5212$ \\
+\bottomrule
+\end{tabularx}
+\caption{Uncertainty relation $\Delta x \, \Delta p$ for potential $\hat{V}^-_m(\lambda,x)$ in the ground state for $m = 0,2,4$.}
+\label{tab-un-iso}
+\end{table}
+
+
+\newpage
+
+\section*{Uncertainty Calculations: 2024-Paper}
+
+\subsection*{Full Line Oscillator}
+\begin{equation}\label{FLO:V+}
+    V^+(x)=\frac{1}{4}\omega_x^2{x}^2,\qquad -\infty <x<\infty,
+\end{equation}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c|c}
+\hline
+$n \backslash m$ & 0     & 2       & 4       & 6       \\ \hline
+0               & 0.5   & 0.517247 & 0.521212 & 0.522388 \\
+1               & 1.5   & 1.55415  & 1.61522  & 1.66868  \\
+2               & 2.5   & 2.34124  & 2.21019  & 2.12295  \\
+3               & 3.5   & 3.50248  & 3.53107  & 3.56781  \\ \hline
+\end{tabular}
+\caption{Uncertainty values for Full Line Oscillator.}
+\label{tab:uncertainty}
+\end{table}
+
+
+
+\subsection*{Half Line Oscillator}
+\begin{equation}\label{HLO:V+}
+    V_h^+(x)=\begin{cases}
+        \frac{1}{4}\omega_x^2 x^2 &,\qquad x>0\\
+        \infty &,\qquad x\leq 0\,.
+    \end{cases}
+\end{equation}
+
+{\bf $\alpha=-\frac{1}{2}$}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c|c}
+\hline
+$n \backslash m$ & 0     & 1       & 2       & 3       \\ \hline
+0 & 0.583216 & 0.68377  & 0.747385 & 0.796063 \\
+1 & 1.49105  & 1.43835  & 1.44864  & 1.46897  \\
+2 & 2.37291  & 2.29944  & 2.28775  & 2.29239  \\
+3 & 3.24886  & 3.17543  & 3.15381  & 3.14931  \\ \hline
+\end{tabular}
+\caption{Uncertainty values for Half Line Oscillator with $\alpha = -\tfrac{1}{2}$.}
+\label{tab:uncertainty_halfl}
+\end{table}
+
+
+{\bf $\alpha=\frac{1}{2}$}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c|c}
+\hline
+$n \backslash m$ & 0 & 1 & 2 & 3 \\ \hline
+0 & 0.525237 & 0.53416  & 0.539833 & 0.543865 \\
+1 & 1.46161  & 1.45048  & 1.44748  & 1.44709  \\
+2 & 2.36972  & 2.34908  & 2.33979  & 2.33524  \\
+3 & 3.26505  & 3.24028  & 3.22724  & 3.21972  \\ \hline
+\end{tabular}
+\caption{Uncertainty values for Half Line Oscillator with $\alpha = \tfrac{1}{2}$}
+\label{tab:uncertainty_halfline_m123}
+\end{table}
 
 
 \end{document}
