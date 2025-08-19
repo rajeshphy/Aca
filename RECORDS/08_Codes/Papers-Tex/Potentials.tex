@@ -2,7 +2,6 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage{amsmath, amssymb, graphicx, tabularx, booktabs, amsthm, subfiles, enumitem, xcolor, braket, subcaption}
 
-%\numberwithin{equation}{section} % Number equations by section
 
 \title{Equation Lists}
 \author{}
@@ -91,6 +90,7 @@ E^+_{n,m}&=2(n+m+1),\quad n=0,1,2,\cdots
 E^-_{n+1,m}=E^+_{n,m}=E^+_{n}-\epsilon_m=(n + m + 1)\omega_x \quad 
 \text{ with }\quad E^-_{0,m}=0\,.
 \end{equation}
+
 
 \begin{equation}\label{HLO:V+}
     V_h^+(x)=\begin{cases}
@@ -724,6 +724,65 @@ $n \backslash m$ & 0 & 1 & 2 & 3 \\ \hline
 \caption{Uncertainty values for Half Line Oscillator with $\alpha = \tfrac{1}{2}$}
 \label{tab:uncertainty_halfline_m123}
 \end{table}
+
+
+\newpage
+\section*{$\mathcal{I}_m$ for Full and Half Line Oscillator}
+
+
+\begin{table}[h!]
+\centering
+\setlength{\tabcolsep}{1em}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{c|l}
+\hline
+$m$ & $\mathcal{I}_m(x)$ \\ \hline
+0 & $\dfrac{1}{2}\left(\mathrm{erf}(x)+1\right) + \lambda$ \\ 
+2 & $\dfrac{1}{2}\left(\mathrm{erf}(x) + \dfrac{2 e^{-x^2}\,x}{\sqrt{\pi}(2x^2+1)} + 1\right) + \lambda$ \\ 
+4 & $\dfrac{1}{2}\left(1 + \mathrm{erf}(x) + \dfrac{2 e^{-x^2}\,x(5+2x^2)}{\sqrt{\pi}(3+4x^2(3+x^2))}\right) + \lambda$ \\ \hline
+\end{tabular}
+\caption{Expressions for $\mathcal{I}_m(x)$ in the Full line Oscillator for $m=0,2,4$ with $\omega_x=2$.}
+\label{tab:Im-values}
+\end{table}
+
+
+\begin{table}[h!]
+\centering
+\setlength{\tabcolsep}{1em}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{c|l}
+\hline
+$m$ & $I_0(x)$ \\ \hline
+0 & $-\dfrac{2 e^{-x^2}x(3+2x^2)}{3\sqrt{\pi}} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
+1 & $-\dfrac{2 e^{-x^2}x(15+20x^2+4x^4)}{5\sqrt{\pi}(3+2x^2)} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
+2 & $-\dfrac{2 e^{-x^2}x(105+210x^2+84x^4+8x^6)}{7\sqrt{\pi}(15+20x^2+4x^4)} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
+3 & $-\dfrac{2 e^{-x^2}x(945+2520x^2+1512x^4+288x^6+16x^8)}{9\sqrt{\pi}(105+210x^2+84x^4+8x^6)} + \mathrm{erf}(x) + \lambda$ \\ \hline
+\end{tabular}
+\caption{Expressions for $I_0(x)$ in the Half Line Oscillator with $\alpha=\tfrac{1}{2}$, for $m=0,1,2,3$ with $\omega_x=2$.}
+\label{tab:I0-halfline}
+\end{table}
+
+
+
+\begin{table}[h!]
+\centering
+\setlength{\tabcolsep}{1em}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{c|l}
+\hline
+$m$ & $I_0(x)$ \\ \hline
+0 & $-\dfrac{2 e^{-x^2}x}{\sqrt{\pi}} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
+
+1 & $-\dfrac{2 e^{-x^2}x \,(3+2x^2)}{3\sqrt{\pi}\,(1+2x^2)} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
+
+2 & $-\dfrac{2 e^{-x^2}x \,(15+20x^2+4x^4)}{5\sqrt{\pi}\,(3+12x^2+4x^4)} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
+
+3 & $-\dfrac{2 e^{-x^2}x \,(105+210x^2+84x^4+8x^6)}{7\sqrt{\pi}\,(15+90x^2+60x^4+8x^6)} + \mathrm{erf}(x) + \lambda$ \\ \hline
+\end{tabular}
+\caption{Expressions for $I_0(x)$ in the Half Line Oscillator with $\alpha=-\tfrac{1}{2}$, for $m=0,1,2,3$ with $\omega_x=2$.}
+\label{tab:I0-halfline-neg}
+\end{table}
+
 
 
 \end{document}

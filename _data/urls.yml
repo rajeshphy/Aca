@@ -10,6 +10,7 @@
   Other_Certifications:
     - 2016-NGPE.pdf
     - 2018-GATE.pdf
+    - 2025-08-Pre-PhD.pdf
     - 2025-PhD_Synopsis_Approval.pdf
 
 02_Research:
@@ -151,6 +152,9 @@
   libgen-doi-extract:
     - cod.sh
     - url.txt
+  m-package:
+    - IValues.m
+    - path.txt
   Papers-Tex:
     - 2023_REHO.tex
     - 2024_QAHO-HD.tex
