@@ -58,18 +58,6 @@
     - 2022-Oct-15-Transfer-DCD-MCD.pdf
     - 2022-Oct-17-DCD-Releiving.pdf
     - 2022-Oct-18-MCD-Joining.pdf
-  2_HRD:
-    - 2018_UGC_HRDC_Regulation_Draft.pdf
-    - 2021-Statute_Jharkhand.pdf
-    - 2024_JSHEC_NEP.pdf
-    - 2024_UGC_HRDC_Regulation.pdf
-    - 2024-07-Appointment-Non-Teaching.pdf
-    - 2024-07-Leave-Non-Teaching.pdf
-    - 2025-05-SKMU-Health-Insurance.pdf
-  3_UGC:
-    - 2018-UGC-Regulations-2018-for-appointment-of-teachers-and-academic-staff.pdf
-    - DL-MMTTC.jpeg
-    - Pay-Matrix-2018.pdf
   Finance:
     - Form-16-2022.pdf
     - Form-16-2023.pdf
@@ -81,6 +69,8 @@
     - 2019-Order_Incois-01.pdf
     - 2019-Order-Incois-02.pdf
     - 2020-April-Experience-Incois.pdf
+  TA_DA_Bill:
+    - 2025-08-AISHE-JUT.pdf
 
 05_SKMU_Notification:
   A._Important:
@@ -130,16 +120,19 @@
     - DA-2024.PDF
     - DA-2025.PDF
 
-06_License_ID:
-  ID:
-    - 1_AADHAR.pdf
-    - 2_Voter.pdf
-    - 3_Passport.pdf
-    - 4_PAN.pdf
-    - 5_DL.pdf
-    - 8_DCD_ID.pdf
-  Insurance:
-    - Z-Health-Insurance.pdf
+06_UGC_HRDC:
+  2_HRD:
+    - 2018_UGC_HRDC_Regulation_Draft.pdf
+    - 2021-Statute_Jharkhand.pdf
+    - 2024_JSHEC_NEP.pdf
+    - 2024_UGC_HRDC_Regulation.pdf
+    - 2024-07-Appointment-Non-Teaching.pdf
+    - 2024-07-Leave-Non-Teaching.pdf
+    - 2025-05-SKMU-Health-Insurance.pdf
+  3_UGC:
+    - 2018-UGC-Regulations-2018-for-appointment-of-teachers-and-academic-staff.pdf
+    - DL-MMTTC.jpeg
+    - Pay-Matrix-2018.pdf
 
 07_Questions:
   PG-1:
@@ -154,17 +147,24 @@
   doi-scihub-download:
     - dow.sh
     - inf.txt
+  gar:
+    - full-half-oscillator.m
+    - IValues.m
+    - path.txt
+    - PsiIso.m
+    - VIso.m
   libgen-doi-extract:
     - cod.sh
     - url.txt
   m-package:
-    - IValues.m
-    - path.txt
+    - oscillator.m
+  nb-file:
+    - Full-Half.nb
+    - Plot.nb
   Papers-Tex:
     - 2023_REHO.tex
     - 2024_QAHO-HD.tex
     - 2025_PT-Symmetry.tex
-    - Potentials.pdf
     - Potentials.tex
   Prompt:
     - Doi-Extraction.txt
@@ -307,4 +307,15 @@
     - ZZ-Reply-New_methods_for_solving_the_Bethe-Goldstone_equation.pdf
     - ZZ-Reply-Solution_of_the_Dirac_equation_for_the_Woods–Saxon_potential_with_spin_and_pseudospin_symmetry.pdf
     - ZZ-Reply-Truncated_space_calculation_of_exact_bound_state_energies.pdf
+
+10_License_ID:
+  ID:
+    - 1_AADHAR.pdf
+    - 2_Voter.pdf
+    - 3_Passport.pdf
+    - 4_PAN.pdf
+    - 5_DL.pdf
+    - 8_DCD_ID.pdf
+  Insurance:
+    - Z-Health-Insurance.pdf
 

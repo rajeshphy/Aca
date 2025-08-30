@@ -7,8 +7,7 @@ BeginPackage["IValues`"]
 
 ClearAll[I0]
 
-I0::usage =
-  "I0[m, \[Lambda], \[Alpha], x] returns the auxiliary integral depending on m \
+I0::usage ="I0[m, \[Lambda], \[Alpha], x] returns the auxiliary integral depending on m \
 (oscillator index), \[Lambda], parameter \[Alpha], and variable x. Differentiable with respect to x.";
 
 Begin["`Private`"]

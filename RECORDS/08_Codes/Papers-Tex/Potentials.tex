@@ -726,6 +726,7 @@ $n \backslash m$ & 0 & 1 & 2 & 3 \\ \hline
 \end{table}
 
 
+
 \newpage
 \section*{$\mathcal{I}_m$ for Full and Half Line Oscillator}
 
@@ -752,13 +753,13 @@ $m$ & $\mathcal{I}_m(x)$ \\ \hline
 \renewcommand{\arraystretch}{1.6}
 \begin{tabular}{c|l}
 \hline
-$m$ & $I_0(x)$ \\ \hline
+$m$ & $I_m(x)$ \\ \hline
 0 & $-\dfrac{2 e^{-x^2}x(3+2x^2)}{3\sqrt{\pi}} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
 1 & $-\dfrac{2 e^{-x^2}x(15+20x^2+4x^4)}{5\sqrt{\pi}(3+2x^2)} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
 2 & $-\dfrac{2 e^{-x^2}x(105+210x^2+84x^4+8x^6)}{7\sqrt{\pi}(15+20x^2+4x^4)} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
 3 & $-\dfrac{2 e^{-x^2}x(945+2520x^2+1512x^4+288x^6+16x^8)}{9\sqrt{\pi}(105+210x^2+84x^4+8x^6)} + \mathrm{erf}(x) + \lambda$ \\ \hline
 \end{tabular}
-\caption{Expressions for $I_0(x)$ in the Half Line Oscillator with $\alpha=\tfrac{1}{2}$, for $m=0,1,2,3$ with $\omega_x=2$.}
+\caption{Expressions for $I_m(x)$ in the Half Line Oscillator with $\alpha=\tfrac{1}{2}$, for $m=0,1,2,3$ with $\omega_x=2$.}
 \label{tab:I0-halfline}
 \end{table}
 
@@ -770,7 +771,7 @@ $m$ & $I_0(x)$ \\ \hline
 \renewcommand{\arraystretch}{1.6}
 \begin{tabular}{c|l}
 \hline
-$m$ & $I_0(x)$ \\ \hline
+$m$ & $I_m(x)$ \\ \hline
 0 & $-\dfrac{2 e^{-x^2}x}{\sqrt{\pi}} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
 
 1 & $-\dfrac{2 e^{-x^2}x \,(3+2x^2)}{3\sqrt{\pi}\,(1+2x^2)} + \mathrm{erf}(x) + \lambda$ \\[0.8em]
@@ -779,9 +780,172 @@ $m$ & $I_0(x)$ \\ \hline
 
 3 & $-\dfrac{2 e^{-x^2}x \,(105+210x^2+84x^4+8x^6)}{7\sqrt{\pi}\,(15+90x^2+60x^4+8x^6)} + \mathrm{erf}(x) + \lambda$ \\ \hline
 \end{tabular}
-\caption{Expressions for $I_0(x)$ in the Half Line Oscillator with $\alpha=-\tfrac{1}{2}$, for $m=0,1,2,3$ with $\omega_x=2$.}
+\caption{Expressions for $I_m(x)$ in the Half Line Oscillator with $\alpha=-\tfrac{1}{2}$, for $m=0,1,2,3$ with $\omega_x=2$.}
 \label{tab:I0-halfline-neg}
 \end{table}
+
+\newpage
+
+\section*{Potentials and Ground State Wavefunction for Iso-Spectral Potential}
+
+
+
+
+
+\begin{table}[htp]
+\centering
+\begin{tabularx}{\textwidth}{>{\bfseries}c|X}
+\toprule
+$m$ & $\hat{V}_m(x;\lambda,\alpha=\frac{1}{2})$ \\
+\midrule
+0 & $\displaystyle 
+x^2+\frac{2}{x^2}-8+\frac{128 x^8}{\left(-3 \sqrt{\pi } e^{x^2} (\text{erf}(x)+\lambda )+4 x^3+6 x\right)^2}
+- \frac{32 (x^2-2) x^3}{-3 \sqrt{\pi } e^{x^2} (\text{erf}(x)+\lambda )+4 x^3+6 x}
+$ 
+\\
+\hline\\
+1 & $\Big[ \vphantom{\dfrac{00}{00}} \right. 20 \sqrt{\pi } e^{x^2} \left(24 x^{10}+140 x^8+430 x^6+531 x^4+480 x^2-90\right) x (\text{erf}(x)+\lambda )+25 \pi  e^{2 x^2}\left(4 x^8-36 x^6-111 x^4-108 x^2+18\right) (\text{erf}(x)+\lambda )^2+4 \left(8 \left(2 x^6+4 x^4-51 x^2-255\right) x^6-2335 x^4-2100 x^2+450\right) x^2 \left. \vphantom{\dfrac{00}{00}} \Big] \div$  $\left[ x^2 \left(-5 \sqrt{\pi } e^{x^2} \left(2 x^2+3\right) (\text{erf}(x)+\lambda )+8 \left(x^2+5\right) x^3+30 x\right)^2\right]$
+\\
+\hline\\
+2 & $ \Big[ \vphantom{\dfrac{00}{00}} \right.28 \sqrt{\pi } e^{x^2} \left(2 \left(48 x^8+776 x^6+5208 x^4+17780 x^2+33235\right) x^6+55545 x^4+23100 x^2-3150\right) x (\text{erf}(x)+\lambda )+49 \pi  e^{2 x^2} \left(8 \left(2 x^6-12 x^4-235 x^2-885\right) x^6-8175 x^4-3600 x^2+450\right) (\text{erf}(x)+\lambda )^2+4 \left(4 \left(4 \left(4 x^6+36 x^4-237 x^2-3962\right) x^4-66717 x^2-122395\right) x^6-367255 x^4-147000 x^2+22050\right) x^2\Big] \div$  $\left[x^2 \left(2 x \left(8 x^6+84 x^4+210 x^2+105\right)-7 \sqrt{\pi } e^{x^2} \left(4 \left(x^2+5\right) x^2+15\right) (\text{erf}(x)+\lambda )\right)^2\right]$\\
+\bottomrule
+\end{tabularx}
+\caption{Isospectral partner potentials $\hat{V}_m(x;\lambda,\alpha=\frac{1}{2})$ for $m=0,1,2$.}
+\label{tab:isospectral-potentials-alphaPlus}
+\end{table}
+
+
+
+
+
+\begin{table}[htp]
+\centering
+\begin{tabularx}{\textwidth}{>{\bfseries}c|X}
+\toprule
+$m$ & $\hat{V}_m(x;\lambda,\alpha=-\frac{1}{2})$ \\
+\midrule
+0 & $\displaystyle 
+\frac{12 \sqrt{\pi } e^{x^2} x^3 (\text{erf}(x)+\lambda )+\pi  e^{2 x^2} \left(x^2-4\right) (\text{erf}(x)+\lambda )^2+4 \left(x^2+4\right) x^2}{\left(\sqrt{\pi } e^{x^2} (\text{erf}(x)+\lambda )-2 x\right)^2}
+$ 
+\\
+\hline\\
+1 & $\Big[ \vphantom{\dfrac{00}{00}} \right.12 \sqrt{\pi } e^{x^2} x \left(6 x^4+19 x^2+4\right) \left(2 x^2+3\right) (\text{erf}(x)+\lambda )+9 \pi  e^{2 x^2} \left(4 x^6-28 x^4-15 x^2-16\right) (\text{erf}(x)+\lambda )^2+4 x^2 \left(x^2+8\right) \left(2 x^2+3\right)^2\left.\vphantom{\dfrac{00}{00}}\Big]\div$ $\left[-3 \sqrt{\pi } e^{x^2} \left(2 x^2+1\right) (\text{erf}(x)+\lambda )+4 x^3+6 x\right]^2$
+\\
+\hline\\
+2 & $\Big[ \vphantom{\dfrac{00}{00}} \right.20 \sqrt{\pi } e^{x^2} x \left(12 x^6+100 x^4+153 x^2+24\right) \left(4 \left(x^2+5\right) x^2+15\right) (\text{erf}(x)+\lambda )+25 \pi  e^{2 x^2} \left(16 x^{10}-96 x^8-856 x^6-1752 x^4-567 x^2-252\right) (\text{erf}(x)+\lambda )^2+4 x^2 \left(x^2+12\right) \left(4 \left(x^2+5\right) x^2+15\right)^2\left.\vphantom{\dfrac{00}{00}}\Big]\div$ $\Big[ \vphantom{\dfrac{00}{00}} \right.-20 \sqrt{\pi } e^{x^2} x \left(4 \left(x^2+3\right) x^2+3\right) \left(4 \left(x^2+5\right) x^2+15\right) (\text{erf}(x)+\lambda )+25 \pi  e^{2 x^2} \left(4 \left(x^2+3\right) x^2+3\right)^2 (\text{erf}(x)+\lambda )^2+4 x^2 \left(4 \left(x^2+5\right) x^2+15\right)^2\left.\vphantom{\dfrac{00}{00}}\Big]$ 
+
+\bottomrule
+\end{tabularx}
+\caption{Isospectral partner potentials $\hat{V}_m(x;\lambda,\alpha=-\frac{1}{2})$ for $m=0,1,2$.}
+\label{tab:isospectral-potentials-alphaMinus}
+\end{table}
+
+
+
+\newpage
+
+
+
+
+\begin{table}[htp]
+\centering
+\begin{tabularx}{\textwidth}{>{\bfseries}c|X}
+\toprule
+$m$ & $\hat{\Psi}_m(x;\lambda,\alpha=\frac{1}{2})$ \\
+\midrule
+0 & $\frac{2 \sqrt{\frac{2}{3}} \sqrt{\lambda  (\lambda +1)} e^{-\frac{x^2}{2}} x^2}{\sqrt[4]{\pi } \left(\text{erf}(x)+\lambda -\frac{2 e^{-x^2} x \left(2 x^2+3\right)}{3 \sqrt{\pi }}\right)}$\\
+1 & $\frac{2 \sqrt{\frac{2}{5}} \sqrt{\lambda  (\lambda +1)} e^{-\frac{x^2}{2}} x^2 \left(x^2+\frac{5}{2}\right)}{\sqrt[4]{\pi } \left(x^2+\frac{3}{2}\right) \left(\text{erf}(x)+\lambda -\frac{2 e^{-x^2} x \left(4 x^4+20 x^2+15\right)}{5 \sqrt{\pi } \left(2 x^2+3\right)}\right)}$\\
+2 & $\frac{2 \sqrt{\frac{2}{7}} \sqrt{\lambda  (\lambda +1)} e^{-\frac{x^2}{2}} x^2 \left(4 x^4+28 x^2+35\right)}{\sqrt[4]{\pi } \left(4 x^4+20 x^2+15\right) \left(\text{erf}(x)+\lambda -\frac{2 e^{-x^2} x \left(8 x^6+84 x^4+210 x^2+105\right)}{7 \sqrt{\pi } \left(4 x^4+20 x^2+15\right)}\right)}$\\
+3 & $\frac{2 \sqrt{2} \sqrt{\lambda  (\lambda +1)} e^{-\frac{x^2}{2}} x^2 \left(8 x^6+108 x^4+378 x^2+315\right)}{3 \sqrt[4]{\pi } \left(8 x^6+84 x^4+210 x^2+105\right) \left(\text{erf}(x)+\lambda -\frac{2 e^{-x^2} x \left(16 x^8+288 x^6+1512 x^4+2520 x^2+945\right)}{9 \sqrt{\pi } \left(8 x^6+84 x^4+210 x^2+105\right)}\right)}$\\
+\bottomrule
+\end{tabularx}
+\caption{Isospectral partner potentials $\hat{\Psi}_m(x;\lambda,\alpha=\frac{1}{2})$ for $m=0,1,2$.}
+\label{tab:isospectral-GS-alphaPlus}
+\end{table}
+
+
+
+
+
+
+\begin{table}[htp]
+\centering
+\begin{tabularx}{\textwidth}{>{\bfseries}c|X}
+\toprule
+$m$ & $\hat{\Psi}_m(x;\lambda,\alpha=-\tfrac{1}{2})$ \\
+\midrule
+0 & $\displaystyle 
+\frac{2 \sqrt{\lambda (\lambda +1)} \, e^{-\tfrac{x^2}{2}} \, x}
+{\sqrt[4]{\pi} \left( \text{erf}(x) + \lambda 
+ - \tfrac{2 e^{-x^2} x}{\sqrt{\pi}} \right)}$ \\[1.0ex]
+
+1 & $\displaystyle 
+\frac{2 \sqrt{\lambda (\lambda +1)} \, e^{-\tfrac{x^2}{2}} \, x \left(x^2+\tfrac{3}{2}\right)}
+{\sqrt{3}\sqrt[4]{\pi}\, \left(x^2+\tfrac{1}{2}\right) \left( \text{erf}(x) + \lambda 
+ - \tfrac{2 e^{-x^2} x \left(2 x^2+3\right)}{3\sqrt{\pi}(2x^2+1)} \right)}$ \\[1.0ex]
+
+2 & $\displaystyle 
+\frac{2 \sqrt{\lambda (\lambda +1)} \, e^{-\tfrac{x^2}{2}} \, x \left(4 x^4+20 x^2+15\right)}
+{\sqrt{5}\sqrt[4]{\pi}\, \left(4 x^4+12 x^2+3\right) \left( \text{erf}(x) + \lambda 
+ - \tfrac{2 e^{-x^2} x (4 x^4+20 x^2+15)}{5\sqrt{\pi}\,(4 x^4+12 x^2+3)} \right)}$ \\[1.0ex]
+
+3 & $\displaystyle 
+\frac{2 \sqrt{\lambda (\lambda +1)} \, e^{-\tfrac{x^2}{2}} \, x \left(8 x^6+84 x^4+210 x^2+105\right)}
+{\sqrt{7}\sqrt[4]{\pi}\, \left(8 x^6+60 x^4+90 x^2+15\right) \left( \text{erf}(x) + \lambda 
+ - \tfrac{2 e^{-x^2} x (8 x^6+84 x^4+210 x^2+105)}{7\sqrt{\pi}\,(8 x^6+60 x^4+90 x^2+15)} \right)}$ \\[1.0ex]
+\bottomrule
+\end{tabularx}
+\caption{Isospectral partner wavefunctions $\hat{\Psi}_m(x;\lambda,\alpha=-\tfrac{1}{2})$ 
+for $m=0,1,2,3$.}
+\label{tab:isospectral-GS-alphaMinus}
+\end{table}
+
+
+\newpage
+.
+\newpage
+
+
+\section*{Uncertainty for Isospectral-Half Line Oscillator}
+
+\begin{table}[htp]
+\centering
+\begin{tabular}{c|cccc}
+\toprule
+$\lambda$ & $m=0$ & $m=1$ & $m=2$ & $m=3$ \\
+\midrule
+$10^{-10}$ & 0.687219 & 0.687258 & 0.687293 & 0.687325 \\
+$10^{-5}$  & 0.699465 & 0.702989 & 0.706010 & 0.708700 \\
+$1$        & 0.558179 & 0.572736 & 0.581874 & 0.588354 \\
+$10^{5}$   & 0.525237 & 0.534160 & 0.539833 & 0.543865 \\
+$10^{10}$  & 0.525237 & 0.534160 & 0.539833 & 0.543865 \\
+$10^{15}$  & 0.525237 & 0.534160 & 0.539833 & 0.543865 \\
+\bottomrule
+\end{tabular}
+\caption{Uncertainty values for $\alpha = \tfrac{1}{2}$ across different $\lambda$ and $m$.}
+\label{tab:uncertainty-alpha-half}
+\end{table}
+
+
+\begin{table}[htp]
+\centering
+\begin{tabular}{c|cccc}
+\toprule
+$\lambda$ & $m=0$ & $m=1$ & $m=2$ & $m=3$ \\
+\midrule
+$10^{-10}$ & 1.24144  & 1.24202  & 1.24239  & 1.24268 \\
+$10^{-5}$  & 1.22967  & 1.25449  & 1.27015  & 1.28271 \\
+$1$        & 0.651304 & 0.787014 & 0.869768 & 0.932633 \\
+$10^{5}$   & 0.583217 & 0.683772 & 0.747387 & 0.796065 \\
+$10^{10}$  & 0.583216 & 0.683770 & 0.747385 & 0.796063 \\
+$10^{15}$  & 0.583216 & 0.683770 & 0.747385 & 0.796063 \\
+\bottomrule
+\end{tabular}
+\caption{Uncertainty values for $\alpha = -\tfrac{1}{2}$ across different $\lambda$ and $m$.}
+\label{tab:uncertainty-alpha-minus}
+\end{table}
+
+
 
 
 

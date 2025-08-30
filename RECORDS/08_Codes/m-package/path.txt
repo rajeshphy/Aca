@@ -1,5 +1,0 @@
-(*I0[m,\[Lambda],\[Alpha],x]*)
-\
-Get["/Users/rajeshkumar/Folder/GIT-HOSTED/SKMU-PHY-RECORDS/RECORDS/08_\
-Codes/m-package/IValues.m"]
-
