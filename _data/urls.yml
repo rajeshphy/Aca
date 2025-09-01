@@ -319,6 +319,8 @@
     - ZZ-Reply-Truncated_space_calculation_of_exact_bound_state_energies.pdf
 
 10_License_ID:
+  H-Insurance:
+    - Z-Health-Insurance.pdf
   ID:
     - 1_AADHAR.pdf
     - 2_Voter.pdf
@@ -326,6 +328,13 @@
     - 4_PAN.pdf
     - 5_DL.pdf
     - 8_DCD_ID.pdf
-  Insurance:
-    - Z-Health-Insurance.pdf
+  V-Insurance:
+    - Bike-VHINSC-jh01en1547.pdf
+    - Car-VHINSC-JH01FJ4176.pdf
+    - Policy_Liberty_General_Insurance.pdf
+    - Scooty-VHINSC-JH01DW3388.pdf
+  Vehicle:
+    - Bike-JH01EN1547.pdf
+    - Car-JH01FJ4176.pdf
+    - Scooty-JH01DW3388.pdf
 
