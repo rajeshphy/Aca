@@ -34,15 +34,14 @@
 03_Development_Sessions:
   1_Orientation:
     - 2021-Nov-16-RU-FIP.png
-  2_FDP:
+  2_Refresher:
+    []
+  3_FDP:
     - 2023-Mar-03-SKMU-FDP.png
     - 2024-Sep-9-cssteap.png
     - 2025-Sep-8-IITBHU-ResearchWriting.pdf
-  3_Refresher:
-    []
-  4_Conf_Seminar:
-    - 2024-Feb-16-SBU-National-Conference.png
-    - 2025-Feb-08-KIIT-International-Conference.png
+  4_NFLP:
+    - 2025-09-IIM-Rnc.pdf
   5_Workshop:
     - 2022-Feb-28-SKMU-Capacity-Building-Workshop.png
     - 2022-Mar-31-SKMU-Social-Responsibility-Workshop.png
@@ -50,8 +49,9 @@
     - 2024-Feb-02-HRDC-Startup-Workshop.png
     - 2024-Sep-11-XISS-Ranking-Framework-Workshop.png
     - 2025-Jun-21-JRU-Character-Building-Workshop.png
-  6_NFLP:
-    - 2025-09-IIM-Rnc.pdf
+  6_Conf_Seminar:
+    - 2024-Feb-16-SBU-National-Conference.png
+    - 2025-Feb-08-KIIT-International-Conference.png
 
 04_Service_Documents:
   1_Joining_Confirmation:
