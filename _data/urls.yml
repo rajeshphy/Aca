@@ -92,8 +92,10 @@
     - template.pdf
   TA_DA_Bill:
     - 2025-08-AISHE-JUT.pdf
-    - 2025-08-NFLP-IIM.pdf
     - 2025-08-NFLP-SKMU.pdf
+    - TA-Less.png
+    - TA-More.png
+    - TA.pdf
 
 05_SKMU_Notification:
   A._Important:
@@ -367,4 +369,9 @@
     - cv_astro.pdf
     - cv_astro.tex
     - profile.png
+  6._MCD-ID:
+    - ID-B.jpeg
+    - ID-F.jpeg
+    - ID.pdf
+    - ID.png
 
