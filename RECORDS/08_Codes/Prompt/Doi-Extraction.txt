@@ -10,3 +10,25 @@ Year, Paper Name, DOI, Authors, Venue/Details
 	7.	Paper name should be title case exactly as in the reference.
 	8.	DOI should be just the DOI number without URL prefix (10.xxxx/...).
 	9.	Venue/Details should be everything after the title in the reference (journal, volume, pages, etc.).
+
+
+
+
+
+
+Generate a downloadable `.json` file for Google Forms import.
+
+Title: "JET Physical Science – Vector Algebra & Calculus Practice (20 Easy Questions)"
+
+Description: "Answer all questions. Each carries 1 mark. Choose the most appropriate option."
+
+Requirements:
+- Total 20 questions (MCQ) based on NET/GATE/IIT JAM level
+- Each question has 4 options: a, b, c, and d
+- Keep the **same order** as in my input
+- Do **not mark correct answers** (leave answer keys blank)
+- Each question should carry **1 mark**
+- Enable quiz mode in the JSON
+- Output a **direct download link** for the `.json` file
+
+File name: `JET_Vector_Algebra_Practice.json`
