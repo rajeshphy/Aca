@@ -1,3 +1,0 @@
-1999,Harmonic Oscillator Well With A Screened Coulombic Core Is Quasi-Exactly Solvable,10.1088/0305-4470/32/24/318,Miloslav Znojil,J. Phys. A: Math. Gen. 32 (1999) 4563-4570
-1971,Practical Quantum Mechanics I,10.1007/978-3-642-61995-3,S. Flugge,Springer, Berlin, 1971, p. 167
-1966,Perturbation Theory For Linear Operators,10.1007/978-3-662-12678-3,T. Kato,Springer, Berlin, 1966

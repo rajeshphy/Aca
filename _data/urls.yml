@@ -242,32 +242,31 @@
     - 2023-MDC-Phy.pdf
 
 08_Codes:
-  A-CLI:
-    - read.txt
-  doi-scihub-download:
+  1_doi-scihub-download:
     - dow.sh
     - inf.txt
-  gar:
-    - full-half-oscillator.m
-    - IValues.m
-    - path.txt
-    - PsiIso.m
-    - VIso.m
-  libgen-doi-extract:
+  2_libgen-doi-extract:
     - cod.sh
     - url.txt
+  3_A-CLI:
+    - read.txt
+  4_Prompt:
+    - Doi-Extraction.txt
+  5_Papers-Tex:
+    - 2023_REHO.tex
+    - 2024_QAHO-HD.tex
+    - 2025_PT-Symmetry.tex
+    - Potentials.tex
+  6_skmu-pdf-insert-delete:
+    - B.txt
+    - code.sh
+    - F.txt
+    - task.csv
   m-package:
     - oscillator.m
   nb-file:
     - Full-Half.nb
     - Plot.nb
-  Papers-Tex:
-    - 2023_REHO.tex
-    - 2024_QAHO-HD.tex
-    - 2025_PT-Symmetry.tex
-    - Potentials.tex
-  Prompt:
-    - Doi-Extraction.txt
 
 09_Articles:
   Books:
@@ -308,6 +307,7 @@
     - 2_2011-Information-entropy.pdf
     - 3_2019-Momentum-Space.pdf
     - 4_Fock.pdf
+    - 5_QM_momentum_Lieber.pdf
   Znojil-PT:
     - 1971-Practical-Quantum-Mechanics-I.pdf
     - 1971-Singular-Potentials.pdf
