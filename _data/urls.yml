@@ -240,6 +240,8 @@
     - 2024-PG-4-All-Question.pdf
   UG-3:
     - 2023-MDC-Phy.pdf
+  UG-5:
+    - 2023-DSE-2.pdf
 
 08_Codes:
   1_doi-scihub-download:
@@ -304,6 +306,8 @@
     - Orthogonal-Poly.pdf
   RKY:
     - 1_2025-Quantum-Info-Processing.pdf
+    - 10_Momentum-Space-Position-Dependent-Mass.pdf
+    - 11_Momentum-Space-Uncertainty.pdf
     - 2_2011-Information-entropy.pdf
     - 3_2019-Momentum-Space.pdf
     - 4_Fock.pdf
@@ -312,6 +316,7 @@
     - 6_2022-Momentum-Space.pdf
     - 7_2000-Momentum-Space.pdf
     - 8_2008-Bound-States.pdf
+    - 9_Momentum-Space-Infinite-Square.pdf
   Znojil-PT:
     - 1971-Practical-Quantum-Mechanics-I.pdf
     - 1971-Singular-Potentials.pdf
