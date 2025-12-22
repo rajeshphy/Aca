@@ -45,8 +45,9 @@
     - 2021-NOC-RU-FIP.pdf
     - 2021-Nov-16-RU-FIP.png
   2_Refresher:
-    - 2025-Appointment-Kannur.pdf
-    - 2025-NOC-Kannur-Univ.pdf
+    - 1.0_2025-RC-Kannur.pdf
+    - 1.1_2025-Appointment-Kannur.pdf
+    - 1.2_2025-NOC-Kannur-Univ.pdf
   3_FDP:
     - 2023-Mar-03-SKMU-FDP.pdf
     - 2024-Sep-9-cssteap.pdf
@@ -276,6 +277,7 @@
   Books:
     - family.pdf
     - Shashi_Deshpande.pdf
+    - SUSY.pdf
     - The_Concept_of_Corporate_Strategy.pdf
     - The-Functions-Of-The-Executive.pdf
   Fellow-Smith:
@@ -324,6 +326,11 @@
   SUSY-APPLIED:
     - Applied-SUSY.pdf
     - SUSY-LASER.pdf
+  SUSY-Matrix:
+    - Dirac-SUSY.pdf
+    - Pauli-SUSY.pdf
+    - Spherically-Sym-Pauli-SUSY.pdf
+    - Unconventional-SUSYpdf.pdf
   Thesis:
     - 01_title.pdf
     - 02_prelim pages.pdf
@@ -457,7 +464,7 @@
   2._H-Insurance:
     - Accidental_Insurance.pdf
     - Z-Health-Insurance.pdf
-  3._Vehicle:
+  3._V-RC:
     - Bike-JH01EN1547.pdf
     - Car-JH01FJ4176.pdf
     - Scooty-JH01DW3388.pdf
@@ -467,11 +474,13 @@
     - Car-VHINSC-JH01FJ4176.pdf
     - Policy_Liberty_General_Insurance.pdf
     - Scooty-VHINSC-JH01DW3388.pdf
-  5._CV:
+  5._V-PUC:
+    - 2025-07-PUC-CAR.pdf
+  6._CV:
     - cv_astro.pdf
     - cv_astro.tex
     - profile.png
-  6._MCD-ID:
+  7._MCD-ID:
     - ID-B.jpeg
     - ID-F.jpeg
     - ID.pdf
