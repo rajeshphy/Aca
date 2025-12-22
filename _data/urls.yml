@@ -41,30 +41,32 @@
     - Manthan-September-2023-Ank.pdf
 
 03_Development_Sessions:
-  1_Orientation:
-    - 2021-NOC-RU-FIP.pdf
-    - 2021-Nov-16-RU-FIP.png
-  2_Refresher:
-    - 1.0_2025-RC-Kannur.pdf
-    - 1.1_2025-Appointment-Kannur.pdf
-    - 1.2_2025-NOC-Kannur-Univ.pdf
-  3_FDP:
+  1_Refresher:
+    - 1.0_2021-FIP-RU.pdf
+    - 1.1_2021-Selection-RU.pdf
+    - 1.2_2021-NOC-FIP-RU.pdf
+    - 1.3_2021-Releiving-FIP-RU.pdf
+    - 2.0_2025-RC-Kannur.pdf
+    - 2.1_2025-Selection-Kannur.pdf
+    - 2.2_2025-NOC-Kannur-Univ.pdf
+    - 2.3_2025-Releiving-Kannur-Univ.pdf
+  2_FDP:
     - 2023-Mar-03-SKMU-FDP.pdf
     - 2024-Sep-9-cssteap.pdf
     - 2025-Oct-16-IITH-Matrices.pdf
     - 2025-Sep-8-IITBHU-ResearchWriting.pdf
-  4_NFLP:
-    - 2025-09-IIM-Rnc.pdf
-  5_Workshop:
+  3_Conf_Seminar:
+    - 2024-Feb-16-SBU-National-Conference.png
+    - 2025-Feb-08-KIIT-International-Conference.png
+  4_Workshop:
     - 2022-Feb-28-SKMU-Capacity-Building-Workshop.png
     - 2022-Mar-31-SKMU-Social-Responsibility-Workshop.png
     - 2022-Nov-21-Cyber-Defense-Workshop.png
     - 2024-Feb-02-HRDC-Startup-Workshop.png
     - 2024-Sep-11-XISS-Ranking-Framework-Workshop.png
     - 2025-Jun-21-JRU-Character-Building-Workshop.png
-  6_Conf_Seminar:
-    - 2024-Feb-16-SBU-National-Conference.png
-    - 2025-Feb-08-KIIT-International-Conference.png
+  5_NFLP:
+    - 2025-09-IIM-Rnc.pdf
 
 04_Service_Documents:
   1_Joining_Confirmation:
