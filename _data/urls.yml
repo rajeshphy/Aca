@@ -498,6 +498,6 @@
     - ID.png
 
 11_Miscellaneous:
-  *:
-    []
+  Format:
+    - mid-ruled-A4.pdf
 
