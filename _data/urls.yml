@@ -14,10 +14,15 @@
     - 2025-Oct-Application.pdf
     - 2025-Oct-Payment.pdf
     - 2025-Oct-Z-AAPAR-Details.pdf
+    - Aadhar.pdf
+    - DL.pdf
     - profile.jpeg
   Other_Certifications:
+    - 2016-Annex-I.pdf
     - 2016-NGPE.pdf
+    - 2018-Annex-I.pdf
     - 2018-GATE.pdf
+    - 2018-JPSC-Application-Fee.pdf
     - 2025-08-Pre-PhD.pdf
     - 2025-Pay-Fixation-DCD.pdf
     - 2025-PhD_Synopsis_Approval.pdf
@@ -63,6 +68,8 @@
   3_Conf_Seminar:
     - 2024-Feb-16-SBU-National-Conference.png
     - 2025-Feb-08-KIIT-International-Conference.png
+    - 2026-Jan-SRT-Dhamri.pdf
+    - SRT-Invitation.pdf
   4_Workshop:
     - 2022-Feb-28-SKMU-Capacity-Building-Workshop.png
     - 2022-Mar-31-SKMU-Social-Responsibility-Workshop.png
@@ -164,6 +171,7 @@
     - 2025-08-UG-1-SPC.jpg
     - 2025-10-PG-1-SKMU.pdf
     - 2025-10-UG-4-SPC.jpeg
+    - 2026-01-UG-3-SPC.jpg
   G._Misc:
     - 2025-08-Pay_Fixation-2008_Batch.PDF
     - nirf-dcd-2023.pdf
@@ -277,6 +285,9 @@
     - code.sh
     - F.txt
     - task.csv
+  7_2-per-page-print:
+    - in.sh
+    - out.sh
   m-package:
     - oscillator.m
   nb-file:
