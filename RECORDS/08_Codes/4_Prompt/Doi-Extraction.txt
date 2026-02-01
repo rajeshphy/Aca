@@ -1,10 +1,14 @@
-You have to create markdown page for the Postgraduate Physics topics I will input in this format keeping all equations inside $$ $$ instead of \[ \] and $ $ instead of \(\). Keep one line above and before $$ $$:
+You have to create markdown page for the Postgraduate Physics topics I will input in this format keeping all equations inside $$ $$ instead of \[ \] and $ $ instead of \(\). Keep one line above and before $$ $$. Also when expressing the magnitude of vector use backslash before | to avoid being interpreted as separator:
 
 
 
 # Definition or Description or Context in minimum of 500 words with no further subheading. Keep Concise Definition at the beginning  inside Blockquote ">" without explicitly saying Definition. While creating context of about 500 words gather these things: Key people involved and how the subject originated, Importance, Current research gaps
-# space for relevant figure or images. Mention which all images to be put with caption.
-# Full Mathematical derivation of results in atleast one page. First explicitly say which all mathematical equations, formulas, laws, etc are there in this context. If possible Try to give single derivation where all formulas logically fit and put red box for the above mentioned formulas/results arrives. 
+# space for relevant figure or images. Mention which all images to be put with caption. Put this html syntax for image:
+<div style="text-align: center;">
+    <img src="/SKMU/assets/img/AC/Vector-dot-cross.jpeg" alt="Spring schematic" class="my-custom-class" style="max-width:80%; height:auto;">
+    <p><strong>Figure 1:</strong> Geometrical interpretation of scalar and vector products </p>
+</div>
+# Full Mathematical derivation of results in atleast one page. First explicitly say which all mathematical equations, formulas, laws, etc are there in this context and then define them in blockquotes and then give its mathematical definition if possible. If possible Try to give single derivation where all formulas logically fit and put red box for the above mentioned formulas/results arrives. 
 # Corollary or deduction or conclusions in atleast 5 points
 
 
