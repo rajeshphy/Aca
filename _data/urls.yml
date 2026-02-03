@@ -291,6 +291,9 @@
   7_2-per-page-print:
     - in.sh
     - out.sh
+  8_Book-Format-A5:
+    - extra.tex
+    - main.tex
   m-package:
     - oscillator.m
   nb-file:

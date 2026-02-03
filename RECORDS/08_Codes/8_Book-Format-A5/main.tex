@@ -1,0 +1,69 @@
+\documentclass[11pt,twoside]{book}
+
+% ---------- Core ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% ---------- A5 Layout ----------
+\usepackage[
+  paperwidth=148mm,
+  paperheight=210mm,
+  inner=18mm,
+  outer=14mm,
+  top=18mm,
+  bottom=22mm
+]{geometry}
+
+% ---------- Math & Figures ----------
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\graphicspath{{IMG/}}
+
+% ---------- Wrapped figures ----------
+\usepackage{wrapfig}
+
+% ---------- References ----------
+\usepackage[numbers]{natbib}
+
+% ---------- Hyperlinks ----------
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black]{hyperref}
+
+% ---------- Headers ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+
+% ---------- Spacing ----------
+\usepackage{setspace}
+\onehalfspacing
+
+% ---------- Outline box ----------
+\usepackage{tcolorbox}
+\tcbset{
+  chapteroutline/.style={
+    colback=yellow!15,
+    colframe=yellow!40!black,
+    arc=6pt,
+    boxrule=0.6pt,
+    left=8pt,right=8pt,top=8pt,bottom=8pt
+  }
+}
+
+\begin{document}
+
+\frontmatter
+% \include{extra}
+
+\mainmatter
+\include{Chapter/chapter1}
+\include{Chapter/chapter2}
+
+\backmatter
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\end{document}
