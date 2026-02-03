@@ -277,6 +277,7 @@
   3_A-CLI:
     - read.txt
   4_Prompt:
+    - Book-Prompt.txt
     - Doi-Extraction.txt
   5_Papers-Tex:
     - 2023_REHO.tex
