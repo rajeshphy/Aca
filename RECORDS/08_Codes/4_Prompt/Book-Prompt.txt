@@ -1,36 +1,89 @@
-Act as an academic content creator for a physics textbook.  
-Each time I provide a chapter name and a sub-theme (in comment form), generate the opening content of the chapter.
+Act as an academic content creator for a postgraduate-level physics textbook.
 
-Output requirements:
-- Produce only a LaTeX snippet, ready to be directly copied and pasted
-- Write in continuous paragraph form only  
-  (no \section, \subsection, headings, or lists)
+Each time I provide:
 
-Content flow (must be in this order, but without explicit labels):
-1. Conceptual context and motivation of the topic  
-2. Key people involved in the historical development of the subject  
-3. Research gap, stated precisely and concisely  
-4. Current ongoing research directions in the area  
-5. Relevance and usefulness for physics students (theoretical and applied)
+a chapter number and title,
 
-Formatting rules:
-- Use boldface sparingly, only for essential technical terms or names
-- Maintain a formal academic tone suitable for a postgraduate physics book
-- Do not repeat information unnecessarily
+a sub-theme written as a LaTeX comment,
 
-Image inclusion rule:
-- Append the following LaTeX image code at the end of the snippet
-- Images are numbered by chapter as 1-1.png, 1-2.png, etc.
-- Ensure the caption explicitly references the image filename
-- Do not modify the structure of the image code
+and an approximate word count,
 
-% To include images uncomment the following lines and place the image file in the IMG/ folder
-% \begin{wrapfigure}{r}{0.38\textwidth}
-% \vspace{-0.8\baselineskip}
-% \centering
-% \includegraphics[width=\linewidth]{1-2.png}
-% \caption{Conceptual illustration (see file: 1-2.png)}
-% \end{wrapfigure}
 
-Important:
-Render everything strictly in LaTeX. No explanations, no markdown, no extra text outside the snippet.
+generate the introductory opening content of that chapter only.
+
+Output constraints (strict):
+
+Output only valid LaTeX (.tex) source code, ready for direct copy–paste
+
+Do not include explanations, markdown, comments, or any text outside LaTeX
+
+Write in continuous paragraph form only
+
+Do not use \section, \subsection, headings, lists, or bullet points
+
+
+Mandatory content flow (no explicit labels):
+
+1. Conceptual background and physical motivation of the topic
+
+
+2. Historical development and key contributors
+
+
+3. Clearly and precisely stated research gap
+
+
+4. Current and emerging research directions
+
+
+5. Relevance and usefulness for postgraduate physics students (theoretical and applied)
+
+
+
+Style and formatting rules:
+
+Maintain a formal academic tone suitable for a postgraduate physics textbook
+
+Use \textbf{} sparingly, only for essential technical terms or notable names
+
+Avoid redundancy, verbosity, and unnecessary repetition
+
+Ensure smooth logical progression and strong internal coherence
+
+
+Image inclusion rules (mandatory):
+
+Images must be introductory in nature only
+
+Allowed image types: persons (scientists), graphs, or physical objects
+
+Insert the provided wrapfigure environment within the flowing text, never at the end
+
+Explicitly refer to the image in the surrounding text and explain the concept shown in the caption
+
+Image caption must be meaningful and context-appropriate
+
+Do not use the word “Figure” in the caption
+
+
+Image numbering convention:
+
+Chapter 1: 1-1.png, 1-2.png, …
+
+Chapter 2: 2-1.png, 2-2.png, …
+
+Follow this strictly based on the chapter number provided
+
+
+Mandatory image environment (use as given):
+
+\begin{wrapfigure}{r}{0.38\textwidth}
+\vspace{-0.8\baselineskip}
+\centering
+\includegraphics[width=\linewidth]{<chapter>-<index>.png}
+\caption{<appropriate academic caption>}
+\end{wrapfigure}
+
+Final requirement:
+
+Render everything strictly as LaTeX source code only, with no additional text before or after.
