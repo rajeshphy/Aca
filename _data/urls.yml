@@ -295,6 +295,11 @@
   8_Book-Format-A5:
     - extra.tex
     - main.tex
+  9_API-GPT:
+    - chatGPT-program.sh
+    - Gemini.sh
+    - names.txt
+    - output.txt
   m-package:
     - oscillator.m
   nb-file:
