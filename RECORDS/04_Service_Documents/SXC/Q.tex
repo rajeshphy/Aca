@@ -1,0 +1,1122 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{times, amssymb, amsmath, graphicx, tabularx, booktabs, subfiles, amsthm,enumitem,xcolor,braket, subcaption} 
+
+% Add this in the preamble of your LaTeX document
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+
+\newcommand{\ans}[1]{\textcolor{red}{#1}}
+
+\newcommand{\boxx}[1]{%
+    \begin{tcolorbox}[colback=gray!10, colframe=gray!50, title=Where it is getting wrong?]
+        #1
+    \end{tcolorbox}%
+}
+
+
+\title{}
+\author{}
+
+\begin{document}
+\maketitle
+%------------Body-Starts--------------------
+
+
+\textbf{1. Answer all questions of the following:}
+
+\textbf{(a) What is meant by stopping potential in the photoelectric effect?}
+
+Stopping potential is the minimum negative (retarding) potential applied to the collector plate which just stops the most energetic photoelectrons, making the photocurrent zero.  
+If $K_{\text{max}}$ is the maximum kinetic energy of emitted electrons, then
+
+\[
+eV_0 = K_{\text{max}}
+\]
+
+\textbf{\textcolor{brown}{\textbf{Stopping potential is the minimum retarding potential required to reduce the photocurrent to zero by stopping the most energetic photoelectrons.}}}
+
+\vspace{0.5cm}
+
+\textbf{(b) What does the Davisson and Germer experiment demonstrate?}
+
+The Davisson and Germer experiment demonstrated the diffraction of electrons by a crystal lattice, confirming the wave nature of electrons as proposed by de Broglie.
+
+\textbf{\textcolor{brown}{\textbf{The experiment demonstrates the wave nature of electrons and verifies de Broglie’s hypothesis.}}}
+
+\vspace{0.5cm}
+
+\textbf{(c) Write down the expression for radius of a nucleus.}
+
+The radius of a nucleus is given by
+
+\[
+R = R_0 A^{1/3}
+\]
+
+where $R_0 \approx 1.2 \times 10^{-15}\,\text{m}$ and $A$ is the mass number.
+
+\textbf{\textcolor{brown}{\textbf{The radius of a nucleus is given by $R = R_0 A^{1/3}$.}}}
+
+\vspace{0.5cm}
+
+\textbf{(d) How does the volume term in the semi-empirical mass formula contribute to binding energy?}
+
+In the semi-empirical mass formula, the volume term is proportional to the mass number $A$:
+
+\[
+E_v = a_v A
+\]
+
+Since each nucleon interacts with a nearly constant number of neighboring nucleons, this term contributes positively and increases linearly with $A$, thereby increasing the binding energy.
+
+\textbf{\textcolor{brown}{\textbf{The volume term contributes positively to binding energy and is proportional to $A$, i.e., $E_v = a_v A$.}}}
+
+\vspace{0.5cm}
+
+\textbf{(e) Under what condition does population inversion take place in a laser medium?}
+
+Population inversion occurs when the number of atoms in the excited state exceeds the number in the lower energy state:
+
+\[
+N_2 > N_1
+\]
+
+\textbf{\textcolor{brown}{\textbf{Population inversion occurs when the population of the upper energy level exceeds that of the lower level ($N_2 > N_1$).}}}
+
+
+
+
+\textbf{2. A particle is described by the one-dimensional wave function}
+\[
+\psi(x) = A e^{-\alpha x^{2}}, \qquad -\infty < x < \infty
+\]
+\textbf{where $A$ is a positive constant. Write down the normalization condition for the wave function. Hence determine the value of the normalization constant $A$ in terms of $\alpha$.}
+
+\vspace{0.3cm}
+
+The normalization condition for a wave function is
+
+\[
+\int_{-\infty}^{\infty} |\psi(x)|^{2} \, dx = 1
+\]
+
+Since $\psi(x) = A e^{-\alpha x^{2}}$ is real,
+
+\[
+|\psi(x)|^{2} = A^{2} e^{-2\alpha x^{2}}
+\]
+
+Substituting into the normalization condition,
+
+\[
+\int_{-\infty}^{\infty} A^{2} e^{-2\alpha x^{2}} \, dx = 1
+\]
+
+Taking $A^{2}$ outside the integral,
+
+\[
+A^{2} \int_{-\infty}^{\infty} e^{-2\alpha x^{2}} \, dx = 1
+\]
+
+Using the Gaussian integral,
+
+\[
+\int_{-\infty}^{\infty} e^{-a x^{2}} \, dx = \sqrt{\frac{\pi}{a}}, \qquad a > 0
+\]
+
+Here $a = 2\alpha$, therefore
+
+\[
+\int_{-\infty}^{\infty} e^{-2\alpha x^{2}} \, dx
+=
+\sqrt{\frac{\pi}{2\alpha}}
+\]
+
+Substituting,
+
+\[
+A^{2} \sqrt{\frac{\pi}{2\alpha}} = 1
+\]
+
+Solving for $A$,
+
+\[
+A^{2} = \sqrt{\frac{2\alpha}{\pi}}
+\]
+
+\[
+A = \left( \frac{2\alpha}{\pi} \right)^{1/4}
+\]
+
+\[
+\textcolor{brown}{\mathbf{A = \left( \dfrac{2\alpha}{\pi} \right)^{1/4}}}
+\]
+
+
+
+
+\textbf{3. Differentiate between spontaneous emission and stimulated emission highlighting the role of an incident photon in each process.}
+
+\vspace{0.3cm}
+
+Consider an atom having two energy levels $E_2$ (excited state) and $E_1$ (lower state) such that
+
+\[
+E_2 > E_1
+\]
+
+If the atom is initially in the excited state, it can undergo transition to the lower state by emitting radiation of frequency
+
+\[
+h\nu = E_2 - E_1
+\]
+
+\textbf{Spontaneous Emission}
+
+In spontaneous emission, the atom in the excited state $E_2$ returns to the lower state $E_1$ without the influence of any external radiation field. The emission occurs randomly due to internal atomic instability.
+
+The emitted photon:
+
+\[
+h\nu = E_2 - E_1
+\]
+
+is emitted in a random direction with random phase and polarization.
+
+The probability per unit time of spontaneous transition is given by Einstein’s coefficient $A_{21}$.
+
+There is \emph{no incident photon} involved in initiating the process.
+
+\vspace{0.4cm}
+
+\textbf{Stimulated Emission}
+
+In stimulated emission, an external photon of energy $h\nu$ such that
+
+\[
+h\nu = E_2 - E_1
+\]
+
+interacts with an atom already in the excited state $E_2$.
+
+The incident photon induces the atom to return to the lower state $E_1$, resulting in the emission of a second photon.
+
+The emitted photon has:
+
+\[
+\text{same frequency}, \quad \text{same phase}, \quad \text{same direction}, \quad \text{same polarization}
+\]
+
+as the incident photon.
+
+Thus, two coherent photons emerge from the interaction.
+
+The probability per unit time of stimulated transition is proportional to the radiation energy density $\rho(\nu)$ and is given by Einstein’s coefficient $B_{21}$.
+
+\vspace{0.4cm}
+
+\textbf{Key Differences}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Feature} & \textbf{Spontaneous Emission} & \textbf{Stimulated Emission} \\
+\hline
+Initiation & No incident photon & Requires incident photon \\
+\hline
+Direction of emitted photon & Random & Same as incident photon \\
+\hline
+Phase relation & Random phase & Same phase (coherent) \\
+\hline
+Rate dependence & Independent of radiation field & Proportional to radiation energy density $\rho(\nu)$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\[
+\textcolor{brown}{\mathbf{\text{Spontaneous emission occurs without any incident photon and produces incoherent radiation, whereas stimulated emission is induced by an incident photon and produces coherent radiation identical to the incident photon.}}}
+\]
+
+
+\textbf{4. A particle of mass $m$ is confined in a one-dimensional infinite square potential well of width $L$, such that the potential $V(x)=0$ for $0<x<L$ and $V(x)=\infty$ elsewhere. Write the time-independent Schrödinger equation for the particle inside the well and solve it to obtain the allowed energy eigenvalues. Write the normalized eigenfunctions corresponding to these energy levels.}
+
+\vspace{0.3cm}
+
+Inside the well, the potential is
+
+\[
+V(x)=0, \qquad 0<x<L
+\]
+
+The time-independent Schrödinger equation is
+
+\[
+-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}+V(x)\psi=E\psi
+\]
+
+Since $V(x)=0$ inside the well,
+
+\[
+-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}=E\psi
+\]
+
+Rearranging,
+
+\[
+\frac{d^2\psi}{dx^2} + \frac{2mE}{\hbar^2}\psi = 0
+\]
+
+Let
+
+\[
+k^2 = \frac{2mE}{\hbar^2}
+\]
+
+Then the equation becomes
+
+\[
+\frac{d^2\psi}{dx^2}+k^2\psi=0
+\]
+
+The general solution is
+
+\[
+\psi(x)=A\sin kx + B\cos kx
+\]
+
+The boundary conditions for an infinite potential well are
+
+\[
+\psi(0)=0, \qquad \psi(L)=0
+\]
+
+Applying $\psi(0)=0$,
+
+\[
+\psi(0)=B=0
+\]
+
+Thus,
+
+\[
+\psi(x)=A\sin kx
+\]
+
+Applying $\psi(L)=0$,
+
+\[
+A\sin kL=0
+\]
+
+For a non-trivial solution ($A\neq 0$),
+
+\[
+\sin kL=0
+\]
+
+\[
+kL=n\pi, \qquad n=1,2,3,\dots
+\]
+
+\[
+k=\frac{n\pi}{L}
+\]
+
+Using $k^2=\dfrac{2mE}{\hbar^2}$,
+
+\[
+\frac{2mE_n}{\hbar^2}=\frac{n^2\pi^2}{L^2}
+\]
+
+\[
+E_n=\frac{n^2\pi^2\hbar^2}{2mL^2}
+\]
+
+Normalization condition:
+
+\[
+\int_0^L |\psi(x)|^2 dx =1
+\]
+
+\[
+\int_0^L A^2\sin^2\left(\frac{n\pi x}{L}\right)dx=1
+\]
+
+Using
+
+\[
+\int_0^L \sin^2\left(\frac{n\pi x}{L}\right)dx=\frac{L}{2}
+\]
+
+\[
+A^2\frac{L}{2}=1
+\]
+
+\[
+A=\sqrt{\frac{2}{L}}
+\]
+
+Hence the normalized eigenfunctions are
+
+\[
+\psi_n(x)=\sqrt{\frac{2}{L}}\sin\left(\frac{n\pi x}{L}\right)
+\]
+
+\[
+\textcolor{brown}{\mathbf{E_n=\dfrac{n^2\pi^2\hbar^2}{2mL^2}, \qquad 
+\psi_n(x)=\sqrt{\dfrac{2}{L}}\sin\left(\dfrac{n\pi x}{L}\right), \quad n=1,2,3,\dots}}
+\]
+
+
+\textbf{5. Explain the Heisenberg gamma-ray microscope thought experiment in detail and discuss how it leads to the Heisenberg uncertainty principle, highlighting the limitations imposed on the simultaneous measurement of an electron's position and momentum.}
+
+\vspace{0.3cm}
+
+Consider an electron whose position is to be measured using a microscope. 
+To observe the electron, it must be illuminated by radiation. 
+Suppose high-frequency $\gamma$-rays of wavelength $\lambda$ are used in order to obtain high resolving power.
+
+According to the resolving power of a microscope, the uncertainty in position is approximately
+
+\[
+\Delta x \approx \frac{\lambda}{2\sin\theta}
+\]
+
+where $\theta$ is the semi-angle of collection of the microscope objective.
+
+To reduce $\Delta x$, one must use radiation of very small wavelength $\lambda$. 
+For $\gamma$-rays,
+
+\[
+\lambda = \frac{h}{p_\gamma}
+\]
+
+where $p_\gamma$ is the momentum of the incident photon.
+
+When the $\gamma$-ray photon strikes the electron, Compton scattering occurs. 
+During this interaction, the photon transfers momentum to the electron. 
+The momentum of the photon is
+
+\[
+p_\gamma = \frac{h}{\lambda}
+\]
+
+Because the scattered photon can emerge within an angle $\pm \theta$, the uncertainty in the $x$-component of the photon momentum is of order
+
+\[
+\Delta p_x \approx p_\gamma \sin\theta
+\]
+
+Since momentum is conserved, this uncertainty is transferred to the electron. Therefore,
+
+\[
+\Delta p_x \approx \frac{h}{\lambda} \sin\theta
+\]
+
+Multiplying the uncertainties in position and momentum,
+
+\[
+\Delta x \, \Delta p_x
+\approx
+\left( \frac{\lambda}{2\sin\theta} \right)
+\left( \frac{h}{\lambda} \sin\theta \right)
+\]
+
+\[
+\Delta x \, \Delta p_x
+\approx
+\frac{h}{2}
+\]
+
+Since $h = 2\pi\hbar$,
+
+\[
+\Delta x \, \Delta p_x \approx \pi \hbar
+\]
+
+A more rigorous quantum mechanical treatment gives
+
+\[
+\Delta x \, \Delta p_x \geq \frac{\hbar}{2}
+\]
+
+This is the Heisenberg uncertainty principle.
+
+\vspace{0.4cm}
+
+The thought experiment shows that in order to measure the position accurately (small $\lambda$), the photon must have large momentum. 
+This large momentum disturbs the electron significantly, increasing uncertainty in its momentum. 
+
+Conversely, using radiation of large wavelength reduces momentum disturbance but increases uncertainty in position.
+
+Thus, the act of measurement itself introduces a fundamental limitation. 
+It is not due to experimental imperfections but is intrinsic to the wave–particle duality of matter.
+
+\vspace{0.4cm}
+
+\[
+\textcolor{brown}{\mathbf{\Delta x \, \Delta p_x \geq \dfrac{\hbar}{2}}}
+\]
+
+\[
+\textcolor{brown}{\mathbf{\text{Hence, the simultaneous precise measurement of the position and momentum of an electron is fundamentally limited by the Heisenberg uncertainty principle.}}}
+\]
+
+\textbf{6. Describe Fermi theory of Beta Decay and explain why neutrinos are needed in the hypothesis.}
+
+\vspace{0.3cm}
+
+\textbf{Fermi Theory of Beta Decay}
+
+Beta decay is a nuclear process in which a nucleus emits an electron (or positron) and transforms into a different nucleus. 
+For $\beta^{-}$ decay, the reaction is
+
+\[
+n \rightarrow p + e^{-}
+\]
+
+However, experimentally the emitted electrons were observed to have a continuous energy spectrum rather than a discrete energy value. 
+This created a serious problem because if only two particles were involved in the decay, conservation of energy and momentum would require a fixed (monoenergetic) electron energy.
+
+To explain this, \textbf{Enrico Fermi} proposed in 1934 that beta decay is a weak interaction process involving four fermions. 
+The complete $\beta^{-}$ decay process is
+
+\[
+n \rightarrow p + e^{-} + \bar{\nu}
+\]
+
+where $\bar{\nu}$ is the antineutrino.
+
+Similarly, for $\beta^{+}$ decay,
+
+\[
+p \rightarrow n + e^{+} + \nu
+\]
+
+Fermi assumed that beta decay occurs due to a point-like interaction between four fermions (neutron, proton, electron, neutrino). 
+The transition probability per unit time is given by
+
+\[
+\lambda = \frac{2\pi}{\hbar} |M_{fi}|^2 \rho(E)
+\]
+
+where $M_{fi}$ is the transition matrix element and $\rho(E)$ is the density of final states.
+
+The interaction Hamiltonian density in Fermi's original theory is
+
+\[
+H_{int} = G_F \, \bar{\psi}_p \gamma^\mu \psi_n \, 
+\bar{\psi}_e \gamma_\mu \psi_\nu
+\]
+
+where $G_F$ is the Fermi coupling constant. 
+This describes a weak interaction of short range.
+
+\vspace{0.4cm}
+
+\textbf{Why Neutrinos are Needed}
+
+Before neutrino hypothesis, the process was assumed as
+
+\[
+n \rightarrow p + e^{-}
+\]
+
+In such a two-body decay, conservation of energy and momentum would require the electron to have a single fixed energy.
+
+However, experimentally:
+
+\[
+0 \leq E_e \leq E_{max}
+\]
+
+The electron energy spectrum is continuous.
+
+This contradiction implied that another particle must be sharing the energy and momentum. 
+Wolfgang Pauli proposed a neutral, very light particle — the neutrino — with:
+
+\[
+\text{Charge} = 0, \qquad \text{Spin} = \frac{1}{2}, \qquad \text{Very small mass}
+\]
+
+Including the neutrino,
+
+\[
+n \rightarrow p + e^{-} + \bar{\nu}
+\]
+
+Now energy conservation becomes
+
+\[
+E_n = E_p + E_e + E_{\bar{\nu}}
+\]
+
+Momentum conservation becomes
+
+\[
+\vec{p}_n = \vec{p}_p + \vec{p}_e + \vec{p}_{\bar{\nu}}
+\]
+
+Because the energy is shared between three particles, the electron can have a continuous range of energies, consistent with experimental observation.
+
+The neutrino also preserves conservation of:
+
+\[
+\text{Angular momentum}
+\]
+
+since neutron and proton both have spin $\frac{1}{2}$, and the electron also has spin $\frac{1}{2}$. 
+Without the neutrino, spin conservation would be violated in certain transitions.
+
+\vspace{0.4cm}
+
+\textcolor{brown}{\textbf{Fermi theory describes beta decay as a weak four-fermion interaction, and the neutrino is required to ensure conservation of energy, momentum, and angular momentum, thereby explaining the continuous beta spectrum.}}
+
+\textbf{7. Explain Gamow's theory of alpha decay. Describe the quantum mechanical tunneling mechanism involved in alpha emission from a nucleus and illustrate the process with the help of a potential energy barrier diagram (graph), explaining how the alpha particle penetrates the Coulomb barrier despite having insufficient classical energy.}
+
+\vspace{0.3cm}
+
+In $\alpha$-decay, a heavy nucleus emits an $\alpha$-particle ($^4_2\text{He}$ nucleus) and transforms into a daughter nucleus:
+
+\[
+^{A}_{Z}X \rightarrow ^{A-4}_{Z-2}Y + \alpha + Q
+\]
+
+where $Q$ is the decay energy.
+
+\vspace{0.4cm}
+
+\textbf{Basic Idea of Gamow's Theory}
+
+According to classical physics, the $\alpha$-particle confined inside the nucleus cannot escape because it does not possess enough kinetic energy to overcome the Coulomb repulsion barrier outside the nucleus.
+
+Inside the nucleus ($r<R$), the $\alpha$-particle experiences a strong attractive nuclear potential, which can be approximated as a deep potential well.
+
+For $r>R$, the nuclear force vanishes and the $\alpha$-particle experiences Coulomb repulsion:
+
+\[
+V(r) = \frac{1}{4\pi\varepsilon_0}\frac{2Ze^2}{r}
+\]
+
+Thus, the total potential energy has the following form:
+
+- Deep negative well inside the nucleus.
+- High positive Coulomb barrier outside.
+- Potential decreases gradually as $1/r$ for large $r$.
+
+\vspace{0.4cm}
+
+\textbf{Quantum Mechanical Tunneling}
+
+Although the $\alpha$-particle has total energy $E$ such that
+
+\[
+E < V_{\text{max}}
+\]
+
+quantum mechanics allows a finite probability of penetrating the barrier.
+
+In the classically forbidden region ($R < r < b$), where $V(r) > E$, the Schrödinger equation gives exponentially decaying solutions:
+
+\[
+\psi(r) \propto e^{-\kappa r}
+\]
+
+where
+
+\[
+\kappa = \sqrt{\frac{2m(V(r)-E)}{\hbar^2}}
+\]
+
+The transmission probability (tunneling probability) is approximately
+
+\[
+T \approx e^{-2 \int_R^b \kappa(r)\, dr}
+\]
+
+This exponential dependence explains:
+
+- Extremely long half-lives for small changes in energy.
+- The Geiger–Nuttall law relating decay constant to $\alpha$ energy.
+
+\vspace{0.4cm}
+
+\textbf{Potential Energy Barrier Diagram (Schematic)}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+\draw[->] (0,0) -- (8,0) node[right] {$r$};
+\draw[->] (0,0) -- (0,4) node[above] {$V(r)$};
+
+\draw[thick] (0.5,1) -- (2,1);
+\draw[thick] (2,1) .. controls (3,3.5) and (4,3.5) .. (5,2.5);
+\draw[thick] (5,2.5) .. controls (6,1.8) and (7,1.2) .. (8,1);
+
+\draw[dashed] (0,1.5) -- (8,1.5) node[right] {$E$};
+
+\node at (1.2,0.6) {$R$};
+\node at (5,0.6) {$b$};
+\end{tikzpicture}
+\end{center}
+
+The horizontal dashed line represents the total energy $E$ of the $\alpha$-particle. 
+Between $R$ and $b$, the region is classically forbidden. 
+However, due to quantum tunneling, the wave function does not vanish but decreases exponentially, allowing a finite probability of escape.
+
+\vspace{0.4cm}
+
+\textbf{Conclusion of Gamow's Theory}
+
+Gamow explained $\alpha$-decay as a quantum tunneling phenomenon where the $\alpha$-particle pre-exists inside the nucleus and escapes by penetrating the Coulomb barrier, even though its energy is less than the barrier height.
+
+The decay constant is proportional to the tunneling probability:
+
+\[
+\lambda \propto e^{-2 \int_R^b \kappa(r)\, dr}
+\]
+
+which accounts for the observed half-lives.
+
+\vspace{0.5cm}
+
+\[
+\textcolor{brown}{\mathbf{\alpha\text{-decay occurs due to quantum mechanical tunneling through the Coulomb barrier,}}}
+\]
+
+\[
+\textcolor{brown}{\mathbf{\text{even when } E < V_{\text{max}}, \text{ with } \lambda \propto e^{-2 \int_R^b \kappa(r)\, dr}.}}
+\]
+
+
+
+\textbf{8. Derive the time-dependent Schrödinger equation starting from the concept of matter waves and hence obtain the time-independent Schrödinger equation by the method of separation of variables.}
+
+\vspace{0.3cm}
+
+According to de Broglie, a particle of momentum $p$ is associated with a matter wave of wavelength
+
+\[
+\lambda = \frac{h}{p}
+\]
+
+The corresponding wave number is
+
+\[
+k = \frac{2\pi}{\lambda} = \frac{p}{\hbar}
+\]
+
+The energy of the particle is related to angular frequency $\omega$ as
+
+\[
+E = \hbar \omega
+\]
+
+A plane matter wave may therefore be written as
+
+\[
+\Psi(x,t) = A e^{i(kx-\omega t)}
+\]
+
+Differentiating with respect to time,
+
+\[
+\frac{\partial \Psi}{\partial t} = -i\omega \Psi
+\]
+
+\[
+i\hbar \frac{\partial \Psi}{\partial t} = \hbar \omega \Psi = E\Psi
+\]
+
+Differentiating twice with respect to $x$,
+
+\[
+\frac{\partial^2 \Psi}{\partial x^2} = -k^2 \Psi
+\]
+
+\[
+-\hbar^2 \frac{\partial^2 \Psi}{\partial x^2} = \hbar^2 k^2 \Psi = p^2 \Psi
+\]
+
+Using the classical relation for total energy,
+
+\[
+E = \frac{p^2}{2m} + V(x,t)
+\]
+
+Substituting the operator forms,
+
+\[
+i\hbar \frac{\partial \Psi}{\partial t}
+=
+\frac{1}{2m}
+\left(
+-\hbar^2 \frac{\partial^2}{\partial x^2}
+\right)\Psi
++
+V(x,t)\Psi
+\]
+
+Thus, the time-dependent Schrödinger equation in one dimension is
+
+\[
+i\hbar \frac{\partial \Psi(x,t)}{\partial t}
+=
+-\frac{\hbar^2}{2m}
+\frac{\partial^2 \Psi(x,t)}{\partial x^2}
++
+V(x,t)\Psi(x,t)
+\]
+
+In three dimensions,
+
+\[
+i\hbar \frac{\partial \Psi}{\partial t}
+=
+-\frac{\hbar^2}{2m}\nabla^2 \Psi
++
+V\Psi
+\]
+
+\vspace{0.4cm}
+
+\textbf{Derivation of the Time-Independent Schrödinger Equation}
+
+If the potential is independent of time, $V = V(x)$, we assume a separable solution
+
+\[
+\Psi(x,t) = \psi(x)T(t)
+\]
+
+Substituting into the time-dependent equation,
+
+\[
+i\hbar \psi(x)\frac{dT}{dt}
+=
+-\frac{\hbar^2}{2m}T(t)\frac{d^2\psi}{dx^2}
++
+V(x)\psi(x)T(t)
+\]
+
+Dividing by $\psi(x)T(t)$,
+
+\[
+i\hbar \frac{1}{T}\frac{dT}{dt}
+=
+-\frac{\hbar^2}{2m}\frac{1}{\psi}\frac{d^2\psi}{dx^2}
++
+V(x)
+\]
+
+The left-hand side depends only on $t$, and the right-hand side only on $x$, therefore both must be equal to a constant $E$.
+
+From the time part,
+
+\[
+i\hbar \frac{1}{T}\frac{dT}{dt} = E
+\]
+
+\[
+T(t) = e^{-iEt/\hbar}
+\]
+
+From the spatial part,
+
+\[
+-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}
++
+V(x)\psi
+=
+E\psi
+\]
+
+This is the time-independent Schrödinger equation.
+
+\vspace{0.5cm}
+
+\[
+\textcolor{brown}{\mathbf{i\hbar \frac{\partial \Psi}{\partial t}
+=
+-\frac{\hbar^2}{2m}\nabla^2 \Psi + V\Psi}}
+\]
+
+\[
+\textcolor{brown}{\mathbf{-\frac{\hbar^2}{2m}\nabla^2 \psi + V\psi = E\psi}}
+\]
+
+
+\textbf{9. Write short notes on any two of the following:}
+
+\vspace{0.3cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{(a) Define half-life and derive the expression for the half-life of a radioactive substance.}
+
+The rate of radioactive decay is proportional to the number of undecayed nuclei present at any time:
+
+\[
+\frac{dN}{dt} = -\lambda N
+\]
+
+where $\lambda$ is the decay constant.
+
+Separating variables,
+
+\[
+\frac{dN}{N} = -\lambda dt
+\]
+
+Integrating from $N_0$ at $t=0$ to $N$ at time $t$,
+
+\[
+\int_{N_0}^{N} \frac{dN}{N}
+=
+-\lambda \int_{0}^{t} dt
+\]
+
+\[
+\ln \left( \frac{N}{N_0} \right) = -\lambda t
+\]
+
+\[
+N = N_0 e^{-\lambda t}
+\]
+
+Half-life $T_{1/2}$ is defined as the time required for the number of nuclei to reduce to half of its initial value:
+
+\[
+N = \frac{N_0}{2}
+\]
+
+Substituting,
+
+\[
+\frac{N_0}{2} = N_0 e^{-\lambda T_{1/2}}
+\]
+
+\[
+\frac{1}{2} = e^{-\lambda T_{1/2}}
+\]
+
+Taking logarithm,
+
+\[
+\ln 2 = \lambda T_{1/2}
+\]
+
+\[
+T_{1/2} = \frac{\ln 2}{\lambda}
+\]
+
+\[
+\textcolor{brown}{\mathbf{T_{1/2} = \dfrac{\ln 2}{\lambda} = \dfrac{0.693}{\lambda}}}
+\]
+
+\vspace{0.8cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{(b) Derive and explain the rate equations for population densities in a two-level laser system and discuss why population inversion cannot be achieved under steady-state conditions.}
+
+Consider a two-level system with lower level $E_1$ and upper level $E_2$ having populations $N_1$ and $N_2$ respectively.
+
+Absorption rate:
+
+\[
+\text{Rate}_{\text{abs}} = B_{12} \rho(\nu) N_1
+\]
+
+Stimulated emission rate:
+
+\[
+\text{Rate}_{\text{stim}} = B_{21} \rho(\nu) N_2
+\]
+
+Spontaneous emission rate:
+
+\[
+\text{Rate}_{\text{sp}} = A_{21} N_2
+\]
+
+The rate equation for the upper level is
+
+\[
+\frac{dN_2}{dt}
+=
+B_{12}\rho(\nu)N_1
+-
+B_{21}\rho(\nu)N_2
+-
+A_{21}N_2
+\]
+
+Using $N_1 + N_2 = N$,
+
+Under steady-state condition,
+
+\[
+\frac{dN_2}{dt}=0
+\]
+
+\[
+B_{12}\rho(\nu)N_1
+=
+B_{21}\rho(\nu)N_2
++
+A_{21}N_2
+\]
+
+\[
+\frac{N_2}{N_1}
+=
+\frac{B_{12}\rho(\nu)}
+{B_{21}\rho(\nu) + A_{21}}
+\]
+
+Even for very large radiation density $\rho(\nu)$,
+
+\[
+\frac{N_2}{N_1}
+\rightarrow
+\frac{B_{12}}{B_{21}}
+\]
+
+From Einstein relations,
+
+\[
+B_{12} = B_{21}
+\]
+
+Therefore,
+
+\[
+\frac{N_2}{N_1} \leq 1
+\]
+
+Thus, population inversion ($N_2 > N_1$) cannot be achieved in a two-level system under steady-state conditions.
+
+\[
+\textcolor{brown}{\mathbf{\text{Population inversion cannot be achieved in a two-level system since } N_2 \leq N_1 \text{ under steady state.}}}
+\]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{(c) Physical interpretation of wave function}
+
+In quantum mechanics, the state of a particle is described by a wave function 
+\[
+\Psi(x,t)
+\]
+
+The wave function itself has no direct physical meaning. However, according to Born’s probabilistic interpretation, the physically measurable quantity is the probability density:
+
+\[
+|\Psi(x,t)|^2 = \Psi^*(x,t)\Psi(x,t)
+\]
+
+which represents the probability per unit length of finding the particle at position $x$ at time $t$.
+
+The probability of finding the particle between $x$ and $x+dx$ is
+
+\[
+|\Psi(x,t)|^2 dx
+\]
+
+For a physically acceptable wave function, the following conditions must be satisfied:
+
+It must be single-valued.
+
+It must be finite everywhere.
+
+It must be continuous, and its first derivative must be continuous (except where the potential is infinite).
+
+It must be normalizable:
+
+\[
+\int_{-\infty}^{\infty} |\Psi(x,t)|^2 dx = 1
+\]
+
+Expectation value of any observable $\hat{O}$ is given by
+
+\[
+\langle O \rangle = \int \Psi^* \hat{O} \Psi \, dx
+\]
+
+Thus, the wave function contains complete information about the system through probability amplitudes.
+
+\[
+\textcolor{brown}{\textbf{The wave function itself has no direct physical meaning; its modulus squared }}
+\]
+\[ |\Psi|^2 \text{ represents the probability density of finding the particle.}\]
+
+\vspace{0.8cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{(d) de-Broglie's hypothesis on wave-particle duality and explain its physical significance}
+
+According to de Broglie, not only radiation but also material particles exhibit wave-like properties.
+
+For a particle of momentum $p$,
+
+\[
+\lambda = \frac{h}{p}
+\]
+
+This is known as the de Broglie wavelength.
+
+For a particle of mass $m$ moving with velocity $v$,
+
+\[
+\lambda = \frac{h}{mv}
+\]
+
+Using the energy relation,
+
+\[
+E = h\nu
+\]
+
+and
+
+\[
+p = \hbar k
+\]
+
+de Broglie unified the concepts of particle and wave nature.
+
+Physical significance:
+
+It explains electron diffraction experiments such as Davisson–Germer experiment.
+
+It leads to quantization condition in Bohr’s atomic model:
+
+\[
+2\pi r = n\lambda
+\]
+
+It forms the basis of wave mechanics and Schrödinger equation.
+
+It establishes the fundamental principle of wave-particle duality.
+
+\[
+\textcolor{brown}{\mathbf{\lambda = \dfrac{h}{p}}}
+\]
+
+\[
+\textcolor{brown}{\textbf{Matter particles exhibit wave nature, establishing the principle of wave-particle duality.}}
+\]
+
+
+
+
+
+
+
+
+
+
+%------------Body-Ends--------------------
+%\bibliography{ref.bib}
+%\bibliographystyle{IEEEtran}
+\end{document}
