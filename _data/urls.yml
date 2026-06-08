@@ -14,6 +14,7 @@
     - 2025-Oct-Application.pdf
     - 2025-Oct-Payment.pdf
     - 2025-Oct-Z-AAPAR-Details.pdf
+    - 2026-Admit-Card.pdf
     - Aadhar.pdf
     - cv.pdf
     - DL.pdf
@@ -347,6 +348,9 @@
   nb-file:
     - Full-Half.nb
     - Plot.nb
+  Productivity:
+    - productivit.tex
+    - productivity.pdf
 
 09_Articles:
   Books:
@@ -569,6 +573,7 @@
   Format:
     - IIM-ID-card.pdf
     - mid-ruled-A4.pdf
+    - productivity.pdf
   House-Hold:
     - standard_household_storage_label_guide.pdf
   IGNOU-I:
