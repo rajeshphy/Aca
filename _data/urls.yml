@@ -318,6 +318,11 @@
   1_doi-scihub-download:
     - dow.sh
     - inf.txt
+  10_UGC-MMTTC-Resource:
+    - preamble.tex
+    - presentation.pdf
+    - presentation.tex
+    - run.sh
   2_libgen-doi-extract:
     - cod.sh
     - url.txt
@@ -587,4 +592,13 @@
     - prior_intimation_summer_vacation_application.pages
   Travel:
     - Durgapur_Day_2_Tourist_Attractions_Return_Plan.pdf
+
+12_IGNOU:
+  IGNOU_BCS_111_011:
+    - BCS011_Dec2020_Solved.pdf
+    - BCS011_Dec2021_Solved.pdf
+    - BCS011_Dec2022_Solved.pdf
+    - BCS011_June2020_Solved.pdf
+    - BCS011_June2021_Solved.pdf
+    - BCS011_June2022_Solved.pdf
 

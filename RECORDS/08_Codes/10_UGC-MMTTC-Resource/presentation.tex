@@ -1,0 +1,415 @@
+\input{preamble.tex}
+
+% =========================================================
+% Simple workflow:
+% 1. Edit the title data below.
+% 2. Add slides after \PremiumTitleSlide.
+% 3. Keep reusable layout, image, wheel, and map code in preamble.tex.
+% =========================================================
+
+% ---------- Title-page data ----------
+\renewcommand{\DeckTitle}{AI, Automation and Open Web Workflows}
+\renewcommand{\DeckSubtitle}{Converting scattered knowledge into reusable workflows, diagrams, and publishable web material.}
+\renewcommand{\PresenterName}{Rajesh Kumar}
+\renewcommand{\PresenterDesignation}{Assistant Professor, Department of Physics}
+\renewcommand{\PresenterAffiliation}{Sido Kanhu Murmu University, Dumka, Jharkhand}
+\renewcommand{\PresenterDetails}{M.Sc. Physics, IIT Kanpur}
+\renewcommand{\PresenterEmail}{kr.rajesh.phy@gmail.com}
+\renewcommand{\EventName}{UGC MMTTC Refresher Course}
+\renewcommand{\EventDate}{June 2026}
+\renewcommand{\DeckTagline}{Refresher Course in Information Technology}
+\newcommand{\TitleRightImage}{img/title-image.png}
+
+\begin{document}
+
+\PremiumTitleSlide
+
+
+
+
+\section{OVERVIEW}
+\begin{frame}{Topics We Will Discuss}
+\MapSlide{Topics}{AI, Automation, Workflow}
+\end{frame}
+
+\PartSlide{1}{Artificial Intelligence}
+
+\section{AI}
+
+\begin{frame}{What comes to mind when you think of AI?}
+\Split{
+  \PremiumImage[0.25\linewidth]{img/gemini.jpeg}{}
+  \PremiumImage[0.20\linewidth]{img/chatgpt.png}{}
+  \PremiumImage[0.20\linewidth]{img/claude.png}{}}{
+    \PremiumImage[0.25\linewidth]{img/perplexity.jpeg}{}
+    \PremiumImage[0.25\linewidth]{img/llama.png}{}
+    \PremiumImage[0.25\linewidth]{img/grok.png}{}
+  }
+\end{frame}
+
+
+
+\begin{frame}{AI USE Framework}
+\Split{
+\begin{itemize}\scriptsize
+  \item \textbf{Organize}: Collect scattered notes, PDFs, screenshots, and ideas into clear folders, chapters, slides, or web posts.
+  \item \textbf{Automate}: Make repeated work one-command, such as downloading PDFs, merging files, fetching weather, or compiling LaTeX.
+  \item \textbf{Visualize}: Turn ideas into diagrams, charts, Beamer slides, TikZ figures, and clean academic templates.
+  \item \textbf{Publish}: Convert organized material into PDFs, websites, GitHub pages, blogs, and reusable teaching resources.
+\end{itemize}
+}{
+\PremiumImage[\linewidth]{img/4-work.png}{}
+}
+\end{frame}
+
+
+\begin{frame}{Repetitive Tasks; Connecting Tools}
+\Split{
+\begin{PremiumCard}
+{\bfseries\color{Blue}AI can generate code}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item AI can write code in many programming languages.
+  \item Latex, Python, HTML, JavaScript, and more.
+  \item AI can also explain code and debug errors.
+\end{itemize}
+\PremiumImage[0.4\linewidth]{img/linux.jpeg}{}
+\end{PremiumCard}
+}{\PremiumImage[0.2\linewidth]{img/latex.png}{}
+\PremiumImage[0.2\linewidth]{img/python.jpeg}{}
+\PremiumImage[0.3\linewidth]{img/html.jpeg}{}
+\PremiumImage[0.2\linewidth]{img/jekyll.png}{}
+}
+\end{frame}
+
+
+\begin{frame}{}
+  \centering
+\includegraphics[width=0.9\linewidth]{img/OS-Choice.png}
+\end{frame}
+
+\begin{frame}{}
+  \centering
+\includegraphics[width=0.9\linewidth]{img/AI-Bridge.png}
+\end{frame}
+
+
+
+\begin{frame}{Coding For Weather Forecast Report Download}
+\Split{
+\PremiumImage[\linewidth]{img/weather.png}{}
+}{
+\PremiumImage[\linewidth]{img/code.png}{}
+}
+\end{frame}
+
+
+
+
+\begin{frame}{Workflow Easily Achieved Using Coding Agents}
+  \Split{
+  \begin{PremiumCard}
+  {\WheelCard{USE}{Organize, Automate,Visualize, Publish}}
+  \end{PremiumCard}
+  }{
+    \PremiumImage[0.3\linewidth]
+    {img/codex.jpeg}
+    {Codex}
+    \PremiumImage[0.3\linewidth]
+    {img/claude.png}
+    {Claude}
+  }
+\end{frame}
+
+
+
+\PartSlide{2}{Automation}
+
+\section{Automation}
+
+\begin{frame}{Task Types for Automation}
+\Split{\PremiumImage[\linewidth]{img/task.png}{}
+}
+{
+  \begin{PremiumCard}
+{\bfseries\color{Blue}1. Downloading Monthly Journals}\par
+\end{PremiumCard}
+
+\begin{PremiumCard}
+{\bfseries\color{Green}2. Opening News}\par
+\end{PremiumCard}
+
+\begin{PremiumCard}
+{\bfseries\color{Blue}3. Image and Video Files Processing}\par
+\end{PremiumCard}
+
+\begin{PremiumCard}
+{\bfseries\color{Orange}4. Accessing Files in One Click}\par
+\end{PremiumCard}
+}
+\end{frame}
+
+
+\begin{frame}{}
+  \centering
+\includegraphics[width=0.9\linewidth]{img/ffmpeg.png}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Automating Journal Download}
+\Split{
+  \PremiumImage[\linewidth]{img/journal.png}{}
+}{
+  \begin{PremiumCard}
+{\bfseries\color{Blue}Journal issue to book-form PDF}\par
+\vspace{0.12cm}
+\begin{enumerate}\scriptsize
+  \item Enter volume and issue number.
+  \item Check whether the PDF already exists.
+  \item Fetch the page numbers from the website.
+  \item Extract article page ranges and titles.
+  \item Download the cover page of the issue.
+  \item Build direct PDF links for all articles.
+  \item Download all article PDFs.
+  \item Create a table-of-contents.
+  \item Merge cover, TOC, and articles in one PDF.
+  \item Remove temp files and open the final PDF.
+\end{enumerate}
+\end{PremiumCard}
+}
+\end{frame}
+
+
+
+\section{Website Workflows}
+
+\PartSlide{3}{Web Workflows}
+
+\section{AUTOMATING WEB WORKFLOWS}
+
+\begin{frame}{What Is a Web Page?}
+\TwoCol{0.48\textwidth}{
+\begin{PremiumCard}
+{\bfseries\color{Blue}Web page = HTML structure}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item A web page is built from HTML.
+  \item HTML gives the page its basic structure.
+  \item Headings, paragraphs, links, images, and sections are HTML elements.
+  \item What we see in the browser has a code background.
+\end{itemize}
+\end{PremiumCard}
+}{0.48\textwidth}{
+\PremiumImage[0.95\linewidth]{img/web-page-html.png}{}
+}
+\end{frame}
+
+\begin{frame}{Styles, Functions and Fonts}
+\TwoCol{0.48\textwidth}{
+\begin{PremiumCard}
+{\bfseries\color{Blue}CSS and JavaScript add life}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item CSS controls colors, spacing, fonts, cards, and layout.
+  \item JavaScript controls interaction and dynamic behavior.
+  \item Bootstrap gives ready-made design components.
+  \item Together they turn plain HTML into a modern page.
+\end{itemize}
+\end{PremiumCard}
+}{0.48\textwidth}{
+\PremiumImage[0.95\linewidth]{img/css-js-style-function.png}{}
+}
+\end{frame}
+
+\begin{frame}{Static vs Dynamic Websites}
+\TwoCol{0.48\textwidth}{
+\begin{PremiumCard}
+{\bfseries\color{Blue}Two kinds of websites}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item Static websites are pre-built pages served directly.
+  \item Dynamic websites generate pages using databases and server logic.
+  \item Static sites are faster, simpler, and easier to host.
+  \item Dynamic sites are useful when content changes for every user.
+\end{itemize}
+\end{PremiumCard}
+}{0.48\textwidth}{
+\PremiumImage[0.95\linewidth]{img/static-vs-dynamic.png}{}
+}
+\end{frame}
+
+\begin{frame}{Jekyll as a Workflow Solver}
+\TwoCol{0.48\textwidth}{
+\begin{PremiumCard}
+{\bfseries\color{Blue}Write once, organize automatically}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item Jekyll converts Markdown into web pages.
+  \item Posts, pages, categories, tags, and links become organized.
+  \item GitHub Pages can publish the site directly.
+  \item This makes scattered notes reusable and publishable.
+\end{itemize}
+\end{PremiumCard}
+}{0.48\textwidth}{
+\PremiumImage[0.95\linewidth]{img/jekyll-workflow.png}{}
+}
+\end{frame}
+
+
+
+
+
+
+\PartSlide{4}{Publishing with Jekyll and GitHub Pages}
+
+\section{JEKYLL AND GITHUB PAGES}
+
+\begin{frame}{Why Jekyll?}
+\TwoCol{0.48\textwidth}{
+\begin{PremiumCard}
+{\bfseries\color{Blue}Jekyll solves the publishing problem}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item Write content once in Markdown.
+  \item Jekyll converts it into a static website.
+  \item Posts, pages, categories, and layouts become organized automatically.
+  \item Other popular static-site tools include Hugo, MkDocs, Astro, Eleventy, and Docusaurus.
+\end{itemize}
+\end{PremiumCard}
+
+}{0.48\textwidth}{
+\begin{PremiumCard}
+\MapCard{Static}{Jekyll, Hugo, MkDocs, Astro, Eleventy, Docusaurus}
+\end{PremiumCard}
+}
+\end{frame}
+
+
+
+
+\begin{frame}{GitHub as a Free Repository}
+\TwoCol{0.48\textwidth}{
+\begin{PremiumCard}
+{\bfseries\color{Blue}GitHub stores your project files}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item A repository is a project folder stored online.
+  \item It can keep code, notes, images, PDFs, and website files.
+  \item GitHub supports version history and collaboration.
+  \item Public repositories can be used freely for open academic material.
+\end{itemize}
+\end{PremiumCard}
+}{0.48\textwidth}{
+\PremiumImage[0.95\linewidth]{img/github-free-repository.png}{}
+}
+\end{frame}
+
+\begin{frame}{GitHub Pages: Free Website Hosting}
+\TwoCol{0.48\textwidth}{
+\begin{PremiumCard}
+{\bfseries\color{Blue}From repository to website}\par
+\vspace{0.12cm}
+\begin{itemize}\scriptsize
+  \item GitHub Pages publishes static websites from a repository.
+  \item It has built-in support for Jekyll.
+  \item A user website can appear as \texttt{username.github.io}.
+  \item This is useful for teaching notes, academic pages, blogs, and documentation.
+\end{itemize}
+\end{PremiumCard}
+}{0.48\textwidth}{
+\PremiumImage[0.95\linewidth]{img/github-pages-free-website.png}{}
+}
+\end{frame}
+
+\begin{frame}{My Website}
+\begin{PremiumCard}
+\centering
+{\bfseries\color{Blue}Type this URL in your browser}\par
+\vspace{0.35cm}
+
+{\fontsize{34}{40}\selectfont\bfseries\color{Ink}
+rajeshphy.github.io
+\par}
+
+\vspace{0.35cm}
+\PremiumImage[0.4\linewidth]{img/rajeshphy-website-url.png}{}
+\end{PremiumCard}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}[plain]
+
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[Paper] (current page.south west) rectangle (current page.north east);
+
+  % soft background circles
+  \fill[Blue!10] 
+    ([xshift=-1.8cm,yshift=1.2cm]current page.south west) circle (3.2cm);
+  \fill[Teal!10] 
+    ([xshift=1.4cm,yshift=-0.9cm]current page.north east) circle (3.5cm);
+  \fill[Yellow!18] 
+    ([xshift=0.6cm,yshift=0.4cm]current page.center) circle (1.6cm);
+\end{tikzpicture}
+
+\vspace{1.05cm}
+
+\begin{center}
+
+\begin{PremiumCard}
+\centering
+
+{\fontsize{42}{48}\selectfont\bfseries\color{Ink}
+Thank You
+\par}
+
+\vspace{0.28cm}
+
+{\Large\bfseries\color{Blue}
+Questions and Discussion
+\par}
+
+\vspace{0.45cm}
+
+{\small\color{Muted}
+AI, Automation and Open Web Workflows
+\par}
+
+\vspace{0.35cm}
+
+{\bfseries\color{Ink}
+Rajesh Kumar
+\par}
+
+{\scriptsize\color{Muted}
+Assistant Professor, Department of Physics\\
+Sido Kanhu Murmu University, Dumka, Jharkhand
+\par}
+
+\vspace{0.35cm}
+
+{\fontsize{20}{24}\selectfont\bfseries\color{Blue}
+rajeshphy.github.io
+\par}
+
+\vspace{0.15cm}
+
+{\scriptsize\color{Muted}
+kr.rajesh.phy@gmail.com
+\par}
+
+\end{PremiumCard}
+
+\end{center}
+
+\end{frame}
+
+
+\end{document}
