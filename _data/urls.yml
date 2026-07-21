@@ -116,6 +116,8 @@
     - 2025-ITR-Filed.pdf
     - 2025-ITR1-Receipt.pdf
     - 2025-ITR1.pdf
+    - 2026-Form-16.pdf
+    - 2026-Salary.pdf
   INCOIS:
     - 2018-INCOIS_Advt.pdf
     - 2019-Appointment-Incois.pdf
@@ -308,6 +310,7 @@
     - 2024-Paper-7.pdf
     - 2025-Paper-7.pdf
   PG-3:
+    - 2019-OE.pdf
     - 2024-Paper-10.pdf
   PG-4:
     - 2018-Paper-402A.pdf
@@ -605,11 +608,33 @@
     - Durgapur_Day_2_Tourist_Attractions_Return_Plan.pdf
 
 12_IGNOU:
-  IGNOU_BCS_111_011:
+  BCS_012:
+    - BCS012_Dec2023_Solved.pdf
+    - BCS012_Dec2023_Solved.tex
+    - BCS012_Dec2024_Solved.pdf
+    - BCS012_Dec2024_Solved.tex
+    - BCS012_Dec2025_Solved.pdf
+    - BCS012_Dec2025_Solved.tex
+    - BCS012_June2023_Solved.pdf
+    - BCS012_June2023_Solved.tex
+    - BCS012_June2024_Solved.pdf
+    - BCS012_June2024_Solved.tex
+    - BCS012_June2025_Solved.pdf
+    - BCS012_June2025_Solved.tex
+  BCS_111_011:
     - BCS011_Dec2020_Solved.pdf
     - BCS011_Dec2021_Solved.pdf
     - BCS011_Dec2022_Solved.pdf
     - BCS011_June2020_Solved.pdf
     - BCS011_June2021_Solved.pdf
     - BCS011_June2022_Solved.pdf
+  Eng:
+    - BEGLA_Dec2023_Solved.pdf
+    - BEGLA_Dec2024_Solved.pdf
+    - BEGLA_Dec2025_Solved.pdf
+    - BEGLA_Jun2024_Solved.pdf
+    - BEGLA_Jun2025_Solved.pdf
+    - BEGLA-SOLN.pdf
+  EVS:
+    - EVS.pdf
 
