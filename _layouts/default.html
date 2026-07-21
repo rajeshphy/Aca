@@ -65,36 +65,20 @@
     }
 
     .site-header__inner {
-      padding: 2.25rem 0 2rem;
-    }
-
-    .site-kicker {
-      margin: 0 0 0.45rem;
-      color: var(--brand);
-      font-size: 0.72rem;
-      font-weight: 750;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
+      padding: 1.15rem 0;
+      text-align: center;
     }
 
     .site-title {
       margin: 0;
-      font-size: clamp(1.8rem, 4vw, 2.65rem);
-      line-height: 1.08;
-      letter-spacing: -0.035em;
-    }
-
-    .site-description {
-      max-width: 42rem;
-      margin: 0.7rem 0 0;
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.65;
+      font-size: clamp(1.45rem, 3vw, 1.9rem);
+      line-height: 1.2;
+      letter-spacing: -0.025em;
     }
 
     main {
       flex: 1;
-      padding-block: clamp(1.5rem, 4vw, 3rem);
+      padding-block: clamp(1rem, 3vw, 2rem);
     }
 
     .site-footer {
@@ -125,7 +109,7 @@
       }
 
       .site-header__inner {
-        padding-block: 1.6rem;
+        padding-block: 0.95rem;
       }
     }
 
@@ -145,9 +129,7 @@
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <p class="site-kicker">SKMU · Digital archive</p>
       <h1 class="site-title">{{ site.title }}</h1>
-      <p class="site-description">{{ site.description }}</p>
     </div>
   </header>
 
