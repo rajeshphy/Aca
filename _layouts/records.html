@@ -78,37 +78,52 @@ layout: default
   }
 
   .record-group {
-    box-shadow: none;
+    background: #fffaf5;
+    border-color: #fed7aa;
+    border-radius: 11px;
+    box-shadow: inset 3px 0 #fdba74;
   }
 
   .record-group > summary {
     min-height: 3rem;
     padding-block: 0.7rem;
+    color: #7c3d12;
     font-size: 0.92rem;
     font-weight: 650;
   }
 
+  .record-group > summary::after {
+    color: #c25d18;
+  }
+
   .record-group[open] > summary {
-    color: #166534;
-    background: #ecfdf5;
-    border-bottom: 1px solid var(--line);
+    color: #9a3412;
+    background: #ffedd5;
+    border-bottom: 1px solid #fdba74;
   }
 
   .record-group[open] {
-    background: #f7fefb;
-    border-color: #86d9ad;
-    box-shadow: inset 3px 0 #22a06b;
+    background: #fffdf9;
+    border-color: #fb923c;
+    box-shadow: inset 4px 0 #f97316;
   }
 
   .record-group[open] > summary::after {
-    color: #16845a;
+    color: #c2410c;
   }
 
   .record-count {
     margin-left: auto;
-    color: var(--muted);
+    padding: 0.2rem 0.45rem;
+    color: #9a541f;
+    background: #ffedd5;
+    border-radius: 999px;
     font-size: 0.72rem;
     font-weight: 600;
+  }
+
+  .record-group[open] .record-count {
+    background: #ffffff;
   }
 
   .record-list {
@@ -116,6 +131,7 @@ layout: default
     padding: 0.55rem;
     display: grid;
     gap: 0.35rem;
+    background: #fffdf9;
     list-style: none;
   }
 
