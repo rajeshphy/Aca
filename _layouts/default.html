@@ -1,92 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="description" content="{{ site.description | escape }}">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <style>
     :root {
-      --bg: #f9f9fb;
-      --fg: #1a1a1a;
-      --accent: #5a8dee;
-      --accent-light: #eaf1ff;
-      --card: #ffffff;
+      color-scheme: light;
+      --page: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --text: #172033;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --brand: #3157d5;
+      --brand-strong: #2445b8;
+      --brand-soft: #eef2ff;
+      --shadow: 0 16px 40px rgba(30, 41, 59, 0.07);
+      --radius-lg: 22px;
+      --radius-md: 14px;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-synthesis: none;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--page);
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      min-height: 100vh;
       margin: 0;
-      padding: 0;
-      background-color: var(--bg);
-      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(99, 102, 241, 0.08), transparent 28rem),
+        var(--page);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
-    header {
-      background-color: var(--card);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      padding: 1.5rem 2rem;
-      text-align: center;
+    ::selection {
+      color: var(--brand-strong);
+      background: #dbe5ff;
     }
 
-    header h1 {
+    .site-header {
+      border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+      background: rgba(255, 255, 255, 0.82);
+    }
+
+    .site-header__inner,
+    main,
+    .site-footer__inner {
+      width: min(100% - 2rem, 72rem);
+      margin-inline: auto;
+    }
+
+    .site-header__inner {
+      padding: 2.25rem 0 2rem;
+    }
+
+    .site-kicker {
+      margin: 0 0 0.45rem;
+      color: var(--brand);
+      font-size: 0.72rem;
+      font-weight: 750;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .site-title {
       margin: 0;
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--accent);
+      font-size: clamp(1.8rem, 4vw, 2.65rem);
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    .site-description {
+      max-width: 42rem;
+      margin: 0.7rem 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.65;
     }
 
     main {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: var(--card);
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      flex: 1;
+      padding-block: clamp(1.5rem, 4vw, 3rem);
     }
 
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 1.5rem;
-      color: #666;
+    .site-footer {
+      padding: 1.5rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .site-footer__inner {
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
     }
 
     a {
-      color: var(--accent);
-      text-decoration: none;
+      color: var(--brand);
     }
 
-    a:hover {
-      text-decoration: underline;
+    :focus-visible {
+      outline: 3px solid rgba(49, 87, 213, 0.3);
+      outline-offset: 3px;
     }
 
     @media (max-width: 600px) {
-      main {
-        margin: 1rem;
-        padding: 1rem;
+      .site-header__inner,
+      main,
+      .site-footer__inner {
+        width: min(100% - 1.25rem, 72rem);
       }
 
-      header h1 {
-        font-size: 1.6rem;
+      .site-header__inner {
+        padding-block: 1.6rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
       }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>{{ site.title }}</h1>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="site-kicker">SKMU · Digital archive</p>
+      <h1 class="site-title">{{ site.title }}</h1>
+      <p class="site-description">{{ site.description }}</p>
+    </div>
   </header>
 
   <main>
     {{ content }}
   </main>
 
-  <footer>
-    &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+    </div>
   </footer>
-
 </body>
 </html>
